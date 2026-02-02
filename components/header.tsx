@@ -20,7 +20,7 @@ export default function Header() {
 
           {/* Logo */}
           <Link href="/" className="text-xl font-serif font-bold text-primary">
-            Pure Ayurveda
+            BAMUSO Ayurveda
           </Link>
 
           {/* Nav Links */}

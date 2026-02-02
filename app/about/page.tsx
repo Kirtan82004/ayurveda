@@ -4,8 +4,21 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { MessageCircle, ArrowLeft, Award, Users, Leaf, Heart } from 'lucide-react';
+const img = {
+  src: '/images/about.png',
+  alt: 'Our Story Image',
+};
 
 export default function AboutPage() {
+  const whyChooseBamuso = [
+    '100% Ayurvedic & Natural',
+    'Lab-Tested Safety',
+    'No Chemicals, Parabens, Sulfates',
+    'GMP, AYUSH, ISO & FSSAI Certified',
+    'Fast Delivery Across India',
+    'Easy 15-Day Returns on Damaged/Wrong Product',
+    'Trusted by Thousands of Customers',
+  ];
   return (
     <div className="min-h-screen bg-background text-foreground">
       {/* Header */}
@@ -15,9 +28,9 @@ export default function AboutPage() {
             <Link href="/" className="text-primary hover:text-primary/80 transition">
               <ArrowLeft className="w-5 h-5" />
             </Link>
-            <h1 className="text-4xl font-serif font-bold">About Pure Ayurveda</h1>
+            <h1 className="text-4xl font-serif font-bold">About BAMUSO Ayurveda</h1>
           </div>
-          <p className="text-lg text-foreground/70 max-w-2xl">Bringing the wisdom of ancient Ayurveda to modern wellness</p>
+          <p className="text-lg text-foreground/70 max-w-2xl">Inspired by Nature, Powered by Trust</p>
         </div>
       </section>
 
@@ -28,18 +41,27 @@ export default function AboutPage() {
             <div>
               <h2 className="text-3xl font-serif font-bold mb-6 text-foreground">Our Story</h2>
               <p className="text-lg text-foreground/80 mb-4 leading-relaxed">
-                Pure Ayurveda was founded with a simple mission: to make authentic, high-quality Ayurvedic products accessible to everyone seeking natural wellness solutions.
+                BAMUSO Ayurveda is not just a brand — it is a legacy.
+                The blessings, experience, and trust of three generations form the foundation of BAMUSO.
               </p>
               <p className="text-lg text-foreground/80 mb-4 leading-relaxed">
-                Our journey began with a deep respect for ancient Ayurvedic knowledge and a commitment to quality. Each product is crafted with the finest herbal ingredients, sourced from trusted partners who share our values of sustainability and purity.
+                Building on this legacy, BAMUSO Ayurveda was established with a clear purpose:
+                to bring pure, safe, and effective Ayurvedic wellness solutions to every home.
               </p>
               <p className="text-lg text-foreground/80 leading-relaxed">
-                Today, we proudly serve thousands of customers who have embraced Ayurveda as part of their wellness journey, trusting us with their health and wellbeing.
+                Today, BAMUSO Ayurveda has earned the trust of thousands of customers
+                who seek natural and scientifically validated health solutions.
               </p>
+
+
             </div>
             <div className="flex justify-center">
               <div className="w-full h-96 bg-accent rounded-lg flex items-center justify-center">
-                <span className="text-6xl">🌿</span>
+                <img
+                    src={img.src}
+                    alt={img.alt}
+                    className="w-full h-full object-cover rounded-xl"
+                  />
               </div>
             </div>
           </div>
@@ -119,106 +141,63 @@ export default function AboutPage() {
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-secondary">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-serif font-bold text-center mb-12 text-foreground">
-            Trust & Certifications
+            Trust, Safety & Certifications
           </h2>
-          <div className="grid md:grid-cols-3 gap-8">
+
+          <div className="grid md:grid-cols-4 gap-8">
             <Card className="p-8 border border-border text-center">
-              <h3 className="font-serif font-bold text-2xl mb-4 text-primary">GMP</h3>
-              <p className="text-foreground/70 mb-2">Good Manufacturing Practices Certified</p>
-              <p className="text-sm text-foreground/60">Ensuring quality and safety standards</p>
+              <h3 className="font-serif font-bold text-2xl mb-3 text-primary">GMP</h3>
+              <p className="text-foreground/70">Good Manufacturing Practices</p>
+              <p className="text-sm text-foreground/60 mt-2">
+                Ensures strict quality & hygiene standards
+              </p>
             </Card>
+
             <Card className="p-8 border border-border text-center">
-              <h3 className="font-serif font-bold text-2xl mb-4 text-primary">Herbal</h3>
-              <p className="text-foreground/70 mb-2">100% Herbal Formulations</p>
-              <p className="text-sm text-foreground/60">No synthetic additives or chemicals</p>
+              <h3 className="font-serif font-bold text-2xl mb-3 text-primary">AYUSH</h3>
+              <p className="text-foreground/70">AYUSH Approved</p>
+              <p className="text-sm text-foreground/60 mt-2">
+                Certified by Govt. of India for Ayurveda
+              </p>
             </Card>
+
             <Card className="p-8 border border-border text-center">
-              <h3 className="font-serif font-bold text-2xl mb-4 text-primary">FSSAI</h3>
-              <p className="text-foreground/70 mb-2">Food Safety Compliance</p>
-              <p className="text-sm text-foreground/60">Meeting regulatory standards</p>
+              <h3 className="font-serif font-bold text-2xl mb-3 text-primary">ISO</h3>
+              <p className="text-foreground/70">ISO Certified Facility</p>
+              <p className="text-sm text-foreground/60 mt-2">
+                International quality management standards
+              </p>
+            </Card>
+
+            <Card className="p-8 border border-border text-center">
+              <h3 className="font-serif font-bold text-2xl mb-3 text-primary">FSSAI</h3>
+              <p className="text-foreground/70">FSSAI Registered</p>
+              <p className="text-sm text-foreground/60 mt-2">
+                Food & safety compliance assured
+              </p>
             </Card>
           </div>
         </div>
       </section>
 
+
       {/* Why Choose Us */}
       <section className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-serif font-bold text-center mb-12 text-foreground">
-            Why Choose Pure Ayurveda?
+            Why Choose BAMUSO Ayurveda?
           </h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="space-y-4">
-              <div className="flex gap-4">
-                <div className="flex-shrink-0">
-                  <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center">
-                    <span className="text-primary-foreground font-bold">✓</span>
-                  </div>
+          <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            {whyChooseBamuso.map((point, index) => (
+              <div key={index} className="flex gap-4 items-start">
+                <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0">
+                  <span className="text-primary-foreground font-bold">✓</span>
                 </div>
-                <div>
-                  <h3 className="font-serif font-bold text-lg text-foreground mb-2">Authentic Formulations</h3>
-                  <p className="text-foreground/70">Based on classical Ayurvedic texts and traditional knowledge</p>
-                </div>
+                <p className="text-lg text-foreground/80">{point}</p>
               </div>
-              <div className="flex gap-4">
-                <div className="flex-shrink-0">
-                  <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center">
-                    <span className="text-primary-foreground font-bold">✓</span>
-                  </div>
-                </div>
-                <div>
-                  <h3 className="font-serif font-bold text-lg text-foreground mb-2">Expert Support</h3>
-                  <p className="text-foreground/70">Chat with our wellness experts for personalized guidance</p>
-                </div>
-              </div>
-              <div className="flex gap-4">
-                <div className="flex-shrink-0">
-                  <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center">
-                    <span className="text-primary-foreground font-bold">✓</span>
-                  </div>
-                </div>
-                <div>
-                  <h3 className="font-serif font-bold text-lg text-foreground mb-2">Fast Delivery</h3>
-                  <p className="text-foreground/70">Quick shipping with COD available across India</p>
-                </div>
-              </div>
-            </div>
-            <div className="space-y-4">
-              <div className="flex gap-4">
-                <div className="flex-shrink-0">
-                  <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center">
-                    <span className="text-primary-foreground font-bold">✓</span>
-                  </div>
-                </div>
-                <div>
-                  <h3 className="font-serif font-bold text-lg text-foreground mb-2">Affordable Pricing</h3>
-                  <p className="text-foreground/70">Premium quality products at reasonable prices</p>
-                </div>
-              </div>
-              <div className="flex gap-4">
-                <div className="flex-shrink-0">
-                  <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center">
-                    <span className="text-primary-foreground font-bold">✓</span>
-                  </div>
-                </div>
-                <div>
-                  <h3 className="font-serif font-bold text-lg text-foreground mb-2">Satisfaction Guarantee</h3>
-                  <p className="text-foreground/70">Happy with our products or your money back</p>
-                </div>
-              </div>
-              <div className="flex gap-4">
-                <div className="flex-shrink-0">
-                  <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center">
-                    <span className="text-primary-foreground font-bold">✓</span>
-                  </div>
-                </div>
-                <div>
-                  <h3 className="font-serif font-bold text-lg text-foreground mb-2">Community Focus</h3>
-                  <p className="text-foreground/70">Join thousands on their wellness journey</p>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
+
         </div>
       </section>
 
@@ -229,7 +208,7 @@ export default function AboutPage() {
             Start Your Wellness Journey Today
           </h2>
           <p className="text-lg mb-8 opacity-90">
-            Discover products that align with your unique wellness needs
+            Discover authentic Ayurvedic solutions for your daily health needs with BAMUSO Ayurveda.
           </p>
           <div className="flex gap-4 flex-wrap justify-center">
             <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground" asChild>
@@ -244,42 +223,6 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="bg-foreground text-background py-12 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-4 gap-8 mb-8">
-            <div>
-              <h3 className="font-serif font-bold mb-4">Pure Ayurveda</h3>
-              <p className="text-sm opacity-70">Authentic Ayurvedic products for wellness</p>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-4">Quick Links</h4>
-              <ul className="space-y-2 text-sm">
-                <li><Link href="/products" className="opacity-70 hover:opacity-100">Products</Link></li>
-                <li><Link href="/about" className="opacity-70 hover:opacity-100">About Us</Link></li>
-                <li><Link href="/contact" className="opacity-70 hover:opacity-100">Contact</Link></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-4">Policies</h4>
-              <ul className="space-y-2 text-sm">
-                <li><Link href="/shipping" className="opacity-70 hover:opacity-100">Shipping & Delivery</Link></li>
-                <li><Link href="/returns" className="opacity-70 hover:opacity-100">Returns & Refunds</Link></li>
-                <li><Link href="/privacy" className="opacity-70 hover:opacity-100">Privacy Policy</Link></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-4">Contact</h4>
-              <p className="text-sm opacity-70 mb-2">+91 98765 43210</p>
-              <p className="text-sm opacity-70">WhatsApp Support Available</p>
-            </div>
-          </div>
-          <div className="border-t border-background/20 pt-8 text-center text-sm opacity-70">
-            <p>&copy; 2024 Pure Ayurveda. All rights reserved. Consult a qualified Ayurvedic practitioner before use.</p>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }

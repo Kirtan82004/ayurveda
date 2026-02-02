@@ -6,6 +6,14 @@ import { Card } from '@/components/ui/card';
 import { MessageCircle, Package, Leaf, Award } from 'lucide-react';
 import { ShoppingCart } from 'lucide-react';
 import { useCart } from '@/app/cart-context';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+
 
 const FEATURED_PRODUCTS = [
   {
@@ -41,24 +49,50 @@ const FEATURED_PRODUCTS = [
     image: 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22%3E%3Crect fill=%22%23A1887F%22 width=%22200%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fontSize=%2224%22 fill=%22%23FFFFFF%22 textAnchor=%22middle%22 dominantBaseline=%22middle%22%3EBrahmi Oil%3C/text%3E%3C/svg%3E',
   },
 ];
+const HERO_IMAGES = [
+  {
+    src: "/images/ayurveda-1.png",
+    alt: "Ayurvedic Herbs",
+  },
+  {
+    src: "/images/ayurveda-2.png",
+    alt: "Ayurvedic Wellness",
+  }
+];
 
 const BENEFITS = [
   {
     icon: Leaf,
-    title: '100% Herbal',
-    description: 'Pure botanical ingredients without chemicals',
+    title: '100% Ayurvedic & Natural',
+    description: 'Made with pure herbal ingredients inspired by classical Ayurveda.',
   },
   {
     icon: Award,
-    title: 'GMP Certified',
-    description: 'Quality assured and safety tested',
+    title: 'Lab-Tested & Certified',
+    description: 'GMP, AYUSH, ISO & FSSAI certified for quality and safety.',
   },
   {
     icon: Package,
-    title: 'Fast Delivery',
-    description: 'COD available across India',
+    title: 'No Harmful Chemicals',
+    description: 'Free from parabens, sulfates and synthetic chemicals.',
+  },
+  {
+    icon: ShoppingCart,
+    title: 'Fast Delivery Across India',
+    description: 'Quick and reliable shipping with safe packaging.',
+  },
+  {
+    icon: Package,
+    title: 'Easy 15-Day Returns',
+    description: 'Hassle-free returns on damaged or wrong products.',
+  },
+  {
+    icon: Award,
+    title: 'Trusted by Thousands',
+    description: 'Loved and recommended by customers across India.',
   },
 ];
+
 
 export default function Home() {
   const { cartItems } = useCart();
@@ -69,44 +103,65 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-background text-foreground">
 
-      {/* Hero Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-linear-to-b from-secondary to-background">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold leading-tight text-foreground mb-6">
-                Ancient Wisdom for Modern Wellness
-              </h1>
-              <p className="text-lg text-foreground/70 mb-8 leading-relaxed">
-                Discover the healing power of Ayurveda. Our products are crafted with the finest herbal ingredients, GMP certified and trusted by thousands.
-              </p>
-              <div className="flex gap-4">
-                <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
-                  <Link href="/products">Shop Now</Link>
-                </Button>
-                <Button variant="outline" size="lg" asChild>
-                  <a href="https://wa.me/918377997202" target="_blank" rel="noopener noreferrer">
-                    <MessageCircle className="w-4 h-4 mr-2" />
-                    Order on WhatsApp
-                  </a>
-                </Button>
-              </div>
-            </div>
-            <div className="flex justify-center">
-              <div className="w-full h-96 bg-accent rounded-lg flex items-center justify-center">
-                <span className="text-6xl">🌿</span>
-              </div>
-            </div>
-          </div>
-        </div>
+      {/* Hero Section - Full Width Carousel */}
+      <section className="relative w-full h-[90vh] overflow-hidden">
+        <Carousel opts={{ loop: true }} className="w-full h-full">
+          <CarouselContent>
+            {HERO_IMAGES.map((img, index) => (
+              <CarouselItem key={index}>
+                <div className="relative w-full h-[90vh]">
+                  <img
+                    src={img.src}
+                    alt={img.alt}
+                    className="w-full h-full object-cover"
+                  />
+
+                  {/* Overlay */}
+                  <div className="absolute inset-0 bg-black/40" />
+
+                  {/* Content */}
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="text-center max-w-3xl px-4">
+                      <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-white mb-6">
+                        Shop Ayurvedic Products — BAMUSO Ayurveda Store
+                      </h1>
+                      <p className="text-lg text-white/90 mb-8">
+                        India’s most trusted Ayurvedic wellness range for daily health. Pure, certified and effective solutions for every stage of life.
+                      </p>
+                      <div className="flex justify-center gap-4 flex-wrap">
+                        <Button size="lg" className="bg-primary hover:bg-primary/90">
+                          <Link href="/products">Shop Now</Link>
+                        </Button>
+                        <Button size="lg" variant="outline" className="text-white border-white hover:bg-white/10">
+                          <a
+                            href="https://wa.me/918377997202"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <MessageCircle className="w-4 h-4 mr-2 inline" />
+                            WhatsApp Order
+                          </a>
+                        </Button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+
+          <CarouselPrevious className="left-4 text-white" />
+          <CarouselNext className="right-4 text-white" />
+        </Carousel>
       </section>
 
       {/* Benefits Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-serif font-bold text-center mb-12 text-foreground">
-            Why Choose Pure Ayurveda?
+            Why Choose BAMUSO Ayurveda?
           </h2>
+
           <div className="grid md:grid-cols-3 gap-8">
             {BENEFITS.map((benefit, index) => {
               const Icon = benefit.icon;
@@ -169,6 +224,25 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {/* Customer Reviews */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-secondary">
+        <div className="max-w-7xl mx-auto text-center">
+          <h2 className="text-3xl font-serif font-bold mb-12 text-foreground">Customer Reviews</h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              { name: 'Rahul S.', review: 'Products are authentic and highly effective. Feeling more energetic!' },
+              { name: 'Sneha Sharma', review: 'Natural, safe, and genuine Ayurveda. Loved the quality.' },
+              { name: 'Amit K.', review: 'Fast delivery, great support, excellent results!' },
+            ].map((r, idx) => (
+              <Card key={idx} className="p-6 border border-border text-left hover:shadow-lg transition">
+                <p className="text-foreground/70 mb-4">&quot;{r.review}&quot;</p>
+                <h4 className="font-bold text-foreground">{r.name}</h4>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
 
       {/* CTA Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-primary text-accent-foreground">
@@ -187,42 +261,6 @@ export default function Home() {
           </Button>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="bg-foreground text-background py-12 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-4 gap-8 mb-8">
-            <div>
-              <h3 className="font-serif font-bold mb-4">Pure Ayurveda</h3>
-              <p className="text-sm opacity-70">Authentic Ayurvedic products for wellness</p>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-4">Quick Links</h4>
-              <ul className="space-y-2 text-sm">
-                <li><Link href="/products" className="opacity-70 hover:opacity-100">Products</Link></li>
-                <li><Link href="/about" className="opacity-70 hover:opacity-100">About Us</Link></li>
-                <li><Link href="/contact" className="opacity-70 hover:opacity-100">Contact</Link></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-4">Policies</h4>
-              <ul className="space-y-2 text-sm">
-                <li><Link href="/shipping" className="opacity-70 hover:opacity-100">Shipping & Delivery</Link></li>
-                <li><Link href="/returns" className="opacity-70 hover:opacity-100">Returns & Refunds</Link></li>
-                <li><Link href="/privacy" className="opacity-70 hover:opacity-100">Privacy Policy</Link></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-4">Contact</h4>
-              <p className="text-sm opacity-70 mb-2">📞 +91 98765 43210</p>
-              <p className="text-sm opacity-70">💬 WhatsApp Support Available</p>
-            </div>
-          </div>
-          <div className="border-t border-background/20 pt-8 text-center text-sm opacity-70">
-            <p>&copy; 2024 Pure Ayurveda. All rights reserved. Consult a qualified Ayurvedic practitioner before use.</p>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }

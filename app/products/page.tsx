@@ -74,7 +74,17 @@ const PRODUCTS = [
   },
 ];
 
-const CATEGORIES = ['All', 'Immunity', 'Skin', 'Hair', 'Digestion'];
+const CATEGORIES = [
+  'All',
+  'Male Wellness',
+  'Women Wellness',
+  'Immunity & Daily Health',
+  'Weight & Digestion',
+  'Skin & Hair Care',
+  'Mind & Sleep',
+  'Special Health Support',
+];
+
 
 export default function ProductsPage() {
   const [selectedCategory, setSelectedCategory] = useState('All');
@@ -94,9 +104,13 @@ export default function ProductsPage() {
             <Link href="/" className="text-primary hover:text-primary/80 transition">
               <ArrowLeft className="w-5 h-5" />
             </Link>
-            <h1 className="text-4xl font-serif font-bold">Our Products</h1>
+            <h1 className="text-4xl font-serif font-bold">
+              Shop Ayurvedic Products — BAMUSO Ayurveda
+            </h1>
           </div>
-          <p className="text-foreground/70">Explore our curated selection of authentic Ayurvedic products</p>
+          <p className="text-foreground/70">
+            India’s most trusted Ayurvedic wellness range for daily health
+          </p>
         </div>
       </section>
 
@@ -125,8 +139,8 @@ export default function ProductsPage() {
             {filteredProducts.map((product) => (
               <Card key={product.id} className="overflow-hidden hover:shadow-lg transition flex flex-col">
                 <div className="aspect-square bg-muted flex items-center justify-center overflow-hidden">
-                  <img 
-                    src={product.image || "/placeholder.svg"} 
+                  <img
+                    src={product.image || "/placeholder.svg"}
                     alt={product.name}
                     className="w-full h-full object-cover"
                   />
@@ -174,42 +188,6 @@ export default function ProductsPage() {
           )}
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="bg-foreground text-background py-12 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-4 gap-8 mb-8">
-            <div>
-              <h3 className="font-serif font-bold mb-4">Pure Ayurveda</h3>
-              <p className="text-sm opacity-70">Authentic Ayurvedic products for wellness</p>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-4">Quick Links</h4>
-              <ul className="space-y-2 text-sm">
-                <li><Link href="/products" className="opacity-70 hover:opacity-100">Products</Link></li>
-                <li><Link href="/about" className="opacity-70 hover:opacity-100">About Us</Link></li>
-                <li><Link href="/contact" className="opacity-70 hover:opacity-100">Contact</Link></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-4">Policies</h4>
-              <ul className="space-y-2 text-sm">
-                <li><Link href="/shipping" className="opacity-70 hover:opacity-100">Shipping & Delivery</Link></li>
-                <li><Link href="/returns" className="opacity-70 hover:opacity-100">Returns & Refunds</Link></li>
-                <li><Link href="/privacy" className="opacity-70 hover:opacity-100">Privacy Policy</Link></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-4">Contact</h4>
-              <p className="text-sm opacity-70 mb-2">+91 98765 43210</p>
-              <p className="text-sm opacity-70">WhatsApp Support Available</p>
-            </div>
-          </div>
-          <div className="border-t border-background/20 pt-8 text-center text-sm opacity-70">
-            <p>&copy; 2024 Pure Ayurveda. All rights reserved. Consult a qualified Ayurvedic practitioner before use.</p>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }
