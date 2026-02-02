@@ -25,22 +25,77 @@ export default function CheckoutPage() {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
+  const submitOrderToSheet = async (paymentMode: string) => {
+    const items = cartItems
+      .map(i => `${i.name} x${i.quantity}`)
+      .join(", ");
+
+    const params = new URLSearchParams({
+      name: formData.name,
+      email: formData.email,
+      phone: formData.phone,
+      address: formData.address,
+      city: formData.city,
+      pincode: formData.pincode,
+      items,
+      total: cartTotal.toString(),
+      payment: paymentMode,
+      status: "New Order",
+    });
+
+    const url =
+      "https://script.google.com/macros/s/AKfycbypuJHFbeQf5WEX3ISxlpogxpg0gu0fOd6GspUaMLzn6bfhY6rNQpdoh7trPWrDlDHTLw/exec?" +
+      params.toString();
+
+    await fetch(url, {
+      method: "GET",
+      mode: "no-cors",
+    });
+  };
+
   const generateOrderMessage = () => {
     const items = cartItems.map((item) => `${item.name} x${item.quantity} - ${item.price}`).join('\n');
     const message = `*NEW ORDER*\n\nCustomer Details:\nName: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\n\nDelivery Address:\n${formData.address}\n${formData.city}, ${formData.pincode}\n\n*Order Items:*\n${items}\n\n*Total Amount: ₹${cartTotal.toLocaleString()}*\n\nPlease confirm the order.`;
     return encodeURIComponent(message);
   };
 
-  const handlePlaceOrder = () => {
-    if (!formData.name || !formData.email || !formData.phone || !formData.address || !formData.city || !formData.pincode) {
-      alert('Please fill in all fields');
+ const handleCODOrder = async () => {
+  if (!Object.values(formData).every(Boolean)) {
+    alert("Please fill all fields");
+    return;
+  }
+
+  const whatsappUrl = `https://wa.me/918377997202?text=${generateOrderMessage()}`;
+
+  // ✅ Open WhatsApp FIRST (direct user click)
+  window.open(whatsappUrl, "_blank");
+
+  // ⏳ Sheet entry in background
+  submitOrderToSheet("COD");
+
+  alert("Redirecting to WhatsApp to confirm your order...");
+  clearCart();
+};
+
+  const RAZORPAY_LINK = "https://rzp.io/l/abcd1234";
+
+  const handlePayNow = async () => {
+    if (!Object.values(formData).every(Boolean)) {
+      alert("Please fill all fields");
       return;
     }
 
-    const whatsappUrl = `https://wa.me/918377997202?text=${generateOrderMessage()}`;
-    window.open(whatsappUrl, '_blank');
+    await submitOrderToSheet("ONLINE");
+
+    window.open(
+      `${RAZORPAY_LINK}?amount=${cartTotal * 100}`,
+      "_blank"
+    );
+
+    alert("Redirecting to secure payment...");
     clearCart();
   };
+
 
   if (cartItems.length === 0) {
     return (
@@ -61,28 +116,6 @@ export default function CheckoutPage() {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
-      {/* Navigation */}
-      <nav className="sticky top-0 z-40 bg-background/95 backdrop-blur border-b border-border">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
-            <Link href="/" className="text-xl font-serif font-bold text-primary">
-              Pure Ayurveda
-            </Link>
-            <div className="hidden md:flex gap-8">
-              <Link href="/" className="text-foreground hover:text-primary transition">Home</Link>
-              <Link href="/products" className="text-foreground hover:text-primary transition">Products</Link>
-              <Link href="/about" className="text-foreground hover:text-primary transition">About</Link>
-              <Link href="/contact" className="text-foreground hover:text-primary transition">Contact</Link>
-            </div>
-            <Button variant="default" size="sm" asChild>
-              <a href="https://wa.me/918377997202" target="_blank" rel="noopener noreferrer">
-                <MessageCircle className="w-4 h-4 mr-2" />
-                WhatsApp
-              </a>
-            </Button>
-          </div>
-        </div>
-      </nav>
 
       {/* Header */}
       <section className="py-12 px-4 sm:px-6 lg:px-8 bg-secondary border-b border-border">
@@ -206,18 +239,25 @@ export default function CheckoutPage() {
                   <span className="font-serif font-bold text-primary text-2xl">₹{cartTotal.toLocaleString()}</span>
                 </div>
 
-                <Button
-                  onClick={handlePlaceOrder}
-                  size="lg"
-                  className="w-full bg-primary hover:bg-primary/90 text-white font-bold"
-                >
-                  <MessageCircle className="w-5 h-5 mr-2" />
-                  Place Order on WhatsApp
-                </Button>
+                <div className="space-y-3">
+                  <Button
+                    onClick={handleCODOrder}
+                    size="lg"
+                    className="w-full bg-green-600 hover:bg-green-700 text-white font-bold"
+                  >
+                    <MessageCircle className="w-5 h-5 mr-2" />
+                    Place Order (COD / WhatsApp)
+                  </Button>
 
-                <p className="text-xs text-foreground/50 text-center mt-4">
-                  You'll be redirected to WhatsApp to confirm your order
-                </p>
+                  <Button
+                    onClick={handlePayNow}
+                    size="lg"
+                    variant="outline"
+                    className="w-full border-primary text-primary font-bold"
+                  >
+                    💳 Pay Now
+                  </Button>
+                </div>
               </Card>
             </div>
           </div>
