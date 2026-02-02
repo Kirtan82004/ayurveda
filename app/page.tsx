@@ -51,11 +51,11 @@ const FEATURED_PRODUCTS = [
 ];
 const HERO_IMAGES = [
   {
-    src: "/images/ayurveda-1.png",
+    src: "/images/ayurveda-1.webp",
     alt: "Ayurvedic Herbs",
   },
   {
-    src: "/images/ayurveda-2.png",
+    src: "/images/ayurveda-2.webp",
     alt: "Ayurvedic Wellness",
   }
 ];

@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { MessageCircle, ArrowLeft, Award, Users, Leaf, Heart } from 'lucide-react';
 const img = {
-  src: '/images/about.png',
+  src: '/images/about.webp',
   alt: 'Our Story Image',
 };
 
