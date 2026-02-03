@@ -1,7 +1,6 @@
 'use client';
 
 import Link from 'next/link';
-import Image from 'next/image';
 import { Facebook, Instagram, Send } from 'lucide-react';
 
 export default function Footer() {
@@ -13,13 +12,12 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <Link href="/" className="flex items-center gap-3">
-              <Image
+              <img
                 src="/images/logo.png"
                 alt="BAMUSO Ayurveda Logo"
                 width={60}
                 height={60}
                 className="object-contain"
-                priority
               />
               <span className="text-xl font-serif font-bold text-primary">
                 BAMUSO Ayurveda

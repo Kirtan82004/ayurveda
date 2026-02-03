@@ -8,7 +8,6 @@ import {
   Menu,
   X
 } from 'lucide-react';
-import Image from 'next/image';
 import { useCart } from '@/app/cart-context';
 import { useState } from 'react';
 
@@ -28,14 +27,13 @@ export default function Header() {
 
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3">
-            <Image
-              src="/images/logo.png"
-              alt="BAMUSO Ayurveda Logo"
-              width={60}
-              height={60}
-              className="object-contain"
-              priority
-            />
+            <img
+                src="/images/logo.png"
+                alt="BAMUSO Ayurveda Logo"
+                width={60}
+                height={60}
+                className="object-contain"
+              />
             <span className="text-xl font-serif font-bold text-primary">
               BAMUSO Ayurveda
             </span>
