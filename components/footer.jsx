@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { Facebook, Instagram, Send } from 'lucide-react';
 
 export default function Footer() {
@@ -11,8 +12,20 @@ export default function Footer() {
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4 mb-10">
           {/* Brand */}
           <div>
-            <h3 className="text-2xl font-serif font-bold mb-3">BAMUSO Ayurveda</h3>
-            <p className="text-sm opacity-70">
+            <Link href="/" className="flex items-center gap-3">
+              <Image
+                src="/images/logo.png"
+                alt="BAMUSO Ayurveda Logo"
+                width={60}
+                height={60}
+                className="object-contain"
+                priority
+              />
+              <span className="text-xl font-serif font-bold text-primary">
+                BAMUSO Ayurveda
+              </span>
+            </Link>
+            <p className="text-sm opacity-70 mt-3">
               India’s trusted Ayurvedic wellness brand for daily health & long-term care.
             </p>
           </div>
@@ -49,7 +62,7 @@ export default function Footer() {
               <a
                 href="https://www.facebook.com/Bamusoayurveda"
                 target="_blank"
-                className="opacity-70 hover:opacity-100 transition"
+                className="p-2 rounded-full bg-background/10 hover:bg-primary hover:text-white transition"
                 aria-label="Facebook"
               >
                 <Facebook className="w-5 h-5" />
@@ -58,7 +71,7 @@ export default function Footer() {
               <a
                 href="https://www.instagram.com/bamuso_ayurveda"
                 target="_blank"
-                className="opacity-70 hover:opacity-100 transition"
+                className="p-2 rounded-full bg-background/10 hover:bg-primary hover:text-white transition"
                 aria-label="Instagram"
               >
                 <Instagram className="w-5 h-5" />
@@ -67,7 +80,7 @@ export default function Footer() {
               <a
                 href="https://t.me/+3L1419GJ4pZkY2Nl"
                 target="_blank"
-                className="opacity-70 hover:opacity-100 transition"
+                className="p-2 rounded-full bg-background/10 hover:bg-primary hover:text-white transition"
                 aria-label="Telegram"
               >
                 <Send className="w-5 h-5" />
