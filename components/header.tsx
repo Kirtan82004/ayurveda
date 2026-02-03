@@ -29,7 +29,7 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3">
             <Image
-              src="/images/logo.webp"
+              src="/images/logo.png"
               alt="BAMUSO Ayurveda Logo"
               width={60}
               height={60}
