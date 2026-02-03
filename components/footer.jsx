@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import { Facebook, Instagram, Send } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -44,6 +45,35 @@ export default function Footer() {
             <p className="text-sm opacity-70 mb-1">📞 +91 98765 43210</p>
             <p className="text-sm opacity-70 mb-1">💬 WhatsApp Support Available</p>
             <p className="text-sm opacity-70">✉ support@bamusoayurveda.com</p>
+            <div className="flex gap-4 mt-4">
+              <a
+                href="https://www.facebook.com/Bamusoayurveda"
+                target="_blank"
+                className="opacity-70 hover:opacity-100 transition"
+                aria-label="Facebook"
+              >
+                <Facebook className="w-5 h-5" />
+              </a>
+
+              <a
+                href="https://www.instagram.com/bamuso_ayurveda"
+                target="_blank"
+                className="opacity-70 hover:opacity-100 transition"
+                aria-label="Instagram"
+              >
+                <Instagram className="w-5 h-5" />
+              </a>
+
+              <a
+                href="https://t.me/+3L1419GJ4pZkY2Nl"
+                target="_blank"
+                className="opacity-70 hover:opacity-100 transition"
+                aria-label="Telegram"
+              >
+                <Send className="w-5 h-5" />
+              </a>
+            </div>
+
           </div>
         </div>
 

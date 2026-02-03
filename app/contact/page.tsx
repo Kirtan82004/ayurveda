@@ -3,7 +3,8 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
-import { MessageCircle, ArrowLeft, Phone, Mail, MapPin, Clock } from 'lucide-react';
+import { MessageCircle, ArrowLeft, Phone, Mail, MapPin, Clock,Facebook, Instagram, Youtube, Send } from 'lucide-react';
+
 
 export default function ContactPage() {
   return (
@@ -137,7 +138,7 @@ export default function ContactPage() {
               Subscribe to our WhatsApp channel for wellness tips, product updates, and special offers
             </p>
             <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
-              <a href="https://wa.me/918377997202" target="_blank" rel="noopener noreferrer">
+              <a href="https://whatsapp.com/channel/0029Va8znqQ42DciLmcEAY2T" target="_blank" rel="noopener noreferrer">
                 <MessageCircle className="w-5 h-5 mr-2" />
                 Subscribe on WhatsApp
               </a>
@@ -188,24 +189,55 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+      {/* Social Media Section */}
+<section className="py-16 px-4 sm:px-6 lg:px-8 bg-secondary">
+  <div className="max-w-4xl mx-auto text-center">
+    <h2 className="text-3xl font-serif font-bold mb-4 text-foreground">
+      Connect With Us
+    </h2>
+    <p className="text-foreground/70 mb-10">
+      Follow us on social media for daily wellness tips, offers & updates
+    </p>
 
-      {/* Final CTA */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-primary text-accent-foreground">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl sm:text-4xl font-serif font-bold mb-4">
-            Have More Questions?
-          </h2>
-          <p className="text-lg mb-8 opacity-90">
-            Our wellness experts are ready to help guide you on your Ayurvedic wellness journey
-          </p>
-          <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground" asChild>
-            <a href="https://wa.me/918377997202" target="_blank" rel="noopener noreferrer">
-              <MessageCircle className="w-5 h-5 mr-2" />
-              Chat with Our Experts
-            </a>
-          </Button>
-        </div>
-      </section>
+    <div className="flex justify-center gap-6 flex-wrap">
+      <a
+        href="https://www.facebook.com/Bamusoayurveda"
+        target="_blank"
+        className="flex items-center gap-2 px-6 py-3 rounded-full border border-border hover:bg-accent transition"
+      >
+        <Facebook className="w-5 h-5 text-blue-600" />
+        Facebook
+      </a>
+
+      <a
+        href="https://www.instagram.com/bamuso_ayurveda"
+        target="_blank"
+        className="flex items-center gap-2 px-6 py-3 rounded-full border border-border hover:bg-accent transition"
+      >
+        <Instagram className="w-5 h-5 text-pink-500" />
+        Instagram
+      </a>
+
+      <a
+        href="https://www.youtube.com/@BamusoAyurveda7"
+        target="_blank"
+        className="flex items-center gap-2 px-6 py-3 rounded-full border border-border hover:bg-accent transition"
+      >
+        <Youtube className="w-5 h-5 text-red-600" />
+        YouTube
+      </a>
+
+      <a
+        href="https://t.me/+3L1419GJ4pZkY2Nl"
+        target="_blank"
+        className="flex items-center gap-2 px-6 py-3 rounded-full border border-border hover:bg-accent transition"
+      >
+        <Send className="w-5 h-5 text-sky-500" />
+        Telegram
+      </a>
+    </div>
+  </div>
+</section>
     </div>
   );
 }
