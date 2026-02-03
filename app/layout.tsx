@@ -10,25 +10,23 @@ import Footer from "@/components/footer"
 const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Buy Ayurvedic Products Online in India | BAMUSO Ayurveda",
   description:
     "Shop authentic Ayurvedic products online from BAMUSO Ayurveda. Ashwagandha, Turmeric, Brahmi Oil & more. 100% natural, AYUSH & GMP certified.",
-  keywords: [
-    "Ayurvedic products online",
-    "Buy ayurvedic medicine India",
-    "Ashwagandha powder",
-    "Brahmi hair oil",
-    "Natural herbal products",
-    "BAMUSO Ayurveda"
-  ],
+
+  verification: {
+    google: "iiP4-0rBA5X0Hlu0MqcnxVLx2PKE5zQJZmgAj13rO04",
+  },
+
   alternates: {
     canonical: "https://bamuso-ayurveda.vercel.app/",
   },
+
   openGraph: {
     title: "BAMUSO Ayurveda – Trusted Ayurvedic Wellness Store",
     description:
-      "Pure, natural & certified Ayurvedic products for immunity, skin & hair care. Order online across India.",
+      "Pure, natural & certified Ayurvedic products for immunity, skin & hair care.",
     url: "https://bamuso-ayurveda.vercel.app/",
     siteName: "BAMUSO Ayurveda",
     images: [
@@ -44,6 +42,7 @@ export const metadata = {
   },
 };
 
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -51,7 +50,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <meta name="google-site-verification" content="iiP4-0rBA5X0Hlu0MqcnxVLx2PKE5zQJZmgAj13rO04" />
       <body className={`font-sans antialiased`}>
         <CartProvider>
           <Header/>
