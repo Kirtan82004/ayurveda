@@ -13,7 +13,7 @@ export default function Footer() {
           <div>
             <Link href="/" className="flex items-center gap-3">
               <img
-                src="/images/logo.png"
+                src="/images/LOGO.webp"
                 alt="BAMUSO Ayurveda Logo"
                 width={60}
                 height={60}
