@@ -240,6 +240,15 @@ export default function CheckoutPage() {
                 </div>
 
                 <div className="space-y-3">
+                
+                  <Button
+                    onClick={handlePayNow}
+                    size="lg"
+                    variant="outline"
+                    className="w-full border-primary text-primary font-bold"
+                  >
+                    💳 Pay Now
+                  </Button>
                   <Button
                     onClick={handleCODOrder}
                     size="lg"
@@ -249,14 +258,6 @@ export default function CheckoutPage() {
                     Place Order (COD / WhatsApp)
                   </Button>
 
-                  <Button
-                    onClick={handlePayNow}
-                    size="lg"
-                    variant="outline"
-                    className="w-full border-primary text-primary font-bold"
-                  >
-                    💳 Pay Now
-                  </Button>
                 </div>
               </Card>
             </div>
