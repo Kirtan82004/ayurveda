@@ -1,7 +1,8 @@
 'use client';
 
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from '@/components/ui/accordion';
-import { Mail, Phone } from 'lucide-react';
+import { ArrowLeft, Mail, Phone } from 'lucide-react';
+import Link from 'next/link';
 
 const FAQS = [
   {
@@ -93,9 +94,14 @@ export default function FAQPage() {
   return (
     <div className="min-h-screen bg-background text-foreground py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-5xl mx-auto">
-        <h1 className="text-4xl font-serif font-bold mb-4 text-center">
-          Frequently Asked Questions (FAQs)
-        </h1>
+        <div className="flex items-center gap-4 mb-8">
+            <Link href="/" className="text-primary hover:text-primary/80 transition">
+              <ArrowLeft className="w-5 h-5" />
+            </Link>
+            <h1 className="text-4xl font-serif font-bold">Frequently Asked Questions </h1>
+          </div>
+
+          <p className="text-foreground/70 mb-8">Last Updated: January 2025</p>
         <p className="text-lg text-foreground/70 text-center mb-12">
           Inspired by Nature, Powered by Trust — Clear and reliable answers to all your questions in one place.
         </p>

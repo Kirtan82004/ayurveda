@@ -20,13 +20,15 @@ export default function PrivacyPage() {
             <h1 className="text-4xl font-serif font-bold">Privacy Policy</h1>
           </div>
 
-          <p className="text-foreground/70 mb-8">Last Updated: January 2024</p>
+          <p className="text-foreground/70 mb-8">Last Updated: January 2025</p>
 
           <div className="prose prose-invert max-w-none space-y-6">
             <Card className="p-6 border border-border">
               <h2 className="text-2xl font-serif font-bold mb-4 text-foreground">Introduction</h2>
               <p className="text-foreground/80">
-                Pure Ayurveda ("we," "us," "our") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website and use our services.
+                At Bamuso Ayurveda, your privacy and trust matter to us. This Privacy Policy explains how we
+                collect, use, store, and protect your information when you visit our website www.bamuso.com or
+                purchase our Ayurvedic products. By using our website and services, you agree to the terms outlined in this policy.
               </p>
             </Card>
 
@@ -36,19 +38,11 @@ export default function PrivacyPage() {
               <ul className="space-y-2 text-foreground/80">
                 <li className="flex gap-3">
                   <span className="text-primary font-bold">•</span>
-                  <span><strong>Personal Data:</strong> Name, email address, phone number, mailing address</span>
+                  <span><strong>Personal Information:</strong> Name, email address, phone number, Billing Address / Shipping Address </span>
                 </li>
                 <li className="flex gap-3">
                   <span className="text-primary font-bold">•</span>
-                  <span><strong>Order Information:</strong> Order history, payment details, delivery preferences</span>
-                </li>
-                <li className="flex gap-3">
-                  <span className="text-primary font-bold">•</span>
-                  <span><strong>Usage Data:</strong> Browser type, IP address, pages visited, time spent</span>
-                </li>
-                <li className="flex gap-3">
-                  <span className="text-primary font-bold">•</span>
-                  <span><strong>Health Information:</strong> Product preferences for health conditions (voluntarily provided)</span>
+                  <span><strong>Non-Personal Information :</strong> Browser type, IP address, pages visited, time spent</span>
                 </li>
               </ul>
             </Card>
@@ -58,40 +52,66 @@ export default function PrivacyPage() {
               <ul className="space-y-2 text-foreground/80">
                 <li className="flex gap-3">
                   <span className="text-primary font-bold">•</span>
-                  <span>Process and fulfill your orders</span>
+                  <span>To process, confirm, and deliver your orders  </span>
                 </li>
                 <li className="flex gap-3">
                   <span className="text-primary font-bold">•</span>
-                  <span>Send order updates and shipping notifications</span>
+                  <span>To share order updates, tracking details, and delivery information </span>
                 </li>
                 <li className="flex gap-3">
                   <span className="text-primary font-bold">•</span>
-                  <span>Provide customer support and respond to inquiries</span>
+                  <span>To provide customer support and resolve queries </span>
                 </li>
                 <li className="flex gap-3">
                   <span className="text-primary font-bold">•</span>
-                  <span>Send wellness tips and product recommendations (with your consent)</span>
+                  <span>To send offers, wellness tips, updates, and promotional messages (only with your
+                    consent) </span>
                 </li>
                 <li className="flex gap-3">
                   <span className="text-primary font-bold">•</span>
-                  <span>Improve our website and services</span>
+                  <span>To improve website performance and provide a personalized shopping experience </span>
                 </li>
                 <li className="flex gap-3">
                   <span className="text-primary font-bold">•</span>
-                  <span>Prevent fraudulent activities and ensure security</span>
+                  <span>To monitor fraudulent activity and ensure platform safety & security </span>
                 </li>
               </ul>
             </Card>
 
             <Card className="p-6 border border-border">
-              <h2 className="text-2xl font-serif font-bold mb-4 text-foreground">Data Security</h2>
+              <h2 className="text-2xl font-serif font-bold mb-4 text-foreground">Cookies & Tracking Technologies </h2>
               <p className="text-foreground/80 mb-3">
-                We implement appropriate technical and organizational measures to protect your personal data against unauthorized access, alteration, disclosure, or destruction.
+                We use cookies, web beacons, pixels, and similar tools to:
               </p>
               <ul className="space-y-2 text-foreground/80">
                 <li className="flex gap-3">
                   <span className="text-primary font-bold">•</span>
-                  <span>Encrypted communication for sensitive data</span>
+                  <span>Remember your preferences </span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-primary font-bold">•</span>
+                  <span>Save items in your cart</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-primary font-bold">•</span>
+                  <span>Improve loading speed</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-primary font-bold">•</span>
+                  <span>Analyze website traffic & performance </span>
+                </li>
+              </ul>
+              <p className="text-foreground/80 mt-3">You may disable cookies from browser settings. However, some features may not work properly
+                without them.</p>
+            </Card>
+
+            <Card className="p-6 border border-border">
+              <h2 className="text-2xl font-serif font-bold mb-4 text-foreground">Data Security</h2>
+              <p className="text-foreground/80 mb-3">We take strong security measures to protect your data: </p>
+              <ul className="space-y-2 text-foreground/80">
+                <li className="flex gap-3">
+                  <span className="text-primary font-bold">•</span>
+                  <span>Encrypted connections (HTTPS)</span>
                 </li>
                 <li className="flex gap-3">
                   <span className="text-primary font-bold">•</span>
@@ -99,58 +119,89 @@ export default function PrivacyPage() {
                 </li>
                 <li className="flex gap-3">
                   <span className="text-primary font-bold">•</span>
-                  <span>Regular security audits</span>
+                  <span>Strict access control </span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-primary font-bold">•</span>
+                  <span>Regular monitoring and updates </span>
                 </li>
               </ul>
+              <p className="text-foreground/80 mt-3">However, no online method is 100% secure. While we do our best, we cannot guarantee
+                absolute security. </p>
             </Card>
 
             <Card className="p-6 border border-border">
-              <h2 className="text-2xl font-serif font-bold mb-4 text-foreground">Information Sharing</h2>
-              <p className="text-foreground/80 mb-3">We do not sell, trade, or rent your personal information to third parties. We may share information with:</p>
+              <h2 className="text-2xl font-serif font-bold mb-4 text-foreground">Third-Party Partners </h2>
+              <p className="text-foreground/80 mb-3">We may work with trusted third-party platforms such as: </p>
               <ul className="space-y-2 text-foreground/80">
                 <li className="flex gap-3">
                   <span className="text-primary font-bold">•</span>
-                  <span><strong>Courier Partners:</strong> Delivery address for order fulfillment</span>
+                  <span>Payment processors </span>
                 </li>
                 <li className="flex gap-3">
                   <span className="text-primary font-bold">•</span>
-                  <span><strong>Payment Processors:</strong> Payment information for transaction processing</span>
+                  <span>Logistics partners</span>
                 </li>
                 <li className="flex gap-3">
                   <span className="text-primary font-bold">•</span>
-                  <span><strong>Legal Authorities:</strong> If required by law</span>
+                  <span>Email/SMS service providers </span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-primary font-bold">•</span>
+                  <span>Analytics tools</span>
                 </li>
               </ul>
+              <p className="text-foreground/80 mt-3">They may use cookies or collect limited information to provide seamless services.
+                Please refer to their respective privacy policies for more details.  </p>
             </Card>
-
             <Card className="p-6 border border-border">
-              <h2 className="text-2xl font-serif font-bold mb-4 text-foreground">Your Rights</h2>
-              <p className="text-foreground/80 mb-3">You have the right to:</p>
+              <h2 className="text-2xl font-serif font-bold mb-4 text-foreground">Your Privacy Rights  </h2>
+              <p className="text-foreground/80 mb-3">Depending on your location and applicable laws, you may request to:  </p>
               <ul className="space-y-2 text-foreground/80">
                 <li className="flex gap-3">
                   <span className="text-primary font-bold">•</span>
-                  <span>Access the personal data we hold about you</span>
+                  <span>Access your personal data</span>
                 </li>
                 <li className="flex gap-3">
                   <span className="text-primary font-bold">•</span>
-                  <span>Request correction of inaccurate data</span>
+                  <span>Update or correct your information</span>
                 </li>
                 <li className="flex gap-3">
                   <span className="text-primary font-bold">•</span>
-                  <span>Request deletion of your data (subject to legal obligations)</span>
+                  <span>Delete your account/data</span>
                 </li>
                 <li className="flex gap-3">
                   <span className="text-primary font-bold">•</span>
-                  <span>Opt-out of marketing communications</span>
+                  <span>Restrict or object to data processing </span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-primary font-bold">•</span>
+                  <span>Withdraw consent for promotional messages </span>
                 </li>
               </ul>
+              <p className="text-foreground/80 mt-3">To exercise these rights, email us at:
+                <a href="mailto:support@bamuso.com" className="text-primary hover:underline"> support@bamuso.com</a>   </p>
             </Card>
 
             <Card className="p-6 border border-border">
-              <h2 className="text-2xl font-serif font-bold mb-4 text-foreground">Cookies</h2>
+              <h2 className="text-2xl font-serif font-bold mb-4 text-foreground"> Data Retention </h2>
               <p className="text-foreground/80">
-                We may use cookies to enhance your experience on our website. You can manage cookie preferences through your browser settings.
+                We retain your information only as long as required:
               </p>
+              <ul className="space-y-2 text-foreground/80">
+                <li className="flex gap-3">
+                  <span className="text-primary font-bold">•</span>
+                  <span>To fulfill orders </span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-primary font-bold">•</span>
+                  <span>For legal, taxation, or regulatory compliance</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-primary font-bold">•</span>
+                  <span>For resolving disputes or ensuring service continuity </span>
+                </li>
+              </ul>
             </Card>
 
             <Card className="p-6 border border-border">
@@ -159,11 +210,22 @@ export default function PrivacyPage() {
                 Our website may contain links to third-party websites. We are not responsible for the privacy practices of other websites. Please review their privacy policies before providing personal information.
               </p>
             </Card>
+            <Card className="p-6 border border-border">
+              <h2 className="text-2xl font-serif font-bold mb-4 text-foreground">Children’s Privacy</h2>
+              <p className="text-foreground/80">
+                We do not knowingly collect or store information from individuals under 18 years of age.
+                If you believe a minor has shared data with us, please contact us immediately so we can delete
+                it.
+              </p>
+            </Card>
 
             <Card className="p-6 border border-border">
-              <h2 className="text-2xl font-serif font-bold mb-4 text-foreground">Changes to This Policy</h2>
+              <h2 className="text-2xl font-serif font-bold mb-4 text-foreground">Updates to This Policy</h2>
               <p className="text-foreground/80">
-                We may update this Privacy Policy from time to time. We will notify you of any significant changes by posting the updated policy on our website with a new "Last Updated" date.
+                We may update this Privacy Policy occasionally to reflect changes in laws, technology, or our
+                practices.
+                Updated versions will be posted on this page with a revised “Last Updated” date.
+                We encourage you to review this page regularly.
               </p>
             </Card>
 

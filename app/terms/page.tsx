@@ -1,21 +1,28 @@
 'use client';
 
 import { Card } from '@/components/ui/card';
-import { Mail, MapPin, Globe } from 'lucide-react';
+import { Mail, MapPin, Globe,ArrowLeft } from 'lucide-react';
+import Link from 'next/link';
 
 export default function TermsPage() {
   return (
     <div className="min-h-screen bg-background text-foreground px-4 sm:px-6 lg:px-8 py-16">
       <div className="max-w-5xl mx-auto space-y-8">
         {/* Header */}
-        <h1 className="text-4xl font-serif font-bold text-center mb-4">
-          Terms & Conditions – Bamuso Ayurveda
-        </h1>
-        <p className="text-foreground/70 text-center">Last Updated: 2025</p>
+        <div className="flex items-center gap-4 mb-8">
+            <Link href="/" className="text-primary hover:text-primary/80 transition">
+              <ArrowLeft className="w-5 h-5" />
+            </Link>
+            <h1 className="text-4xl font-serif font-bold">Terms & Conditions</h1>
+          </div>
+
+          <p className="text-foreground/70 mb-8">Last Updated: January 2025</p>
 
         <Card className="p-8 space-y-6 border border-border">
           <p className="text-lg text-foreground/80 leading-relaxed">
-            Welcome to Bamuso Ayurveda. By accessing or using our website (www.bamuso.com) and purchasing our Ayurvedic products, you agree to the terms mentioned below. Please read them carefully.
+            Welcome to Bamuso Ayurveda. By accessing or using our website <a href="https://www.bamuso.com" className="text-primary underline">www.bamuso.com</a> and 
+purchasing our Ayurvedic products, you agree to the terms mentioned below. Please read them 
+carefully. 
           </p>
 
           {/* 1. General Terms */}
@@ -33,7 +40,8 @@ export default function TermsPage() {
           <div className="space-y-2">
             <h2 className="text-2xl font-serif font-bold text-foreground">2. Return & Replacement Policy</h2>
             <p className="text-foreground/70">
-              You can request a return or replacement only if:
+             We offer a smooth and transparent return process. You can request a return or replacement 
+only if: 
             </p>
             <ul className="list-disc list-inside text-foreground/70 space-y-1">
               <li>You received the wrong product</li>

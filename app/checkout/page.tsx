@@ -65,7 +65,7 @@ export default function CheckoutPage() {
     return;
   }
 
-  const whatsappUrl = `https://wa.me/918377997202?text=${generateOrderMessage()}`;
+  const whatsappUrl = `https://wa.me/919990359097?text=${generateOrderMessage()}`;
 
   // ✅ Open WhatsApp FIRST (direct user click)
   window.open(whatsappUrl, "_blank");

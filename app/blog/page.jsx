@@ -27,60 +27,145 @@ const TESTIMONIALS = [
 export default function BlogPage() {
   return (
     <div className="min-h-screen bg-background text-foreground">
-
-      <section className="py-12 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto">
-
-          {/* Header */}
-          <div className="flex items-center gap-4 mb-8">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-secondary border-b border-border">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex items-center gap-4 mb-6">
             <Link href="/" className="text-primary hover:text-primary/80 transition">
               <ArrowLeft className="w-5 h-5" />
             </Link>
             <h1 className="text-4xl font-serif font-bold">Health Tips & Blog</h1>
           </div>
-
-          <p className="text-foreground/70 mb-8">
-            Ayurveda is not just a treatment, it’s a lifestyle. Discover tips, remedies, and wellness guidance to stay healthy, energetic, and balanced.
+          <p className="text-lg text-foreground/70 max-w-2xl">
+            Ayurveda is not just a treatment, it’s a lifestyle. Discover tips, remedies,
+            and wellness guidance to stay healthy, energetic, and balanced.
+          </p>
+        </div>
+      </section>
+      <section className="py-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-5xl mx-auto text-center">
+          <h2 className="text-3xl font-serif font-bold mb-4">
+            Ayurveda Health Tips & Wellness Blog
+          </h2>
+          <p className="text-foreground/80 leading-relaxed">
+            Ayurveda सिर्फ इलाज नहीं — एक जीवनशैली है।
+            हमारा उद्देश्य है हर व्यक्ति तक सुरक्षित, सरल और असरदार प्राकृतिक
+            wellness knowledge पहुँचाना।
           </p>
 
-          {/* Daily Health Tips */}
-          <h2 className="text-3xl font-serif font-bold mb-6">Daily Ayurvedic Health Tips</h2>
-          <div className="grid md:grid-cols-2 gap-6 mb-12">
+          <div className="mt-6 text-sm text-foreground/70">
+            ✔ Daily Ayurvedic Health Tips &nbsp; ✔ Herbal Home Remedies &nbsp; ✔ Diet & Lifestyle Guidance
+            ✔ Immunity, Digestion & Weight Management &nbsp; ✔ Skin–Hair Natural Care
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl font-serif font-bold mb-10 text-center">
+            Daily Ayurvedic Health Tips
+          </h2>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {BLOG_TIPS.map((tip, index) => (
-              <Card key={index} className="p-6 border border-border hover:shadow-lg transition">
-                <h3 className="text-xl font-serif font-bold mb-2 text-foreground">{tip.title}</h3>
-                <p className="text-foreground/80">{tip.description}</p>
+              <Card
+                key={index}
+                className="p-6 border border-border hover:shadow-lg hover:-translate-y-1 transition-all"
+              >
+                <h3 className="text-xl font-serif font-bold mb-2">
+                  {tip.title}
+                </h3>
+                <p className="text-foreground/80 text-sm">
+                  {tip.description}
+                </p>
               </Card>
             ))}
           </div>
+        </div>
+      </section>
+      <section className="py-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl font-serif font-bold mb-4">
+            Guest Posts & Collaborations
+          </h2>
+          <p className="text-foreground/80 mb-6">
+            Ayurveda, Yoga, Wellness, Nutrition या Healthy Lifestyle से जुड़े
+            writers & creators हमारे साथ जुड़ सकते हैं।
+          </p>
 
-          {/* Subscribe Section */}
-          <section className="py-12 px-6 bg-primary rounded-lg text-accent-foreground mb-12">
-            <h2 className="text-3xl font-serif font-bold mb-4 text-center">Join Our Wellness Community</h2>
-            <p className="text-center mb-6">
-              Subscribe to receive exclusive Ayurvedic health tips, special offers, and wellness guides.
-            </p>
-            <div className="flex justify-center">
-              <Button asChild size="lg" className="bg-accent hover:bg-accent/90">
-                <a href="https://wa.me/918377997202" target="_blank" rel="noopener noreferrer">
-                  <MessageCircle className="w-5 h-5 mr-2" />
-                  Subscribe Now
-                </a>
-              </Button>
-            </div>
-          </section>
+          <Card className="p-6 border border-border inline-block">
+            <p className="text-sm text-foreground/70 mb-2">Contact us at:</p>
+            <a
+              href="mailto:support@bamuso.com"
+              className="text-primary font-semibold"
+            >
+              support@bamuso.com
+            </a>
+          </Card>
+        </div>
+      </section>
 
-          {/* Testimonials */}
-          <h2 className="text-3xl font-serif font-bold mb-6">What Our Customers Say</h2>
-          <div className="grid md:grid-cols-2 gap-6">
+
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-secondary">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl font-serif font-bold mb-10 text-center">
+            What Our Customers Say
+          </h2>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {TESTIMONIALS.map((t, index) => (
-              <Card key={index} className="p-6 border border-border hover:shadow-lg transition">
-                <p className="text-foreground/80 mb-2">“{t.review}”</p>
-                <p className="text-primary font-semibold">{t.name}</p>
+              <Card
+                key={index}
+                className="p-6 border border-border bg-background"
+              >
+                <p className="text-foreground/80 mb-3 text-sm leading-relaxed">
+                  “{t.review}”
+                </p>
+                <p className="text-primary font-semibold text-sm">
+                  {t.name}
+                </p>
               </Card>
             ))}
           </div>
+        </div>
+      </section>
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-secondary">
+        <div className="max-w-5xl mx-auto text-center">
+          <h2 className="text-3xl font-serif font-bold mb-10">
+            Why Customers Love BAMUSO Ayurveda
+          </h2>
 
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              '100% Natural Ingredients',
+              'Ayurveda + Modern Quality Standards',
+              'Lab-Tested & Safe',
+              'No Chemicals, No Side Effects',
+              'Thousands of Happy Customers',
+              'Fast Delivery Across India',
+              'Dedicated Customer Support',
+            ].map((point, i) => (
+              <Card key={i} className="p-5 border border-border">
+                <p className="text-foreground/80">✔ {point}</p>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-primary text-accent-foreground">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="text-3xl font-serif font-bold mb-4">
+            Join Our Wellness Community
+          </h2>
+          <p className="mb-8 text-accent-foreground/90">
+            Get exclusive Ayurvedic tips, lifestyle guidance & special offers directly on WhatsApp.
+          </p>
+
+          <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
+            <a href="https://wa.me/918377997202" target="_blank" rel="noopener noreferrer">
+              <MessageCircle className="w-5 h-5 mr-2" />
+              Subscribe on WhatsApp
+            </a>
+          </Button>
         </div>
       </section>
     </div>

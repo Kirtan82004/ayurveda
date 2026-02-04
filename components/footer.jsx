@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { Facebook, Instagram, Send } from 'lucide-react';
+import { Facebook, Instagram, Send,Youtube } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -53,7 +53,7 @@ export default function Footer() {
           {/* Contact */}
           <div>
             <h4 className="font-semibold mb-4">Contact</h4>
-            <p className="text-sm opacity-70 mb-1">📞 +91 98765 43210</p>
+            <p className="text-sm opacity-70 mb-1">📞 +91  9990-3590-97</p>
             <p className="text-sm opacity-70 mb-1">💬 WhatsApp Support Available</p>
             <p className="text-sm opacity-70">✉ support@bamusoayurveda.com</p>
             <div className="flex gap-4 mt-4">
@@ -83,6 +83,14 @@ export default function Footer() {
               >
                 <Send className="w-5 h-5" />
               </a>
+              <a
+                href="https://www.youtube.com/@BamusoAyurveda7"
+                target="_blank"
+                className="p-2 rounded-full bg-background/10 hover:bg-primary hover:text-white transition"
+                aria-label="YouTube"
+              >
+                <Youtube className="w-5 h-5" />
+              </a>
             </div>
 
           </div>
@@ -91,7 +99,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-background/20 pt-6 text-center text-sm opacity-70">
           <p>
-            © {new Date().getFullYear()} BAMUSO Ayurveda. All rights reserved. <br />
+            © 2025 BAMUSO Ayurveda. All rights reserved. <br />
             Consult a qualified Ayurvedic practitioner before use.
           </p>
         </div>

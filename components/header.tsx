@@ -28,16 +28,23 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3">
             <img
-                src="/images/LOGO.webp"
-                alt="BAMUSO Ayurveda Logo"
-                width={60}
-                height={60}
-                className="object-contain"
-              />
-            <span className="text-xl font-serif font-bold text-primary">
-              BAMUSO Ayurveda
-            </span>
+              src="/images/LOGO.webp"
+              alt="BAMUSO Ayurveda Logo"
+              width={60}
+              height={60}
+              className="object-contain"
+            />
+
+            <div className="flex flex-col leading-tight">
+              <span className="text-xl font-serif font-bold text-primary">
+                BAMUSO Ayurveda
+              </span>
+              <span className="text-xs text-muted-foreground tracking-wide">
+                Inspired by Nature, Powered by Trust
+              </span>
+            </div>
           </Link>
+
 
           {/* Desktop Nav */}
           <div className="hidden md:flex gap-8">
@@ -64,7 +71,7 @@ export default function Header() {
             <div className="hidden md:block">
               <Button size="sm" asChild>
                 <a
-                  href="https://wa.me/918377997202"
+                  href="https://wa.me/919990359097"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

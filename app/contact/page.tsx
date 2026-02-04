@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
-import { MessageCircle, ArrowLeft, Phone, Mail, MapPin, Clock,Facebook, Instagram, Youtube, Send } from 'lucide-react';
+import { MessageCircle, ArrowLeft, Phone, Mail, MapPin, Clock, Facebook, Instagram, Youtube, Send } from 'lucide-react';
 
 
 export default function ContactPage() {
@@ -19,7 +19,10 @@ export default function ContactPage() {
             </Link>
             <h1 className="text-4xl font-serif font-bold">Contact Us</h1>
           </div>
-          <p className="text-lg text-foreground/70 max-w-2xl">We'd love to hear from you. Get in touch with our wellness team</p>
+          <p className="text-lg text-foreground/70 max-w-2xl">
+            Ayurvedic Products & Health Support — We’re always here for your queries,
+            complaints, order support & Ayurvedic guidance.
+          </p>
         </div>
       </section>
 
@@ -33,7 +36,7 @@ export default function ContactPage() {
               <h3 className="font-serif font-bold text-xl mb-3 text-foreground">WhatsApp Chat</h3>
               <p className="text-foreground/70 mb-6">Fastest way to reach us. Chat with our wellness experts anytime.</p>
               <Button asChild className="w-full bg-primary hover:bg-primary/90">
-                <a href="https://wa.me/918377997202" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/919990359097" target="_blank" rel="noopener noreferrer">
                   <MessageCircle className="w-4 h-4 mr-2" />
                   Start WhatsApp Chat
                 </a>
@@ -45,10 +48,10 @@ export default function ContactPage() {
               <Phone className="w-12 h-12 mx-auto mb-4 text-primary" />
               <h3 className="font-serif font-bold text-xl mb-3 text-foreground">Phone</h3>
               <p className="text-foreground/70 mb-6">Call us during business hours for immediate assistance.</p>
-              <a href="tel:+918377997202" className="text-2xl font-serif font-bold text-primary block mb-4">
-                +91 98765 43210
+              <a href="tel:+919990359097" className="text-2xl font-serif font-bold text-primary">
+                +91 9990 3590 97
               </a>
-              <p className="text-sm text-foreground/60">Mon - Fri, 9 AM - 6 PM IST</p>
+
             </Card>
 
             {/* Email Card */}
@@ -56,9 +59,15 @@ export default function ContactPage() {
               <Mail className="w-12 h-12 mx-auto mb-4 text-primary" />
               <h3 className="font-serif font-bold text-xl mb-3 text-foreground">Email</h3>
               <p className="text-foreground/70 mb-6">Send us an email and we'll respond within 24 hours.</p>
-              <a href="mailto:support@pureayurveda.com" className="text-lg font-serif font-bold text-primary block break-all">
-                support@pureayurveda.com
+              <a
+                href="mailto:support@bamuso.com"
+                className="text-lg font-serif font-bold text-primary block break-all"
+              >
+                support@bamuso.com
               </a>
+              <p className="text-sm text-foreground/60 mt-2">
+                Alternate: bamusoayurveda@gmail.com
+              </p>
             </Card>
           </div>
 
@@ -67,15 +76,14 @@ export default function ContactPage() {
             {/* Hours & Location */}
             <div>
               <h2 className="text-2xl font-serif font-bold mb-8 text-foreground">Hours & Location</h2>
-              
+
               <Card className="p-6 border border-border mb-6">
                 <div className="flex items-start gap-4">
                   <Clock className="w-6 h-6 text-primary shrink-0 mt-1" />
                   <div>
                     <h3 className="font-serif font-bold text-lg mb-2 text-foreground">Business Hours</h3>
-                    <p className="text-foreground/70">Monday - Friday: 9:00 AM - 6:00 PM IST</p>
-                    <p className="text-foreground/70">Saturday: 10:00 AM - 4:00 PM IST</p>
-                    <p className="text-foreground/70">Sunday: Closed</p>
+                    <p>Monday – Sunday: 9:00 AM – 9:00 PM</p>
+                    <p>Support: 365 Days Available</p>
                   </div>
                 </div>
               </Card>
@@ -86,12 +94,12 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-serif font-bold text-lg mb-2 text-foreground">Address</h3>
                     <p className="text-foreground/70">
-                      Pure Ayurveda Wellness Center<br/>
-                      123 Herbal Lane<br/>
-                      Wellness District<br/>
-                      New Delhi 110001<br/>
+                      BAMUSO Ayurveda<br />
+                      Main Road, Meethapur<br />
+                      Badarpur, New Delhi – 110044<br />
                       India
                     </p>
+
                   </div>
                 </div>
               </Card>
@@ -100,7 +108,7 @@ export default function ContactPage() {
             {/* FAQ & Support */}
             <div>
               <h2 className="text-2xl font-serif font-bold mb-8 text-foreground">Frequently Asked Questions</h2>
-              
+
               <div className="space-y-4">
                 <Card className="p-6 border border-border">
                   <h3 className="font-serif font-bold text-lg mb-2 text-foreground">How do I order?</h3>
@@ -160,7 +168,7 @@ export default function ContactPage() {
                 <span className="text-sm text-foreground/70">5/5</span>
               </div>
               <p className="text-foreground/80 mb-4 leading-relaxed">
-                "Pure Ayurveda products are amazing! I noticed a significant improvement in my health within weeks. Highly recommended!"
+                "BAMUSO Ayurveda products are amazing! I noticed a significant improvement in my health within weeks. Highly recommended!"
               </p>
               <p className="font-semibold text-foreground">- Priya Sharma</p>
             </Card>
@@ -189,55 +197,74 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+      {/* Map Section */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-secondary">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-2xl font-serif font-bold mb-8 text-center">
+            Find Us on Map
+          </h2>
+
+          <div className="rounded-xl overflow-hidden border">
+            <iframe
+              src="https://www.google.com/maps?q=Meethapur,Badarpur,New Delhi 110044&output=embed"
+              className="w-full h-100"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* Social Media Section */}
-<section className="py-16 px-4 sm:px-6 lg:px-8 bg-secondary">
-  <div className="max-w-4xl mx-auto text-center">
-    <h2 className="text-3xl font-serif font-bold mb-4 text-foreground">
-      Connect With Us
-    </h2>
-    <p className="text-foreground/70 mb-10">
-      Follow us on social media for daily wellness tips, offers & updates
-    </p>
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-secondary">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl font-serif font-bold mb-4 text-foreground">
+            Connect With Us
+          </h2>
+          <p className="text-foreground/70 mb-10">
+            Follow us on social media for daily wellness tips, offers & updates
+          </p>
 
-    <div className="flex justify-center gap-6 flex-wrap">
-      <a
-        href="https://www.facebook.com/Bamusoayurveda"
-        target="_blank"
-        className="flex items-center gap-2 px-6 py-3 rounded-full border border-border hover:bg-accent transition"
-      >
-        <Facebook className="w-5 h-5 text-blue-600" />
-        Facebook
-      </a>
+          <div className="flex justify-center gap-6 flex-wrap">
+            <a
+              href="https://www.facebook.com/Bamusoayurveda"
+              target="_blank"
+              className="flex items-center gap-2 px-6 py-3 rounded-full border border-border hover:bg-accent transition"
+            >
+              <Facebook className="w-5 h-5 text-blue-600" />
+              Facebook
+            </a>
 
-      <a
-        href="https://www.instagram.com/bamuso_ayurveda"
-        target="_blank"
-        className="flex items-center gap-2 px-6 py-3 rounded-full border border-border hover:bg-accent transition"
-      >
-        <Instagram className="w-5 h-5 text-pink-500" />
-        Instagram
-      </a>
+            <a
+              href="https://www.instagram.com/bamuso_ayurveda"
+              target="_blank"
+              className="flex items-center gap-2 px-6 py-3 rounded-full border border-border hover:bg-accent transition"
+            >
+              <Instagram className="w-5 h-5 text-pink-500" />
+              Instagram
+            </a>
 
-      <a
-        href="https://www.youtube.com/@BamusoAyurveda7"
-        target="_blank"
-        className="flex items-center gap-2 px-6 py-3 rounded-full border border-border hover:bg-accent transition"
-      >
-        <Youtube className="w-5 h-5 text-red-600" />
-        YouTube
-      </a>
+            <a
+              href="https://www.youtube.com/@BamusoAyurveda7"
+              target="_blank"
+              className="flex items-center gap-2 px-6 py-3 rounded-full border border-border hover:bg-accent transition"
+            >
+              <Youtube className="w-5 h-5 text-red-600" />
+              YouTube
+            </a>
 
-      <a
-        href="https://t.me/+3L1419GJ4pZkY2Nl"
-        target="_blank"
-        className="flex items-center gap-2 px-6 py-3 rounded-full border border-border hover:bg-accent transition"
-      >
-        <Send className="w-5 h-5 text-sky-500" />
-        Telegram
-      </a>
-    </div>
-  </div>
-</section>
+            <a
+              href="https://t.me/+3L1419GJ4pZkY2Nl"
+              target="_blank"
+              className="flex items-center gap-2 px-6 py-3 rounded-full border border-border hover:bg-accent transition"
+            >
+              <Send className="w-5 h-5 text-sky-500" />
+              Telegram
+            </a>
+          </div>
+        </div>
+      </section>
+
     </div>
   );
 }

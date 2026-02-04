@@ -132,9 +132,9 @@ export default function Home() {
                         <Button size="lg" className="bg-primary hover:bg-primary/90">
                           <Link href="/products">Shop Now</Link>
                         </Button>
-                        <Button size="lg" variant="outline" className="text-white border-white hover:bg-white/10">
+                        <Button size="lg" variant="outline" className="text-white  border-white bg-white/10">
                           <a
-                            href="https://wa.me/918377997202"
+                            href="https://wa.me/919990359097"
                             target="_blank"
                             rel="noopener noreferrer"
                           >
@@ -150,8 +150,37 @@ export default function Home() {
             ))}
           </CarouselContent>
 
-          <CarouselPrevious className="left-4 text-white" />
-          <CarouselNext className="right-4 text-white" />
+          <CarouselPrevious
+  className="
+    left-4 
+    z-50
+    h-12 w-12
+    rounded-full
+    bg-black/60
+    text-white
+    border border-white/20
+    backdrop-blur
+    hover:bg-black/80
+    hover:scale-110
+    transition
+  "
+/>
+
+<CarouselNext
+  className="
+    right-4 
+    z-50
+    h-12 w-12
+    rounded-full
+    bg-black/60
+    text-white
+    border border-white/20
+    backdrop-blur
+    hover:bg-black/80
+    hover:scale-110
+    transition
+  "
+/>
         </Carousel>
       </section>
 
@@ -176,6 +205,35 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {/* Product Categories */}
+<section className="py-16 bg-secondary px-4 sm:px-6 lg:px-8">
+  <div className="max-w-7xl mx-auto">
+    <h2 className="text-3xl font-serif font-bold text-center mb-12">
+      Our Ayurvedic Product Categories
+    </h2>
+
+    <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {[
+        { title: "Male Wellness & Stamina", link: "/products?cat=male" },
+        { title: "Women Wellness", link: "/products?cat=women" },
+        { title: "Immunity & Daily Health", link: "/products?cat=immunity" },
+        { title: "Weight Loss & Digestion", link: "/products?cat=weight" },
+        { title: "Beauty & Skin Care", link: "/products?cat=beauty" },
+        { title: "Mind, Stress & Sleep", link: "/products?cat=mind" },
+        { title: "Special Condition Remedies", link: "/products?cat=special" },
+        { title: "Super Premium Range", link: "/products?cat=premium" },
+      ].map((cat, i) => (
+        <Card key={i} className="p-6 text-center hover:shadow-lg transition">
+          <h3 className="text-xl font-serif font-bold mb-4">{cat.title}</h3>
+          <Button asChild>
+            <Link href={cat.link}>Shop Now</Link>
+          </Button>
+        </Card>
+      ))}
+    </div>
+  </div>
+</section>
+
 
       {/* Featured Products */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-secondary">
@@ -224,6 +282,29 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {/* Our Promise */}
+<section className="py-16 px-4 sm:px-6 lg:px-8">
+  <div className="max-w-6xl mx-auto text-center">
+    <h2 className="text-3xl font-serif font-bold mb-12">
+      Our Promise to You
+    </h2>
+
+    <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-6">
+      {[
+        "Nature-Sourced",
+        "Ayurveda-Approved",
+        "Scientifically-Tested",
+        "Safe for Daily Use",
+        "Results You Can Feel",
+      ].map((item, i) => (
+        <Card key={i} className="p-6">
+          <p className="font-semibold">{item}</p>
+        </Card>
+      ))}
+    </div>
+  </div>
+</section>
+
       {/* Customer Reviews */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-secondary">
         <div className="max-w-7xl mx-auto text-center">
@@ -248,15 +329,15 @@ export default function Home() {
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-primary text-accent-foreground">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl sm:text-4xl font-serif font-bold mb-4">
-            Ready to Transform Your Wellness?
+            Stay Updated with Wellness Tips
           </h2>
           <p className="text-lg mb-8 opacity-90">
-            Chat with our wellness experts on WhatsApp for personalized recommendations
+            Subscribe to our WhatsApp channel for wellness tips, product updates, and special offers
           </p>
           <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground" asChild>
-            <a href="https://wa.me/918377997202" target="_blank" rel="noopener noreferrer">
+            <a href="https://whatsapp.com/channel/0029Va8znqQ42DciLmcEAY2T" target="_blank" rel="noopener noreferrer">
               <MessageCircle className="w-5 h-5 mr-2" />
-              Start WhatsApp Chat
+              Subscribe on WhatsApp
             </a>
           </Button>
         </div>

@@ -67,6 +67,92 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+      {/* Mission */}
+<section className="py-16 px-4 sm:px-6 lg:px-8">
+  <div className="max-w-6xl mx-auto text-center">
+    <h2 className="text-3xl font-serif font-bold mb-8">
+      Our Mission
+    </h2>
+
+    <p className="text-lg text-foreground/80 mb-6">
+      BAMUSO का मिशन है प्रकृति और आधुनिक विज्ञान को मिलाकर
+      ऐसा Ayurvedic health solution देना जो
+      प्राकृतिक, वैज्ञानिक, सुरक्षित और असरदार हो।
+    </p>
+
+    <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      {[
+        "100% Natural",
+        "Scientifically Tested",
+        "Daily Safe",
+        "Real Results",
+      ].map((item, i) => (
+        <Card key={i} className="p-6 font-semibold">
+          {item}
+        </Card>
+      ))}
+    </div>
+  </div>
+</section>
+{/* Why BAMUSO is Different */}
+<section className="py-16 px-4 sm:px-6 lg:px-8 bg-secondary">
+  <div className="max-w-6xl mx-auto">
+    <h2 className="text-3xl font-serif font-bold mb-12 text-center">
+      Why BAMUSO is Different?
+    </h2>
+
+    <ul className="grid md:grid-cols-2 gap-6 text-lg text-foreground/80">
+      <li>✔ 100% Pure & Natural Herbs</li>
+      <li>✔ GMP Certified | AYUSH Approved | ISO Standard</li>
+      <li>✔ Every Batch Scientifically Tested</li>
+      <li>✔ Chemical-Free, Paraben-Free, Cruelty-Free</li>
+      <li>✔ Made in India | Made for Everyone</li>
+    </ul>
+  </div>
+</section>
+{/* What We Offer */}
+<section className="py-16 px-4 sm:px-6 lg:px-8">
+  <div className="max-w-7xl mx-auto text-center">
+    <h2 className="text-3xl font-serif font-bold mb-12">
+      What We Offer
+    </h2>
+
+    <p className="text-foreground/70 mb-10">
+      BAMUSO Ayurveda 7+ major health categories में 50+ Ayurvedic solutions प्रदान करता है
+    </p>
+
+    <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {[
+        "Male Wellness",
+        "Women Wellness",
+        "Immunity Boosters",
+        "Weight Loss & Digestion",
+        "Beauty & Skin Care",
+        "Mind & Sleep Health",
+        "Special Condition Remedies",
+      ].map((cat, i) => (
+        <Card key={i} className="p-6 font-semibold">
+          {cat}
+        </Card>
+      ))}
+    </div>
+  </div>
+</section>
+{/* Vision */}
+<section className="py-16 px-4 sm:px-6 lg:px-8 bg-secondary">
+  <div className="max-w-5xl mx-auto text-center">
+    <h2 className="text-3xl font-serif font-bold mb-6">
+      The Vision Ahead
+    </h2>
+
+    <p className="text-lg text-foreground/80">
+      हमारा सपना है कि Ayurveda हर घर तक पहुँचे और
+      हर परिवार को प्राकृतिक, सुरक्षित और भरोसेमंद
+      स्वास्थ्य समाधान मिले।
+    </p>
+  </div>
+</section>
+
 
       {/* Ayurveda Philosophy */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-secondary">
@@ -215,7 +301,7 @@ export default function AboutPage() {
               <Link href="/products">Explore Products</Link>
             </Button>
             <Button size="lg" variant="outline" className="border-accent-foreground text-accent-foreground hover:bg-accent-foreground/10 bg-transparent" asChild>
-              <a href="https://wa.me/918377997202" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/919990359097" target="_blank" rel="noopener noreferrer">
                 <MessageCircle className="w-5 h-5 mr-2" />
                 Chat with Us
               </a>
