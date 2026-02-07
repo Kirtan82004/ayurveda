@@ -102,9 +102,11 @@ export default function FAQPage() {
         </div>
 
         <p className="text-foreground/70 mb-8">Last Updated: January 2025</p>
-        
+        <span className="text-xl font-serif font-bold text-primary">
+          BAMUSO Ayurveda
+        </span>
         <p className="text-lg text-foreground/70  mb-12">
-        Inspired by Nature, Powered by Trust — Clear and reliable answers to all your questions in one place.
+          Inspired by Nature, Powered by Trust — Clear and reliable answers to all your questions in one place.
         </p>
 
         <Accordion type="single" collapsible className="space-y-4">
