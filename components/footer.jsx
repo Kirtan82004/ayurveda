@@ -11,18 +11,25 @@ export default function Footer() {
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4 mb-10">
           {/* Brand */}
           <div>
-            <Link href="/" className="flex items-center gap-3">
-              <img
-                src="/images/LOGO.webp"
-                alt="BAMUSO Ayurveda Logo"
-                width={60}
-                height={60}
-                className="object-contain"
-              />
+            {/* Logo */}
+          <Link href="/" className="flex items-center gap-3">
+            <img
+              src="/images/LOGO.webp"
+              alt="BAMUSO Ayurveda Logo"
+              width={60}
+              height={60}
+              className="object-contain"
+            />
+
+            <div className="flex flex-col leading-tight">
               <span className="text-xl font-serif font-bold text-primary">
                 BAMUSO Ayurveda
               </span>
-            </Link>
+              <span className="text-xs text-muted-foreground tracking-wide">
+                Inspired by Nature, Powered by Trust
+              </span>
+            </div>
+          </Link>
             <p className="text-sm opacity-70 mt-3">
               India’s trusted Ayurvedic wellness brand for daily health & long-term care.
             </p>

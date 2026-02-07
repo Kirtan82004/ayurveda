@@ -27,8 +27,11 @@ export default function LegalDisclaimerPage() {
               <p className="text-foreground/80">
                 The Ayurvedic products available on Bamuso Ayurveda are developed using traditional
                 Ayurvedic knowledge, natural herbs, and wellness principles. These products are meant to
-                support general health and lifestyle balance. They are not intended to diagnose, treat, cure, or
-                prevent any disease.
+                support general health and lifestyle balance.
+              </p>
+              <p className="mt-1 text-foreground/80">
+                They are not intended to diagnose, treat, cure, or
+                prevent any disease, <span className='text-red-400'>as defined under Indian laws.</span>  
               </p>
             </Card>
 
@@ -47,23 +50,23 @@ export default function LegalDisclaimerPage() {
             <Card className="p-6 border border-border">
               <h2 className="text-2xl font-serif font-bold mb-4 text-foreground">Medical Advice Disclaimer</h2>
               <p className="text-foreground/80">
-                Ayurvedic results vary from person to person based on body type, diet, lifestyle, medical
-                conditions, and consistency of use. Always consult a qualified Ayurvedic practitioner or healthcare
-                professional before starting any new health regimen, especially if you are pregnant, nursing, have
-                pre-existing medical conditions, or are taking medications.
+               Ayurvedic results vary from person to person based on body type, diet, lifestyle, medical conditions, and consistency of use.
               </p>
 
-              <p className="mt-1 text-foreground/80">Please consult a qualified medical practitioner before using our products if you are: </p>
+              <p className="mt-1 text-foreground/80">Please <span className="font-bold">consult a qualified medical practitioner</span> before using our products if you are: </p>
               <ul className='ml-2.5'>
                 <li>• Pregnant or breastfeeding</li>
-                <li>• Taking prescription medications</li>
-                <li>• Undergoing treatment for chronic health conditions</li>
-                <li>• Allergic to any ingredients listed on the product packaging</li>
+                <li>• Living with chronic or pre-existing medical conditions </li>
+                <li>• Taking prescription medicines </li>
+                <li>• Undergoing medical treatment </li>
+                <li>• Allergic to specific herbs  </li>
               </ul>
+              <p className="text-foreground/80">Our content, blogs, videos, and product descriptions are <span className="font-bold">not a substitute</span> for clinical diagnosis, treatment, or professional medical guidance. </p>
             </Card>
 
             <Card className="p-6 border border-border">
               <h2 className="text-2xl font-serif font-bold mb-4 text-foreground">Limitation of Liability</h2>
+              <p className="text-foreground/80">Bamuso Ayurveda shall not be responsible or liable for: </p>
               <ul className="space-y-2 text-foreground/80">
                 <li>• Any side effects caused by misuse, overuse, or failure to follow dosage instructions </li>
                 <li>• Self-diagnosis or self-treatment based solely on website information  </li>
@@ -71,6 +74,8 @@ export default function LegalDisclaimerPage() {
                 <li>• Variations in product results among individuals  </li>
                 <li>• Minor color/packaging variations due to digital display differences </li>
               </ul>
+              <p className="mt-1 text-foreground/80">If you are dissatisfied with any part of our website or information, your only remedy is to 
+                <span className="font-bold"> discontinue using the website or product.</span> </p>
             </Card>
 
             <Card className="p-6 border border-border">
@@ -80,9 +85,9 @@ export default function LegalDisclaimerPage() {
                 informational purposes.
               </p>
               <ul className="space-y-2 text-foreground/80">
-                <li>• Bamuso Ayurveda does not endorse or control such websites. </li>
-                <li>• We do not guarantee the accuracy, safety, or reliability of third-party content or services.  </li>
-                <li>• Users are advised to review their respective privacy and legal policies before
+                <li>• Bamuso Ayurveda does <span className="font-bold">not endorse or control</span>  such websites. </li>
+                <li>• We do <span className="font-bold">not guarantee</span> the accuracy, safety, or reliability of third-party content or services.  </li>
+                <li>• Users are advised to review their respective <span className="font-bold">privacy and legal policies</span> before
                   interacting with third-party sites. </li>
               </ul>
             </Card>
@@ -90,10 +95,11 @@ export default function LegalDisclaimerPage() {
             <Card className="p-6 border border-border">
               <h2 className="text-2xl font-serif font-bold mb-4 text-foreground">Legal Jurisdiction</h2>
               <p className="text-foreground/80">
-                This Disclaimer and all related matters are governed by the laws of India.
-                In case of disputes, claims, or legal proceedings, the jurisdiction will exclusively lie with the
-                Courts of Delhi, India.
+                This Disclaimer and all related matters are governed by the laws of <span className="font-bold">India</span>.
+                
               </p>
+              <p className="mt-1 text-foreground/80">In case of disputes, claims, or legal proceedings, the jurisdiction will exclusively lie with the
+                Courts of Delhi, India. </p>
             </Card>
 
             <Card className="p-6 border border-border">
@@ -103,10 +109,14 @@ export default function LegalDisclaimerPage() {
                 and agree that:
               </p>
               <ul className="space-y-2 text-foreground/80">
-                <li>• You have read, understood, and accepted this Legal Disclaimer in full. </li>
                 <li>• You have read the Legal Disclaimer </li>
-                <li>• You are using our products voluntarily and responsibly  </li>
+                <li>• You understand the nature and limitations of Ayurvedic products  </li>
+                <li>• You are using our products voluntarily and responsibly </li>
+                <li>• You accept all terms stated in this Disclaimer </li>
               </ul>
+              <p className="text-foreground/80">
+                If you do not agree with these terms, please refrain from buying or using our products or website services. 
+              </p>
             </Card>
             <Card className="p-6 border border-border">
               <h2 className="text-2xl font-serif font-bold mb-4 text-foreground">Legal Policies Overview</h2>
@@ -118,8 +128,9 @@ export default function LegalDisclaimerPage() {
                 We collect and protect your data (name, email, phone, address, device info) to process orders,
                 improve services, and ensure platform security. Cookies may be used to personalize
                 experience. We do not sell your data to third parties.
-                For concerns, contact: support@bamuso.com .
+                
               </p>
+              <p className="mt-1 text-foreground/80">For concerns, contact: <span className='font-bold'>support@bamuso.com</span>  .</p>
               <h3 className="text-xl font-serif font-bold mt-4 mb-2 text-foreground">Terms of Service (Brief)</h3>
               <p className="text-foreground/80">Prices in INR, personal-use only, limited returns, shipping timelines, refunds, and cancellations
                 governed by clear guidelines. </p>

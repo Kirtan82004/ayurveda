@@ -28,52 +28,56 @@ export default function PrivacyPage() {
               <p className="text-foreground/80">
                 At Bamuso Ayurveda, your privacy and trust matter to us. This Privacy Policy explains how we
                 collect, use, store, and protect your information when you visit our website www.bamuso.com or
-                purchase our Ayurvedic products. By using our website and services, you agree to the terms outlined in this policy.
-              </p>
+                purchase our Ayurvedic products.
+                </p>
             </Card>
 
             <Card className="p-6 border border-border">
               <h2 className="text-2xl font-serif font-bold mb-4 text-foreground">Information We Collect</h2>
-              <p className="text-foreground/80 mb-3">We may collect information about you in a variety of ways:</p>
+              <h3 className='font-bold'>a) Personal Information </h3>
               <ul className="space-y-2 text-foreground/80">
                 <li className="flex gap-3">
                   <span className="text-primary font-bold">•</span>
-                  <span><strong>Personal Information:</strong> Name, email address, phone number, Billing Address / Shipping Address </span>
+                  <span>Name, email address, phone number, Billing Address / Shipping Address </span>
                 </li>
+              </ul>
+              <h3 className='font-bold mt-4'>b) Payment Information </h3>
+              <ul className="space-y-2 text-foreground/80">
                 <li className="flex gap-3">
                   <span className="text-primary font-bold">•</span>
-                  <span><strong>Non-Personal Information :</strong> Browser type, IP address, pages visited, time spent</span>
+                  <span>IP address , Browser type & version,Device details ,Pages visited & time spent ,Preferences & interactions (via cookies) </span>
                 </li>
               </ul>
             </Card>
 
             <Card className="p-6 border border-border">
               <h2 className="text-2xl font-serif font-bold mb-4 text-foreground">How We Use Your Information</h2>
+              <p className="text-foreground/80 mb-3">We use your information responsibly and only for necessary purposes:</p>
               <ul className="space-y-2 text-foreground/80">
                 <li className="flex gap-3">
                   <span className="text-primary font-bold">•</span>
-                  <span>To process, confirm, and deliver your orders  </span>
+                  <span>To  <span className='font-bold'>process, confirm, and deliver</span> your orders  </span>
                 </li>
                 <li className="flex gap-3">
                   <span className="text-primary font-bold">•</span>
-                  <span>To share order updates, tracking details, and delivery information </span>
+                  <span>To share <span className='font-bold'>order updates, tracking details,</span>  and delivery information </span>
                 </li>
                 <li className="flex gap-3">
                   <span className="text-primary font-bold">•</span>
-                  <span>To provide customer support and resolve queries </span>
+                  <span>To provide <span className='font-bold'>customer support</span> and resolve queries </span>
                 </li>
                 <li className="flex gap-3">
                   <span className="text-primary font-bold">•</span>
-                  <span>To send offers, wellness tips, updates, and promotional messages (only with your
+                  <span>To send <span className='font-bold'>offers, wellness tips, updates, and promotional messages</span> (only with your
                     consent) </span>
                 </li>
                 <li className="flex gap-3">
                   <span className="text-primary font-bold">•</span>
-                  <span>To improve website performance and provide a personalized shopping experience </span>
+                  <span>To improve website performance and provide a <span className='font-bold'>personalized shopping experience</span> </span>
                 </li>
                 <li className="flex gap-3">
                   <span className="text-primary font-bold">•</span>
-                  <span>To monitor fraudulent activity and ensure platform safety & security </span>
+                  <span>To monitor fraudulent activity and ensure <span className='font-bold'>platform safety & security</span> </span>
                 </li>
               </ul>
             </Card>
@@ -202,13 +206,20 @@ export default function PrivacyPage() {
                   <span>For resolving disputes or ensuring service continuity </span>
                 </li>
               </ul>
+              <span className='text-foreground/80'>After this period, your data is safely deleted or anonymized. </span>
             </Card>
 
             <Card className="p-6 border border-border">
               <h2 className="text-2xl font-serif font-bold mb-4 text-foreground">Third-Party Links</h2>
               <p className="text-foreground/80">
-                Our website may contain links to third-party websites. We are not responsible for the privacy practices of other websites. Please review their privacy policies before providing personal information.
+              Our website may contain links to third-party services (payment gateways, social media, blogs, etc.). 
               </p>
+              <ul>
+                <li className="flex gap-3"><span className="text-foreground/80">We are not responsible for their content, security, or privacy practices. </span></li>
+                <li className="flex gap-3"><span className="text-foreground/80">Please review their policies before sharing any personal information. </span></li>
+              </ul>
+              
+              
             </Card>
             <Card className="p-6 border border-border">
               <h2 className="text-2xl font-serif font-bold mb-4 text-foreground">Children’s Privacy</h2>

@@ -1,4 +1,5 @@
 import React from "react"
+import Script from "next/script";
 import type { Metadata } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
@@ -11,6 +12,7 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+   metadataBase: new URL("https://bamuso-ayurveda.vercel.app"),
   title: "Buy Ayurvedic Products Online in India | BAMUSO Ayurveda",
   description:
     "Shop authentic Ayurvedic products online from BAMUSO Ayurveda. Ashwagandha, Turmeric, Brahmi Oil & more. 100% natural, AYUSH & GMP certified.",
@@ -49,8 +51,12 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={`font-sans antialiased`}>
+         <Script
+          src="https://checkout.razorpay.com/v1/checkout.js"
+          strategy="afterInteractive"
+        />
         <CartProvider>
           <Header/>
           {children}

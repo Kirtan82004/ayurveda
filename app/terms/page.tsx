@@ -65,6 +65,7 @@ only if:
           {/* 3. Shipping & Delivery */}
           <div className="space-y-2">
             <h2 className="text-2xl font-serif font-bold text-foreground">3. Shipping & Delivery Policy</h2>
+            <p className="text-foreground/70">We ensure fast and safe delivery across India. </p>
             <ul className="list-disc list-inside text-foreground/70 space-y-1">
               <li>Orders are delivered within 3–7 business days depending on your location.</li>
               <li>Orders below ₹699 carry a ₹49 shipping charge.</li>
@@ -76,6 +77,7 @@ only if:
           {/* 4. Refund Policy */}
           <div className="space-y-2">
             <h2 className="text-2xl font-serif font-bold text-foreground">4. Refund Policy</h2>
+            <p className="text-foreground/70">We process refunds quickly and smoothly. </p>
             <p className="text-foreground/70">Refund timelines:</p>
             <ul className="list-disc list-inside text-foreground/70 space-y-1">
               <li>Prepaid Orders: 7–10 working days</li>
