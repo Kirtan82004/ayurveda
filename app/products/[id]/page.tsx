@@ -137,8 +137,7 @@ const PRODUCTS = [
   reviews: 96,
   description: "Boosts Vitality, Stamina & Physical Strength. Natural Support for Stress Relief & Overall Performance Capsules",
   longDescription:
-    "BMS Super X Capsule ek Ayurvedic formulation hai jo traditional herbs aur mineral Rasayan ke powerful combination se tayyar ki gayi hai. Yeh formulation body ko daily vitality, strength aur overall wellness support dene ke liye design ki gayi hai. Busy lifestyle, stress aur physical fatigue ko manage karne me madad karta hai. Herbal ingredients body ko nourish karte hain, stress handling capacity support karte hain aur active lifestyle maintain karne me help karte hain.",
-
+    "Aaj ke busy lifestyle, stress aur physical fatigue ki wajah se body energy aur stamina naturally affect ho sakti hai. BMS Super X ek Ayurvedic formulation hai jo traditional herbs aur minerals (Rasayan) ke combination se tayyar ki gayi hai. Iska purpose body ko daily vitality, strength aur overall wellness support dena hai.Ye formulation specially un logon ke liye design ki gayi hai jo apne routine me thakaan, low energy aur body weakness feel karte hain. Herbal ingredients body ko andar se nourish karte hain, stress handle karne ki capacity support karte hain aur active lifestyle maintain karne me madad dete hain",
   images: ["/images/capsule1.webp", "/images/capsule2.webp","/images/capsule3.webp",'/images/box.webp'],
   image:
     "data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22%3E%3Crect fill=%22%23F5E1A4%22 width=%22200%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fontSize=%2216%22 fill=%22%23B8860B%22 textAnchor=%22middle%22 dominantBaseline=%22middle%22%3EBMS Capsule%3C/text%3E%3C/svg%3E",
@@ -155,7 +154,7 @@ const PRODUCTS = [
     { name: "Kesar (Saffron)", function: "Mood, energy & overall vitality support" },
     { name: "Ashwagandha", function: "Stress relief, strength & stamina support" },
     { name: "Sonth (Dry Ginger)", function: "Digestion & absorption support" },
-    { name: "Kaunch Beej", function: "Reproductive wellness & vitality support" }
+    { name: "Kaunch Beej", function: "Reproductive wellness & vitality support"},
   ],
 
   benefits: [
@@ -555,6 +554,16 @@ export default function ProductDetailPage() {
                   </li>
                 ))}
               </ul>
+               {(product.id==2) ? (
+          <div className="mt-1">
+              <h2 className="text-2xl font-serif font-bold mb-6 text-foreground">Mineral Rasayan Support</h2>
+              <p className="text-lg text-foreground/80 leading-relaxed"><span className='font-bold'>Shuddh Shilajit –</span> Energy & stamina support</p>
+              <p className="text-lg text-foreground/80 leading-relaxed"><span className='font-bold'>Tribhang Bhasma –</span> Nerve wellness support</p>
+              <p className="text-lg text-foreground/80 leading-relaxed"><span className='font-bold'>Abhrak Bhasma –</span> Body rejuvenation support</p>
+              <p className="text-lg text-foreground/80 leading-relaxed"><span className='font-bold'>Makar Dhwaj  –</span> Traditional Rasayan for vitality & strength support</p>
+            
+          </div>
+         ) : null}
             </Card>
 
             {/* Benefits */}
@@ -603,17 +612,6 @@ export default function ProductDetailPage() {
               </ul>
             </Card>
           </div>
-         {(product.id==2) ? (
-          <div className="mt-16">
-            <Card className="p-8 border border-border">
-              <h2 className="text-2xl font-serif font-bold mb-6 text-foreground">MINERAL RASAYAN SUPPORT</h2>
-              <p className="text-lg text-foreground/80 leading-relaxed"><span className='font-bold'>Shuddh Shilajit –</span> Energy & stamina support</p>
-              <p className="text-lg text-foreground/80 leading-relaxed"><span className='font-bold'>Tribhang Bhasma –</span> Nerve wellness support</p>
-              <p className="text-lg text-foreground/80 leading-relaxed"><span className='font-bold'>Abhrak Bhasma –</span> Body rejuvenation support</p>
-              <p className="text-lg text-foreground/80 leading-relaxed"><span className='font-bold'>Makar Dhwaj  –</span> Traditional Rasayan for vitality & strength support</p>
-            </Card>
-          </div>
-         ) : null}
 
           <div className="mt-16">
             <Card className="p-8 border border-border">
