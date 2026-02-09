@@ -4,15 +4,25 @@ import React from "react"
 import Script from "next/script";
 
 
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { MessageCircle, ArrowLeft } from 'lucide-react';
 import { useCart } from '@/app/cart-context';
+import {
+  Alert,
+  AlertDescription,
+  AlertTitle,
+} from "@/components/ui/alert"
 
 export default function CheckoutPage() {
   const { cartItems, cartTotal, clearCart } = useCart();
+  const [alert, setAlert] = useState<{
+    type: "success" | "error" | "info";
+    title: string;
+    description: string;
+  } | null>(null);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -29,13 +39,13 @@ export default function CheckoutPage() {
   };
 
   const generateOrderId = () => {
-  return "BM-" + Date.now();
-};
+    return "BM-" + Date.now();
+  };
 
 
   const openWhatsApp = (orderId: string,
-  paymentId: string,
-  paymentMode: string) => {
+    paymentId: string,
+    paymentMode: string) => {
 
     const items = cartItems
       .map(i => `${i.name} x${i.quantity}`)
@@ -69,9 +79,9 @@ Please confirm.
   };
 
 
-  const submitOrderToSheet = (  paymentMode: string,
-  orderId: string,
-  paymentId: string = "N/A") => {
+  const submitOrderToSheet = (paymentMode: string,
+    orderId: string,
+    paymentId: string = "N/A") => {
     const items = cartItems
       .map(i => `${i.name} x${i.quantity}`)
       .join(", ");
@@ -80,19 +90,19 @@ Please confirm.
     const PaymentId = paymentMode === "COD" ? "N/A" : paymentId;
 
     const params = new URLSearchParams({
-  orderId,
-  name: formData.name,
-  email: formData.email,
-  phone: formData.phone,
-  address: formData.address,
-  city: formData.city,
-  pincode: formData.pincode,
-  items,
-  total: cartTotal.toString(),
-  payment: paymentMode,
-  paymentId,
-  status,
-});
+      orderId,
+      name: formData.name,
+      email: formData.email,
+      phone: formData.phone,
+      address: formData.address,
+      city: formData.city,
+      pincode: formData.pincode,
+      items,
+      total: cartTotal.toString(),
+      payment: paymentMode,
+      paymentId,
+      status,
+    });
 
     fetch(
       "https://script.google.com/macros/s/AKfycbwaQ5gN1xL-c-q1ibJI-YDv7eGRg3QHDLAvmZP1E5KXMlF88LBz5gQEWYWq6XpWhEwokw/exec?" +
@@ -120,56 +130,78 @@ Please confirm.
   };
 
 
- const handleCODOrder = () => {
-  if (!Object.values(formData).every(Boolean)) {
-    alert("Please fill all fields");
-    return;
-  }
+  const handleCODOrder = () => {
+    if (!Object.values(formData).every(Boolean)) {
+      setAlert({
+        type: "error",
+        title: "Missing details",
+        description: "Please fill all fields before placing the order.",
+      });
 
-  const orderId = generateOrderId();
+      return;
+    }
 
-  submitOrderToSheet("COD", orderId);
+    const orderId = generateOrderId();
 
-  openWhatsApp(orderId, "N/A", "COD");
+    submitOrderToSheet("COD", orderId);
 
-  alert(`Order placed successfully!\nOrder ID: ${orderId}`);
+    openWhatsApp(orderId, "N/A", "COD");
 
-  clearCart();
-};
+    setAlert({
+      type: "success",
+      title: "Order placed successfully 🎉",
+      description: `Your Order ID is ${orderId}. We will contact you shortly.`,
+    });
+
+
+
+    clearCart();
+  };
 
 
   const handlePayNow = () => {
-  if (!Object.values(formData).every(Boolean)) {
-    alert("Please fill all fields");
-    return;
+    if (!Object.values(formData).every(Boolean)) {
+      setAlert({
+        type: "error",
+        title: "Missing details",
+        description: "Please fill all fields before placing the order.",
+      });
+      return;
+    }
+
+    const orderId = generateOrderId();
+
+    const amountInPaise = cartTotal * 100;
+
+    // 🔥 Razorpay Payment Link (NO backend)
+    const paymentLink =
+      `https://rzp.io/l/bamuso-pay` +
+      `?amount=${amountInPaise}` +
+      `&description=Order%20ID:%20${orderId}` +
+      `&prefill[name]=${encodeURIComponent(formData.name)}` +
+      `&prefill[email]=${encodeURIComponent(formData.email)}` +
+      `&prefill[contact]=${encodeURIComponent(formData.phone)}`;
+
+    // ⚠️ Save order as PENDING (not paid yet)
+    submitOrderToSheet("ONLINE_PENDING", orderId, "WAITING");
+
+    setAlert({
+      type: "info",
+      title: "Complete Payment",
+      description: `Order ID: ${orderId}. Please pay exactly ₹${cartTotal}. After payment, send screenshot with Order ID on WhatsApp.`,
+    });
+
+
+    window.open(paymentLink, "_blank");
+
+  };
+
+useEffect(() => {
+  if (alert) {
+    const timer = setTimeout(() => setAlert(null), 5000);
+    return () => clearTimeout(timer);
   }
-
-  const orderId = generateOrderId();
-
-  const amountInPaise = cartTotal * 100;
-
-  // 🔥 Razorpay Payment Link (NO backend)
-  const paymentLink =
-    `https://rzp.io/l/bamuso-pay` +
-    `?amount=${amountInPaise}` +
-    `&description=Order%20ID:%20${orderId}` +
-    `&prefill[name]=${encodeURIComponent(formData.name)}` +
-    `&prefill[email]=${encodeURIComponent(formData.email)}` +
-    `&prefill[contact]=${encodeURIComponent(formData.phone)}`;
-
-  // ⚠️ Save order as PENDING (not paid yet)
-  submitOrderToSheet("ONLINE_PENDING", orderId, "WAITING");
-
-  alert(
-    `Order ID: ${orderId}\n\n` +
-    `Please pay EXACT amount ₹${cartTotal}\n` +
-    `After payment, send screenshot + Order ID on WhatsApp`
-  );
-
-  window.open(paymentLink, "_blank");
-};
-
-
+}, [alert]);
 
 
 
@@ -215,6 +247,20 @@ Please confirm.
               {/* Checkout Form */}
               <div className="md:col-span-2">
                 <Card className="p-8 border border-border">
+                  {alert && (
+                    <Alert
+                      className={`mb-6 ${alert.type === "success"
+                          ? "border-green-500 text-green-700"
+                          : alert.type === "error"
+                            ? "border-red-500 text-red-700"
+                            : "border-blue-500 text-blue-700"
+                        }`}
+                    >
+                      <AlertTitle className="font-bold">{alert.title}</AlertTitle>
+                      <AlertDescription>{alert.description}</AlertDescription>
+                    </Alert>
+                  )}
+
                   <h2 className="text-2xl font-serif font-bold mb-8 text-foreground">Delivery Information</h2>
 
                   <div className="space-y-6">

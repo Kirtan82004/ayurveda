@@ -10,24 +10,27 @@ import { useCart } from '@/app/cart-context';
 const PRODUCTS = [
   {
     id: 1,
-    name: 'Ashwagandha Powder',
-    category: 'Immunity',
-    price: '₹499',
-    description: 'Stress-relief and energy-boosting adaptogenic blend',
-    image: 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22%3E%3Crect fill=%22%23D4B5A0%22 width=%22200%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fontSize=%2220%22 fill=%22%239B7C66%22 textAnchor=%22middle%22 dominantBaseline=%22middle%22%3EAshwagandha%3C/text%3E%3C/svg%3E',
+    name: 'BMS Super X Oil',
+    category: 'Male Wellness',
+    MRP: '₹999',
+    price: '₹699',
+    description: "Best Massage Oil for men, strength, vitality aur nourishment support. ",
+    image: '/images/oil1.webp'
   },
   {
     id: 2,
-    name: 'Turmeric Golden Milk',
-    category: 'Immunity',
-    price: '₹399',
-    description: 'Anti-inflammatory and immunity-boosting blend',
-    image: 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22%3E%3Crect fill=%22%23E8C4A0%22 width=%22200%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fontSize=%2220%22 fill=%22%23B8860B%22 textAnchor=%22middle%22 dominantBaseline=%22middle%22%3ETurmeric%3C/text%3E%3C/svg%3E',
+    name: "BMS Super X Capsule",
+    category: "Male Wellness",
+    MRP: '₹1999',
+    price: "₹999",
+    description: 'Boosts vitality, stamina & physical strength',
+    image: '/images/capsule1.webp'
   },
   {
     id: 3,
     name: 'Neem Face Mask',
     category: 'Skin',
+    MRP: '₹799',
     price: '₹599',
     description: 'Natural antibacterial and skin-purifying treatment',
     image: 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22%3E%3Crect fill=%22%23C8E6C9%22 width=%22200%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fontSize=%2220%22 fill=%22%23558B2F%22 textAnchor=%22middle%22 dominantBaseline=%22middle%22%3ENeem Mask%3C/text%3E%3C/svg%3E',
@@ -36,7 +39,8 @@ const PRODUCTS = [
     id: 4,
     name: 'Brahmi Hair Oil',
     category: 'Hair',
-    price: '₹349',
+    MRP: '₹499',
+    price: '₹399',
     description: 'Cooling and strengthening oil for hair care',
     image: 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22%3E%3Crect fill=%22%23A1887F%22 width=%22200%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fontSize=%2220%22 fill=%22%23FFFFFF%22 textAnchor=%22middle%22 dominantBaseline=%22middle%22%3EBrahmi Oil%3C/text%3E%3C/svg%3E',
   },
@@ -44,7 +48,8 @@ const PRODUCTS = [
     id: 5,
     name: 'Triphala Churna',
     category: 'Digestion',
-    price: '₹299',
+    MRP: '₹299',
+    price: '₹199',
     description: 'Digestive and detoxifying herbal blend',
     image: 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22%3E%3Crect fill=%22%23D2A679%22 width=%22200%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fontSize=%2220%22 fill=%22%238B6F47%22 textAnchor=%22middle%22 dominantBaseline=%22middle%22%3ETriphala%3C/text%3E%3C/svg%3E',
   },
@@ -52,6 +57,7 @@ const PRODUCTS = [
     id: 6,
     name: 'Sesame Ubtan',
     category: 'Skin',
+    MRP: '₹499',
     price: '₹449',
     description: 'Traditional brightening and exfoliating paste',
     image: 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22%3E%3Crect fill=%22%23E8C4A0%22 width=%22200%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fontSize=%2220%22 fill=%22%23C4956D%22 textAnchor=%22middle%22 dominantBaseline=%22middle%22%3EUbtan%3C/text%3E%3C/svg%3E',
@@ -60,7 +66,8 @@ const PRODUCTS = [
     id: 7,
     name: 'Hibiscus Hair Rinse',
     category: 'Hair',
-    price: '₹329',
+    MRP: '₹329',
+    price: '₹279',
     description: 'Natural conditioning and color-enhancing rinse',
     image: 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22%3E%3Crect fill=%22%23E8A8C8%22 width=%22200%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fontSize=%2220%22 fill=%22%238B4C6D%22 textAnchor=%22middle%22 dominantBaseline=%22middle%22%3EHibiscus%3C/text%3E%3C/svg%3E',
   },
@@ -68,6 +75,7 @@ const PRODUCTS = [
     id: 8,
     name: 'Ginger Digestion Tea',
     category: 'Digestion',
+    MRP: '₹329',
     price: '₹279',
     description: 'Warming blend for digestive comfort',
     image: 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22%3E%3Crect fill=%22%23D4A574%22 width=%22200%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fontSize=%2220%22 fill=%22%238B6F47%22 textAnchor=%22middle%22 dominantBaseline=%22middle%22%3EGinger Tea%3C/text%3E%3C/svg%3E',
@@ -142,7 +150,7 @@ export default function ProductsPage() {
                   <img
                     src={product.image || "/placeholder.svg"}
                     alt={product.name}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover hover:ease-in-out duration-300 transform hover:scale-105"
                   />
                 </div>
                 <div className="p-4 flex flex-col flex-1">
@@ -150,7 +158,7 @@ export default function ProductsPage() {
                   <h3 className="font-serif font-bold text-foreground mb-2 flex-1">{product.name}</h3>
                   <p className="text-sm text-foreground/70 mb-4">{product.description}</p>
                   <div className="flex justify-between items-center mb-4">
-                    <span className="text-2xl font-serif font-bold text-primary">{product.price}</span>
+                    <span className="text-2xl font-serif font-bold text-primary"><span className='font-light text-sm line-through mr-1'>{product.MRP}</span>{product.price}</span>
                   </div>
                   <div className="flex gap-2">
                     <Button

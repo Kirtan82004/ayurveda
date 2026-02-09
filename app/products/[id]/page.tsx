@@ -11,142 +11,320 @@ import { useCart } from '@/app/cart-context';
 const PRODUCTS = [
   {
     id: 1,
-    name: 'Ashwagandha Powder',
-    category: 'Immunity',
-    price: '₹499',
+    name: 'BMS Super X Oil',
+    category: 'Male Wellness',
+    MRP: '₹999',
+    price: '₹699',
     rating: 4.8,
     reviews: 124,
-    description: 'Stress-relief and energy-boosting adaptogenic blend',
-    longDescription: 'Ashwagandha, also known as Withania Somnifera, is a powerful adaptogen that has been used in Ayurveda for centuries. Our premium Ashwagandha powder is sourced from organic farms and contains no additives or preservatives.',
-    image: 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22%3E%3Crect fill=%22%23D4B5A0%22 width=%22200%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fontSize=%2220%22 fill=%22%239B7C66%22 textAnchor=%22middle%22 dominantBaseline=%22middle%22%3EAshwagandha%3C/text%3E%3C/svg%3E',
-    ingredients: ['Withania Somnifera (Ashwagandha)', 'No additives', 'No preservatives'],
-    benefits: ['Reduces stress and anxiety', 'Boosts immunity', 'Improves sleep quality', 'Enhances energy levels', 'Supports cognitive function'],
-    dosage: '1/4 to 1/2 teaspoon twice daily with warm milk or water',
-    weight: '100g',
-    shelf_life: '24 months from manufacturing date',
+    description: 'Best Massage Oil for men, strength, vitality aur nourishment support. ',
+    longDescription: 'BMS Super X Oil ek premium Ayurvedic herbal wellness oil hai jo praachin Ayurvedic herbs aur nourishing base oils ka powerful combination hai. Yeh specially design kiya gaya hai natural vitality, stamina support, body nourishment aur circulation improvement ke liye.Is formulation mein use kiye gaye herbs Ayurvedic texts mein rasayana (rejuvenating), balya (strength promoting), aur vajikarana (vitality enhancing) properties ke liye jane jate hain. Regular external use se body ko warmth, relaxation, nourishment aur overall wellness support milta hai.Light texture hone ki wajah se oil skin mein easily absorb hota hai aur deep herbal action provide karta hai.',
+    images: ['/images/oil1.webp', '/images/oil2.webp', '/images/oil3.webp'],
+    image: 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22%3E%3Crect fill=%22%23F5E1A4%22 width=%22200%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fontSize=%2220%22 fill=%22%23B8860B%22 textAnchor=%22middle%22 dominantBaseline=%22middle%22%3EBMS Oil%3C/text%3E%3C/svg%3E',
+    ingredients: [
+      { name: "Akarkara", function: "Traditional vitality enhancer; supports stamina" },
+      { name: "Kesar (Saffron)", function: "Antioxidant; promotes strength & nourishment" },
+      { name: "Shilajit", function: "Rejuvenator; supports energy & endurance" },
+      { name: "Lavang (Clove)", function: "Warming herb; supports circulation & soothing action" },
+      { name: "Kaunch Beej", function: "Supports reproductive health & vitality" },
+      { name: "Jaiphal (Nutmeg)", function: "Nervous balance & warming comfort" },
+      { name: "Ashwagandha", function: "Adaptogen; supports strength & stress relief" },
+      { name: "Jaitoon Oil (Olive Oil)", function: "Enhances herbal absorption & skin nourishment" },
+      { name: "Till Oil (Sesame Oil)", function: "Deep penetrating oil; supports circulation" }
+    ],
+    benefits: [
+      "Natural stamina & vitality support",
+      "Promotes healthy blood circulation",
+      "Supports reproductive wellness",
+      "Helps in muscle relaxation & comfort",
+      "Deep tissue nourishment",
+      "Supports stress relief & body relaxation",
+      "Herbal antioxidant support"
+    ],
+    dosage: 'Apply a few drops, warm between your palms, and gently massage onto the desired area. Use 1–2 times daily, preferably after a bath or before bedtime, or as advised by a physician/Ayurvedic expert. For external use only.',
+    packDetails: {
+      form: "Herbal Oil",
+      quantity: "15 Ml",
+      shelfLife: "36 Months",
+      storage: "Store in cool & dry place, away from sunlight"
+    },
+    manufacturingQuality: {
+      manufacturedBy: "Human Pharmecia Inc.",
+      certifiedBy: ["AYUSH", "GMP"]
+    },
+    safetyInformation: [
+      "For external use only",
+      "Avoid contact with eyes",
+      "Do not apply on cuts or wounds",
+      "Pregnant or lactating women should consult doctor before use",
+      "If irritation occurs, discontinue use",
+      "Keep away from children",
+      "Not intended to diagnose, treat, cure or prevent any disease"
+    ],
+    whyChoose: [
+      "Authentic Ayurvedic herbal blend",
+      "Premium base oils for deep penetration",
+      "Supports natural body strength & wellness",
+      "No harmful chemicals",
+      "Easy absorption & non-sticky",
+      "Suitable for regular wellness routine"
+    ],
+    faqs: [
+      {
+        question: "What is BMS Super X Oil?",
+        answer:
+          "BMS Super X Oil is an Ayurvedic proprietary herbal oil made with traditional herbs like Ashwagandha, Shilajit, Akarkara, and Kesar. It is used for body nourishment, circulation support, and overall wellness."
+      },
+      {
+        question: "Is this oil for internal or external use?",
+        answer:
+          "This product is strictly for external use only. It should not be consumed orally."
+      },
+      {
+        question: "How do I use this oil?",
+        answer:
+          "Take a small quantity (a few drops) and gently massage onto the required body area. It can be used 1–2 times daily, preferably after a bath or before bedtime."
+      },
+      {
+        question: "Who can use BMS Super X Oil?",
+        answer:
+          "It is suitable for adult men and women. People with sensitive skin should perform a patch test before regular use."
+      },
+      {
+        question: "How long does it take to see results?",
+        answer:
+          "Herbal products work gradually. With regular use, users may experience improved body relaxation, nourishment, and comfort. Results may vary from person to person."
+      },
+      {
+        question: "Can this oil help with body weakness or fatigue?",
+        answer:
+          "The herbs used in this formulation are traditionally known in Ayurveda for supporting strength, vitality, and nourishment, which may be helpful during periods of tiredness or low energy."
+      },
+      {
+        question: "Does it contain chemicals or artificial fragrance?",
+        answer:
+          "This is an Ayurvedic herbal oil prepared with traditional herbs and natural base oils. No artificial medicinal chemicals are added."
+      },
+      {
+        question: "Is it safe for daily use?",
+        answer:
+          "Yes, it is generally considered safe for daily use when applied in the recommended quantity. Discontinue use if irritation occurs."
+      },
+      {
+        question: "Can I apply it on sensitive areas?",
+        answer:
+          "Apply only on external body areas with gentle massage. Avoid contact with eyes, mucous membranes, cuts, or open wounds."
+      },
+      {
+        question: "How should I store the oil?",
+        answer:
+          "Keep the bottle tightly closed and store in a cool, dry place away from direct sunlight."
+      },
+      {
+        question: "Does this product cure any disease?",
+        answer:
+          "No. This is an Ayurvedic wellness support oil. It is not intended to diagnose, treat, cure, or prevent any disease."
+      }
+    ]
   },
   {
-    id: 2,
-    name: 'Turmeric Golden Milk',
-    category: 'Immunity',
-    price: '₹399',
-    rating: 4.9,
-    reviews: 89,
-    description: 'Anti-inflammatory and immunity-boosting blend',
-    longDescription: 'Our Golden Milk blend combines premium turmeric with complementary spices to create a potent anti-inflammatory drink. Perfect for daily wellness.',
-    image: 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22%3E%3Crect fill=%22%23E8C4A0%22 width=%22200%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fontSize=%2220%22 fill=%22%23B8860B%22 textAnchor=%22middle%22 dominantBaseline=%22middle%22%3ETurmeric%3C/text%3E%3C/svg%3E',
-    ingredients: ['Turmeric (Curcuma Longa)', 'Ginger', 'Black Pepper', 'Cinnamon', 'Cardamom'],
-    benefits: ['Anti-inflammatory properties', 'Boosts immunity', 'Supports joint health', 'Aids digestion', 'Promotes skin health'],
-    dosage: '1 teaspoon in warm milk, once or twice daily',
-    weight: '150g',
-    shelf_life: '24 months from manufacturing date',
+  id: 2,
+  name: "BMS Super X Capsule",
+  category: "Male Wellness",
+  MRP: '₹1999',
+  price: "₹999",
+  rating: 4.7,
+  reviews: 96,
+  description: "Boosts Vitality, Stamina & Physical Strength. Natural Support for Stress Relief & Overall Performance Capsules",
+  longDescription:
+    "BMS Super X Capsule ek Ayurvedic formulation hai jo traditional herbs aur mineral Rasayan ke powerful combination se tayyar ki gayi hai. Yeh formulation body ko daily vitality, strength aur overall wellness support dene ke liye design ki gayi hai. Busy lifestyle, stress aur physical fatigue ko manage karne me madad karta hai. Herbal ingredients body ko nourish karte hain, stress handling capacity support karte hain aur active lifestyle maintain karne me help karte hain.",
+
+  images: ["/images/capsule1.webp", "/images/capsule2.webp","/images/capsule3.webp"],
+  image:
+    "data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22%3E%3Crect fill=%22%23F5E1A4%22 width=%22200%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fontSize=%2216%22 fill=%22%23B8860B%22 textAnchor=%22middle%22 dominantBaseline=%22middle%22%3EBMS Capsule%3C/text%3E%3C/svg%3E",
+
+  ingredients: [
+    { name: "Jaifal (Nutmeg)", function: "Nervous system support, relaxation & sleep support" },
+    { name: "Gokhru (Tribulus)", function: "Vitality & urinary wellness support" },
+    { name: "Safed Musli", function: "Physical strength & stamina support" },
+    { name: "Kokilaksh", function: "Reproductive & urinary health support" },
+    { name: "Dalchini (Cinnamon)", function: "Blood circulation & digestion support" },
+    { name: "Shatavri", function: "Hormonal balance & immunity support" },
+    { name: "Lata Kasturi", function: "Nerve wellness & vitality support" },
+    { name: "Lavang (Clove)", function: "Circulation & natural defense support" },
+    { name: "Kesar (Saffron)", function: "Mood, energy & overall vitality support" },
+    { name: "Ashwagandha", function: "Stress relief, strength & stamina support" },
+    { name: "Sonth (Dry Ginger)", function: "Digestion & absorption support" },
+    { name: "Kaunch Beej", function: "Reproductive wellness & vitality support" },
+    { name: "Shuddh Shilajit", function: "Energy & stamina support" },
+    { name: "Tribhang Bhasma", function: "Nerve wellness support" },
+    { name: "Abhrak Bhasma", function: "Body rejuvenation support" },
+    { name: "Makar Dhwaj", function: "Traditional Rasayan for vitality & strength support" }
+  ],
+
+  benefits: [
+    "Daily energy, stamina aur performance support",
+    "Sustained energy levels & physical endurance support",
+    "Stress management & mood wellness support",
+    "Healthy blood circulation support",
+    "Nutrient absorption support",
+    "Hormonal balance support",
+    "Reproductive wellness support",
+    "Immunity & body rejuvenation support"
+  ],
+
+  dosage:
+    "1 capsule daily at night with lukewarm milk or water, or as directed by a healthcare professional.",
+
+  packDetails: {
+    form: "Capsules",
+    quantity: "30 Capsules",
+    shelfLife: "36 Months",
+    storage: "Store in cool & dry place, away from sunlight"
   },
+
+  manufacturingQuality: {
+    manufacturedBy: "Human Pharmecia Inc.",
+    certifiedBy: ["AYUSH", "GMP"]
+  },
+
+  safetyInformation: [
+    "Ayurvedic wellness supplement",
+    "Not intended to diagnose, treat, cure, or prevent any disease",
+    "People with BP, diabetes, heart conditions should consult doctor before use",
+    "Not recommended for pregnant or lactating women",
+    "Keep away from children"
+  ],
+
+  whyChoose: [
+    "Traditional Ayurvedic herbs + Rasayan",
+    "Natural formulation",
+    "Busy lifestyle ke liye wellness support",
+    "Trusted Ayurvedic manufacturing standards"
+  ],
+
+  faqs: [
+    {
+      question: "What is BMS Super X Capsule?",
+      answer:
+        "BMS Super X Capsule is an Ayurvedic formulation designed to support daily vitality, strength, and overall wellness."
+    },
+    {
+      question: "How does it help with energy?",
+      answer:
+        "Herbs like Ashwagandha and Safed Musli with Rasayan like Shilajit support energy, stamina, and nervous system health."
+    },
+    {
+      question: "What is the dosage?",
+      answer:
+        "Take 1 capsule daily at night with lukewarm milk or water."
+    },
+    {
+      question: "Is it safe for long-term use?",
+      answer:
+        "Yes, when taken in recommended dosage. Consult a doctor if you have medical conditions."
+    },
+    {
+      question: "Can women use it?",
+      answer:
+        "Women can use it for general wellness, but pregnant or lactating women should avoid it."
+    }
+  ]
+},
+
   {
     id: 3,
-    name: 'Neem Face Mask',
-    category: 'Skin',
-    price: '₹599',
+    name: "Neem Face Mask",
+    category: "Skin",
+    MRP: '₹999',
+    price: "₹599",
     rating: 4.7,
     reviews: 156,
-    description: 'Natural antibacterial and skin-purifying treatment',
-    longDescription: 'Our Neem Face Mask combines the antibacterial properties of Neem with nurturing botanicals to cleanse and rejuvenate your skin naturally.',
-    image: 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22%3E%3Crect fill=%22%23C8E6C9%22 width=%22200%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fontSize=%2220%22 fill=%22%23558B2F%22 textAnchor=%22middle%22 dominantBaseline=%22middle%22%3ENeem Mask%3C/text%3E%3C/svg%3E',
-    ingredients: ['Neem Leaf Extract', 'Turmeric', 'Fuller\'s Earth', 'Aloe Vera', 'Rose Water'],
-    benefits: ['Antibacterial properties', 'Reduces acne', 'Deep cleansing', 'Soothes irritation', 'Brightens complexion'],
-    dosage: 'Apply 2-3 times per week, leave for 15-20 minutes',
-    weight: '100g',
-    shelf_life: '18 months from manufacturing date',
+    description: "Natural antibacterial skin treatment",
+    images: ["/images/neem-mask.webp"],
+    image: "data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22%3E%3Crect fill=%22%23F5E1A4%22 width=%22200%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fontSize=%2220%22 fill=%22%23B8860B%22 textAnchor=%22middle%22 dominantBaseline=%22middle%22%3ENeem Mask%3C/text%3E%3C/svg%3E",
+    ingredients: [
+      { name: "Neem Extract", function: "Antibacterial skin cleansing" },
+      { name: "Turmeric", function: "Skin brightening support" },
+      { name: "Aloe Vera", function: "Skin soothing" }
+    ],
+    benefits: [
+      "Reduces acne",
+      "Deep cleansing",
+      "Soothes irritation",
+      "Brightens complexion"
+    ],
+    dosage: "Apply 2–3 times weekly",
+    packDetails: {
+      form: "Face Mask Powder",
+      quantity: "100g",
+      shelfLife: "18 Months",
+      storage: "Cool & dry place"
+    },
+    manufacturingQuality: {
+      manufacturedBy: "Ayurveda Naturals",
+      certifiedBy: ["GMP"]
+    },
+    safetyInformation: [
+      "For external use only",
+      "Avoid contact with eyes"
+    ],
+    whyChoose: [
+      "Natural skin purification",
+      "Traditional herbal care"
+    ],
+    faqs: []
   },
+
   {
     id: 4,
-    name: 'Brahmi Hair Oil',
-    category: 'Hair',
-    price: '₹349',
+    name: "Brahmi Hair Oil",
+    category: "Hair",
+    MRP: '₹999',
+    price: "₹349",
     rating: 4.8,
     reviews: 203,
-    description: 'Cooling and strengthening oil for hair care',
-    longDescription: 'Brahmi oil is a traditional Ayurvedic remedy for hair care, known for its cooling and nourishing properties. Perfect for scalp health.',
-    image: 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22%3E%3Crect fill=%22%23A1887F%22 width=%22200%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fontSize=%2220%22 fill=%22%23FFFFFF%22 textAnchor=%22middle%22 dominantBaseline=%22middle%22%3EBrahmi Oil%3C/text%3E%3C/svg%3E',
-    ingredients: ['Brahmi Extract', 'Coconut Oil', 'Sesame Oil', 'Hibiscus Flowers'],
-    benefits: ['Strengthens hair roots', 'Cooling effect on scalp', 'Reduces hair fall', 'Improves hair texture', 'Prevents premature greying'],
-    dosage: 'Massage into scalp 2-3 times per week, leave for 30 minutes',
-    weight: '200ml',
-    shelf_life: '24 months from manufacturing date',
-  },
-  {
-    id: 5,
-    name: 'Triphala Churna',
-    category: 'Digestion',
-    price: '₹299',
-    rating: 4.6,
-    reviews: 178,
-    description: 'Digestive and detoxifying herbal blend',
-    longDescription: 'Triphala is a classical Ayurvedic formulation made from three fruits: Haritaki, Bibhitaki, and Amalaki. It supports digestive health and natural detoxification.',
-    image: 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22%3E%3Crect fill=%22%23D2A679%22 width=%22200%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fontSize=%2220%22 fill=%22%238B6F47%22 textAnchor=%22middle%22 dominantBaseline=%22middle%22%3ETriphala%3C/text%3E%3C/svg%3E',
-    ingredients: ['Haritaki', 'Bibhitaki', 'Amalaki (Indian Gooseberry)'],
-    benefits: ['Supports digestion', 'Gentle detoxification', 'Promotes regular bowel movements', 'Rich in Vitamin C', 'Improves nutrient absorption'],
-    dosage: '1/2 to 1 teaspoon at night with warm water',
-    weight: '100g',
-    shelf_life: '24 months from manufacturing date',
-  },
-  {
-    id: 6,
-    name: 'Sesame Ubtan',
-    category: 'Skin',
-    price: '₹449',
-    rating: 4.7,
-    reviews: 92,
-    description: 'Traditional brightening and exfoliating paste',
-    longDescription: 'Our Sesame Ubtan is a traditional Ayurvedic paste that gently exfoliates and brightens the skin while maintaining its natural moisture.',
-    image: 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22%3E%3Crect fill=%22%23E8C4A0%22 width=%22200%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fontSize=%2220%22 fill=%22%23C4956D%22 textAnchor=%22middle%22 dominantBaseline=%22middle%22%3EUbtan%3C/text%3E%3C/svg%3E',
-    ingredients: ['Sesame Powder', 'Turmeric', 'Chickpea Flour', 'Rose Water', 'Sandalwood'],
-    benefits: ['Gentle exfoliation', 'Brightens complexion', 'Reduces blemishes', 'Nourishes skin', 'All skin types'],
-    dosage: 'Apply 1-2 times per week, leave for 15 minutes',
-    weight: '100g',
-    shelf_life: '18 months from manufacturing date',
-  },
-  {
-    id: 7,
-    name: 'Hibiscus Hair Rinse',
-    category: 'Hair',
-    price: '₹329',
-    rating: 4.5,
-    reviews: 67,
-    description: 'Natural conditioning and color-enhancing rinse',
-    longDescription: 'Traditional Hibiscus flowers combined with herbal essences to condition hair and enhance natural color.',
-    image: 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22%3E%3Crect fill=%22%23E8A8C8%22 width=%22200%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fontSize=%2220%22 fill=%22%238B4C6D%22 textAnchor=%22middle%22 dominantBaseline=%22middle%22%3EHibiscus%3C/text%3E%3C/svg%3E',
-    ingredients: ['Hibiscus Flowers', 'Neem Leaves', 'Fenugreek Seeds', 'Curry Leaves'],
-    benefits: ['Conditions hair naturally', 'Enhances hair color', 'Adds shine', 'Reduces hair fall', 'Prevents dandruff'],
-    dosage: 'Brew and use as final rinse after shampooing, 2-3 times weekly',
-    weight: '50g (dried flowers)',
-    shelf_life: '24 months from manufacturing date',
-  },
-  {
-    id: 8,
-    name: 'Ginger Digestion Tea',
-    category: 'Digestion',
-    price: '₹279',
-    rating: 4.6,
-    reviews: 145,
-    description: 'Warming blend for digestive comfort',
-    longDescription: 'A soothing herbal tea blend that aids digestion and soothes the digestive tract with warming spices.',
-    image: 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22%3E%3Crect fill=%22%23D4A574%22 width=%22200%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fontSize=%2220%22 fill=%22%238B6F47%22 textAnchor=%22middle%22 dominantBaseline=%22middle%22%3EGinger Tea%3C/text%3E%3C/svg%3E',
-    ingredients: ['Ginger Root', 'Fennel Seeds', 'Cumin Seeds', 'Coriander Seeds', 'Black Pepper'],
-    benefits: ['Aids digestion', 'Reduces bloating', 'Warms the digestive system', 'Soothes stomach', 'Anti-inflammatory'],
-    dosage: 'Steep 1 teaspoon in hot water for 3-5 minutes, drink 1-2 times daily',
-    weight: '80g (dried herbs)',
-    shelf_life: '24 months from manufacturing date',
-  },
+    description: "Cooling and strengthening hair oil",
+    images: ["/images/brahmi-oil.webp"],
+    image: "data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22%3E%3Crect fill=%22%23F5E1A4%22 width=%22200%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fontSize=%2220%22 fill=%22%23B8860B%22 textAnchor=%22middle%22 dominantBaseline=%22middle%22%3EBrahmi Oil%3C/text%3E%3C/svg%3E",
+    ingredients: [
+      { name: "Brahmi", function: "Hair strengthening" },
+      { name: "Coconut Oil", function: "Hair nourishment" },
+      { name: "Sesame Oil", function: "Scalp circulation" }
+    ],
+    benefits: [
+      "Strengthens hair roots",
+      "Reduces hair fall",
+      "Improves hair texture"
+    ],
+    dosage: "Massage into scalp 2–3 times weekly",
+    packDetails: {
+      form: "Hair Oil",
+      quantity: "200ml",
+      shelfLife: "24 Months",
+      storage: "Cool & dry place"
+    },
+    manufacturingQuality: {
+      manufacturedBy: "Ayurveda Naturals",
+      certifiedBy: ["GMP"]
+    },
+    safetyInformation: ["For external use only"],
+    whyChoose: ["Cooling Ayurvedic oil"],
+    faqs: []
+  }
 ];
 
 export default function ProductDetailPage() {
   const params = useParams();
   const productId = Number(params.id);
-
   const product = PRODUCTS.find((p) => p.id === productId);
+  const [selectedImage, setSelectedImage] = useState(
+    product?.images?.[0] || product?.image
+  );
   const { addToCart } = useCart();
   const [quantity, setQuantity] = useState(1);
   const [showAddedMessage, setShowAddedMessage] = useState(false);
+
 
   const handleAddToCart = () => {
     if (!product) return;
@@ -157,7 +335,7 @@ export default function ProductDetailPage() {
       name: product.name,
       price: product.price,
       quantity,
-      image: product.image,
+      image: product.images[0] || product.image,
       priceNumber,
     });
 
@@ -199,19 +377,37 @@ export default function ProductDetailPage() {
           <div className="grid md:grid-cols-2 gap-12">
             {/* Product Image */}
             <div className="flex items-center justify-center">
-              <div className="w-full aspect-square bg-muted rounded-lg flex items-center justify-center overflow-hidden">
+              <div className="w-full aspect-square bg-muted rounded-lg flex items-center justify-center overflow-hidden relative">
                 <img
-                  src={product.image || "/placeholder.svg"}
+                  src={selectedImage || "/placeholder.svg"}
                   alt={product.name}
                   className="w-full h-full object-cover"
                 />
+
+                {product.images?.length > 1 && (
+                  <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2">
+                    {product.images.map((img, index) => (
+                      <img
+                        key={index}
+                        src={img || "/placeholder.svg"}
+                        alt={`${product.name}-${index}`}
+                        onClick={() => setSelectedImage(img)}
+                        className={`w-10 h-10 object-cover rounded-full border cursor-pointer ${selectedImage === img ? "border-primary" : "border-border"}`}
+                      />
+                    ))}
+                  </div>
+                )}
               </div>
             </div>
+
+
+
 
             {/* Product Info */}
             <div>
               <p className="text-sm text-primary font-semibold mb-2">{product.category}</p>
               <h1 className="text-4xl font-serif font-bold mb-4 text-foreground">{product.name}</h1>
+              <h2 className="text-lg text-foreground/70 mb-6">{product.description}</h2>
 
               <div className="flex items-center gap-4 mb-6">
                 <div className="flex items-center gap-1">
@@ -221,19 +417,35 @@ export default function ProductDetailPage() {
                 <span className="text-sm text-foreground/70">({product.reviews} reviews)</span>
               </div>
 
-              <p className="text-2xl font-serif font-bold text-primary mb-6">{product.price}</p>
+              <p className="text-2xl font-serif font-bold text-primary mb-6"><span className='text-foreground/50 line-through'>{product.MRP}</span> {product.price}</p>
               <p className="text-foreground/80 text-lg mb-8 leading-relaxed">{product.longDescription}</p>
 
               <div className="bg-secondary p-6 rounded-lg mb-8">
                 <h3 className="font-serif font-bold text-lg mb-4 text-foreground">Quick Info</h3>
                 <div className="space-y-3">
                   <div className="flex justify-between">
+                    <span className="text-foreground/70">Form:</span>
+                    <span className="font-semibold text-foreground">{product.packDetails.form}</span>
+                  </div>
+                  <div className="flex justify-between">
                     <span className="text-foreground/70">Weight:</span>
-                    <span className="font-semibold text-foreground">{product.weight}</span>
+                    <span className="font-semibold text-foreground">{product.packDetails.quantity}</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-foreground/70">Shelf Life:</span>
-                    <span className="font-semibold text-foreground">{product.shelf_life}</span>
+                    <span className="font-semibold text-foreground">{product.packDetails.shelfLife}</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-foreground/70">Storage:</span>
+                    <span className="font-semibold text-foreground">{product.packDetails.storage}</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-foreground/70">Certified By:</span>
+                    <span className="font-semibold text-foreground">{product.manufacturingQuality.certifiedBy}</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-foreground/70">Manufactured By:</span>
+                    <span className="font-semibold text-foreground">{product.manufacturingQuality.manufacturedBy}</span>
                   </div>
                 </div>
               </div>
@@ -310,7 +522,9 @@ export default function ProductDetailPage() {
                 {product.ingredients.map((ingredient, index) => (
                   <li key={index} className="flex items-start gap-3">
                     <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                    <span className="text-foreground">{ingredient}</span>
+                    <span className="text-foreground">{ingredient.name}</span>
+                    <span className="text-foreground/70"> - {ingredient.function}</span>
+
                   </li>
                 ))}
               </ul>
@@ -329,12 +543,53 @@ export default function ProductDetailPage() {
               </ul>
             </Card>
           </div>
-
           {/* Dosage */}
           <Card className="p-8 border border-border mt-12">
             <h2 className="text-2xl font-serif font-bold mb-4 text-foreground">How to Use</h2>
             <p className="text-lg text-foreground/80 leading-relaxed">{product.dosage}</p>
           </Card>
+
+          <div className="mt-16 grid md:grid-cols-2 gap-12">
+            {/* Ingredients */}
+            <Card className="p-8 border border-border">
+              <h2 className="text-2xl font-serif font-bold mb-6 text-foreground">SAFETY INFORMATION</h2>
+              <ul className="space-y-3">
+                {product.safetyInformation.map((info, index) => (
+                  <li key={index} className="flex items-start gap-3">
+                    <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                    <span className="text-foreground">{info}</span>
+                  </li>
+                ))}
+              </ul>
+            </Card>
+
+            {/* Benefits */}
+            <Card className="p-8 border border-border">
+              <h2 className="text-2xl font-serif font-bold mb-6 text-foreground">WHY CHOOSE BMS SUPER X Oil</h2>
+              <ul className="space-y-3">
+                {product.whyChoose.map((benefit, index) => (
+                  <li key={index} className="flex items-start gap-3">
+                    <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                    <span className="text-foreground">{benefit}</span>
+                  </li>
+                ))}
+              </ul>
+            </Card>
+          </div>
+
+          <div className="mt-16">
+            <Card className="p-8 border border-border">
+              <h2 className="text-2xl font-serif font-bold mb-6 text-foreground">FAQs</h2>
+              <div className="space-y-4">
+                {product.faqs.map((faq, index) => (
+                  <div key={index}>
+                    <p className="font-semibold text-foreground mb-1">{faq.question}</p>
+                    <p className="text-foreground/80">{faq.answer}</p>
+                  </div>
+                ))}
+              </div>
+            </Card>
+          </div>
         </div>
       </section>
 
@@ -349,7 +604,7 @@ export default function ProductDetailPage() {
                 <Card key={relatedProduct.id} className="overflow-hidden hover:shadow-lg transition">
                   <div className="aspect-square bg-muted flex items-center justify-center overflow-hidden">
                     <img
-                      src={relatedProduct.image || "/placeholder.svg"}
+                      src={relatedProduct.images[0] || "/placeholder.svg"}
                       alt={relatedProduct.name}
                       className="w-full h-full object-cover"
                     />
@@ -364,6 +619,7 @@ export default function ProductDetailPage() {
                 </Card>
               ))}
           </div>
+
         </div>
       </section>
     </div>

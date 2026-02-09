@@ -19,19 +19,21 @@ import { motion } from "framer-motion";
 const FEATURED_PRODUCTS = [
   {
     id: 1,
-    name: 'Ashwagandha Powder',
-    category: 'Immunity',
-    price: '₹499',
-    description: 'Premium adaptogenic blend',
-    image: 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22%3E%3Crect fill=%22%23D4B5A0%22 width=%22200%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fontSize=%2224%22 fill=%22%239B7C66%22 textAnchor=%22middle%22 dominantBaseline=%22middle%22%3EAshwagandha%3C/text%3E%3C/svg%3E',
+    name: 'BMS Super X Oil',
+    category: 'Male Wellness',
+    MRP: '₹999',
+    price: '₹699',
+    description: "Best Massage Oil for men, strength, vitality aur nourishment support. ",
+    image: '/images/oil1.webp'
   },
   {
     id: 2,
-    name: 'Turmeric Golden Milk',
-    category: 'Immunity',
-    price: '₹399',
-    description: 'Anti-inflammatory blend',
-    image: 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22%3E%3Crect fill=%22%23E8C4A0%22 width=%22200%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fontSize=%2224%22 fill=%22%23B8860B%22 textAnchor=%22middle%22 dominantBaseline=%22middle%22%3ETurmeric%3C/text%3E%3C/svg%3E',
+    name: "BMS Super X Capsule",
+    category: "Male Wellness",
+    MRP: '₹1999',
+    price: "₹999",
+    description: 'Boosts vitality, stamina & physical strength',
+    image: '/images/capsule1.webp'
   },
   {
     id: 3,
@@ -116,7 +118,7 @@ export default function Home() {
                   <img
                     src={img.src}
                     alt={img.alt}
-                    className="w-full h-full object-cover scale-110 transition-transform duration-[6000ms] ease-out hover:scale-125"
+                    className="w-full h-full object-cover scale-110 transition-transform duration-6000 ease-out hover:scale-125"
 
                   />
 
@@ -269,14 +271,14 @@ export default function Home() {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { title: "Male Wellness & Stamina", link: "/products?cat=male" },
+              { title: "Male Wellness & Stamina", link: "/products" },
               { title: "Women Wellness", link: "/products?cat=women" },
-              { title: "Immunity & Daily Health", link: "/products?cat=immunity" },
-              { title: "Weight Loss & Digestion", link: "/products?cat=weight" },
-              { title: "Beauty & Skin Care", link: "/products?cat=beauty" },
-              { title: "Mind, Stress & Sleep", link: "/products?cat=mind" },
-              { title: "Special Condition Remedies", link: "/products?cat=special" },
-              { title: "Super Premium Range", link: "/products?cat=premium" },
+              { title: "Immunity & Daily Health", link: "/products" },
+              { title: "Weight Loss & Digestion", link: "/products" },
+              { title: "Beauty & Skin Care", link: "/products" },
+              { title: "Mind, Stress & Sleep", link: "/products" },
+              { title: "Special Condition Remedies", link: "/products" },
+              { title: "Super Premium Range", link: "/products" },
             ].map((cat, i) => (
               <Card key={i} className="p-6 text-center hover:shadow-lg transition">
                 <h3 className="text-xl font-serif font-bold mb-4">{cat.title}</h3>
