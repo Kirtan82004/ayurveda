@@ -33,7 +33,7 @@ const PRODUCTS = [
     MRP: '₹799',
     price: '₹599',
     description: 'Natural antibacterial and skin-purifying treatment',
-    image: 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22%3E%3Crect fill=%22%23C8E6C9%22 width=%22200%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fontSize=%2220%22 fill=%22%23558B2F%22 textAnchor=%22middle%22 dominantBaseline=%22middle%22%3ENeem Mask%3C/text%3E%3C/svg%3E',
+    image: "/images/coming.webp"
   },
   {
     id: 4,
@@ -42,7 +42,7 @@ const PRODUCTS = [
     MRP: '₹499',
     price: '₹399',
     description: 'Cooling and strengthening oil for hair care',
-    image: 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22%3E%3Crect fill=%22%23A1887F%22 width=%22200%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fontSize=%2220%22 fill=%22%23FFFFFF%22 textAnchor=%22middle%22 dominantBaseline=%22middle%22%3EBrahmi Oil%3C/text%3E%3C/svg%3E',
+    image: "/images/coming.webp"
   },
   {
     id: 5,
@@ -51,7 +51,7 @@ const PRODUCTS = [
     MRP: '₹299',
     price: '₹199',
     description: 'Digestive and detoxifying herbal blend',
-    image: 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22%3E%3Crect fill=%22%23D2A679%22 width=%22200%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fontSize=%2220%22 fill=%22%238B6F47%22 textAnchor=%22middle%22 dominantBaseline=%22middle%22%3ETriphala%3C/text%3E%3C/svg%3E',
+    image: "/images/coming.webp"
   },
   {
     id: 6,
@@ -60,7 +60,7 @@ const PRODUCTS = [
     MRP: '₹499',
     price: '₹449',
     description: 'Traditional brightening and exfoliating paste',
-    image: 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22%3E%3Crect fill=%22%23E8C4A0%22 width=%22200%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fontSize=%2220%22 fill=%22%23C4956D%22 textAnchor=%22middle%22 dominantBaseline=%22middle%22%3EUbtan%3C/text%3E%3C/svg%3E',
+    image: "/images/coming.webp"
   },
   {
     id: 7,
@@ -69,7 +69,7 @@ const PRODUCTS = [
     MRP: '₹329',
     price: '₹279',
     description: 'Natural conditioning and color-enhancing rinse',
-    image: 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22%3E%3Crect fill=%22%23E8A8C8%22 width=%22200%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fontSize=%2220%22 fill=%22%238B4C6D%22 textAnchor=%22middle%22 dominantBaseline=%22middle%22%3EHibiscus%3C/text%3E%3C/svg%3E',
+    image: "/images/coming.webp"
   },
   {
     id: 8,
@@ -78,7 +78,7 @@ const PRODUCTS = [
     MRP: '₹329',
     price: '₹279',
     description: 'Warming blend for digestive comfort',
-    image: 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22%3E%3Crect fill=%22%23D4A574%22 width=%22200%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fontSize=%2220%22 fill=%22%238B6F47%22 textAnchor=%22middle%22 dominantBaseline=%22middle%22%3EGinger Tea%3C/text%3E%3C/svg%3E',
+    image: "/images/coming.webp"
   },
 ];
 

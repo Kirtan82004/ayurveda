@@ -41,7 +41,7 @@ const FEATURED_PRODUCTS = [
     category: 'Skin',
     price: '₹599',
     description: 'Natural skin purifier',
-    image: 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22%3E%3Crect fill=%22%23C8E6C9%22 width=%22200%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fontSize=%2224%22 fill=%22%23558B2F%22 textAnchor=%22middle%22 dominantBaseline=%22middle%22%3ENeem Mask%3C/text%3E%3C/svg%3E',
+    image: '/images/coming.webp',
   },
   {
     id: 4,
@@ -49,7 +49,7 @@ const FEATURED_PRODUCTS = [
     category: 'Hair',
     price: '₹349',
     description: 'Strengthening and cooling',
-    image: 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22%3E%3Crect fill=%22%23A1887F%22 width=%22200%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fontSize=%2224%22 fill=%22%23FFFFFF%22 textAnchor=%22middle%22 dominantBaseline=%22middle%22%3EBrahmi Oil%3C/text%3E%3C/svg%3E',
+    image: "/images/coming.webp"
   },
 ];
 const HERO_IMAGES = [

@@ -8,7 +8,7 @@ import { useCart } from '@/app/cart-context';
 
 export default function CartPage() {
   const { cartItems, removeFromCart, updateQuantity, cartTotal, clearCart } = useCart();
-
+  console.log("cartItems:", cartItems); 
   return (
     <div className="min-h-screen bg-background text-foreground">
 

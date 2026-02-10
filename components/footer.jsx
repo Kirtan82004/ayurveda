@@ -1,35 +1,36 @@
 'use client';
 
 import Link from 'next/link';
-import { Facebook, Instagram, Send,Youtube } from 'lucide-react';
+import { Facebook, Instagram, Send, Youtube } from 'lucide-react';
+import Image from "next/image";
 
 export default function Footer() {
   return (
     <footer className="bg-foreground text-background py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        {/* Top Section */}
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4 mb-10">
+
           {/* Brand */}
           <div>
-            {/* Logo */}
-          <Link href="/" className="flex items-center gap-3">
-            <img
-              src="/images/LOGO.webp"
-              alt="BAMUSO Ayurveda Logo"
-              width={60}
-              height={60}
-              className="object-contain"
-            />
+            <Link href="/" className="flex items-center gap-3">
+              <img
+                src="/images/LOGO.webp"
+                alt="BAMUSO Ayurveda Logo"
+                width={60}
+                height={60}
+                className="object-contain"
+              />
 
-            <div className="flex flex-col leading-tight">
-              <span className="text-xl font-serif font-bold text-primary">
-                BAMUSO Ayurveda
-              </span>
-              <span className="text-xs text-muted-foreground tracking-wide">
-                Inspired by Nature, Powered by Trust
-              </span>
-            </div>
-          </Link>
+              <div className="flex flex-col leading-tight">
+                <span className="text-xl font-serif font-bold text-primary">
+                  BAMUSO Ayurveda
+                </span>
+                <span className="text-xs text-muted-foreground tracking-wide">
+                  Inspired by Nature, Powered by Trust
+                </span>
+              </div>
+            </Link>
+
             <p className="text-sm opacity-70 mt-3">
               India’s trusted Ayurvedic wellness brand for daily health & long-term care.
             </p>
@@ -57,53 +58,60 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Contact */}
+          {/* Contact + Icons */}
           <div>
             <h4 className="font-semibold mb-4">Contact</h4>
-            <p className="text-sm opacity-70 mb-1">📞 +91  9990-3590-97</p>
+            <p className="text-sm opacity-70 mb-1">📞 +91 9990-3590-97</p>
             <p className="text-sm opacity-70 mb-1">💬 WhatsApp Support Available</p>
             <p className="text-sm opacity-70">✉ support@bamusoayurveda.com</p>
-            <div className="flex gap-4 mt-4">
-              <a
-                href="https://www.facebook.com/Bamusoayurveda"
-                target="_blank"
-                className="p-2 rounded-full bg-background/10 hover:bg-primary hover:text-white transition"
-                aria-label="Facebook"
-              >
+
+            {/* Social Icons */}
+            <div className="flex gap-3 mt-4 flex-wrap">
+              <a href="https://www.facebook.com/Bamusoayurveda" target="_blank"
+                className="p-2 rounded-full bg-background/10 hover:bg-primary hover:text-white transition">
                 <Facebook className="w-5 h-5" />
               </a>
 
-              <a
-                href="https://www.instagram.com/bamuso_ayurveda"
-                target="_blank"
-                className="p-2 rounded-full bg-background/10 hover:bg-primary hover:text-white transition"
-                aria-label="Instagram"
-              >
+              <a href="https://www.instagram.com/bamuso_ayurveda" target="_blank"
+                className="p-2 rounded-full bg-background/10 hover:bg-primary hover:text-white transition">
                 <Instagram className="w-5 h-5" />
               </a>
 
-              <a
-                href="https://t.me/+3L1419GJ4pZkY2Nl"
-                target="_blank"
-                className="p-2 rounded-full bg-background/10 hover:bg-primary hover:text-white transition"
-                aria-label="Telegram"
-              >
+              <a href="https://t.me/+3L1419GJ4pZkY2Nl" target="_blank"
+                className="p-2 rounded-full bg-background/10 hover:bg-primary hover:text-white transition">
                 <Send className="w-5 h-5" />
               </a>
-              <a
-                href="https://www.youtube.com/@BamusoAyurveda7"
-                target="_blank"
-                className="p-2 rounded-full bg-background/10 hover:bg-primary hover:text-white transition"
-                aria-label="YouTube"
-              >
+
+              <a href="https://www.youtube.com/@BamusoAyurveda7" target="_blank"
+                className="p-2 rounded-full bg-background/10 hover:bg-primary hover:text-white transition">
                 <Youtube className="w-5 h-5" />
               </a>
             </div>
 
+           
           </div>
         </div>
+        {/* Marketplace */}
+<div className="flex flex-col items-center justify-center mt-6">
+  <p className="text-sm opacity-70 mb-3">Available on</p>
 
-        {/* Bottom Bar */}
+  <div className="flex gap-6 items-center">
+    <img
+      src="/icons/amazon.png"
+      alt="Amazon"
+      className="h-12 p-1 bg-white rounded-2xl hover:opacity-100 transition"
+    /> 
+
+    <img
+      src="/icons/flipkart.jpg"
+      alt="Flipkart"
+      className="h-12 p-1 bg-white rounded-2xl hover:opacity-100 transition"
+    />
+  
+  </div>
+</div>
+
+        {/* Bottom */}
         <div className="border-t border-background/20 pt-6 text-center text-sm opacity-70">
           <p>
             © 2025 BAMUSO Ayurveda. All rights reserved. <br />

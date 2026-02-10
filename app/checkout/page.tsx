@@ -73,7 +73,7 @@ Please confirm.
 
 
     window.open(
-      `https://wa.me/918377997202?text=${encodeURIComponent(message)}`,
+      `https://wa.me/919990359097?text=${encodeURIComponent(message)}`,
       "_blank"
     );
   };

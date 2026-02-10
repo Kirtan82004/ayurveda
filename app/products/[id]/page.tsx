@@ -267,7 +267,7 @@ const PRODUCTS = [
     rating: 4.7,
     reviews: 156,
     description: "Natural antibacterial skin treatment",
-    images: ["/images/neem-mask.webp"],
+    images: ["/images/coming.webp"],
     image: "data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22%3E%3Crect fill=%22%23F5E1A4%22 width=%22200%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fontSize=%2220%22 fill=%22%23B8860B%22 textAnchor=%22middle%22 dominantBaseline=%22middle%22%3ENeem Mask%3C/text%3E%3C/svg%3E",
     ingredients: [
       { name: "Neem Extract", function: "Antibacterial skin cleansing" },
@@ -311,7 +311,7 @@ const PRODUCTS = [
     rating: 4.8,
     reviews: 203,
     description: "Cooling and strengthening hair oil",
-    images: ["/images/brahmi-oil.webp"],
+    images: ["/images/coming.webp"],
     image: "data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22%3E%3Crect fill=%22%23F5E1A4%22 width=%22200%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fontSize=%2220%22 fill=%22%23B8860B%22 textAnchor=%22middle%22 dominantBaseline=%22middle%22%3EBrahmi Oil%3C/text%3E%3C/svg%3E",
     ingredients: [
       { name: "Brahmi", function: "Hair strengthening" },
@@ -361,7 +361,7 @@ export default function ProductDetailPage() {
       name: product.name,
       price: product.price,
       quantity,
-      image: product.images[0] || product.image,
+      image: product?.images[0],
       priceNumber,
     });
 
