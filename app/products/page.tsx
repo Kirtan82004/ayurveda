@@ -10,15 +10,6 @@ import { useCart } from '@/app/cart-context';
 const PRODUCTS = [
   {
     id: 1,
-    name: 'BMS Super X Oil',
-    category: 'Male Wellness',
-    MRP: '₹999',
-    price: '₹699',
-    description: "Best Massage Oil for men, strength, vitality aur nourishment support. ",
-    image: '/images/oil1.webp'
-  },
-  {
-    id: 2,
     name: "BMS Super X Capsule",
     category: "Male Wellness",
     MRP: '₹1999',
@@ -26,6 +17,16 @@ const PRODUCTS = [
     description: 'Boosts vitality, stamina & physical strength',
     image: '/images/capsule1.webp'
   },
+  {
+    id: 2,
+    name: 'BMS Super X Oil',
+    category: 'Male Wellness',
+    MRP: '₹999',
+    price: '₹699',
+    description: "Best Massage Oil for men, strength, vitality aur nourishment support. ",
+    image: '/images/oil1.webp'
+  },
+  
   {
     id: 3,
     name: 'Neem Face Mask',

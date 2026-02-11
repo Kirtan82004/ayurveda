@@ -10,7 +10,7 @@ import { useCart } from '@/app/cart-context';
 
 const PRODUCTS = [
   {
-    id: 1,
+    id: 2,
     name: 'BMS Super X Oil',
     category: 'Male Wellness',
     MRP: '₹999',
@@ -128,7 +128,7 @@ const PRODUCTS = [
     ]
   },
   {
-  id: 2,
+  id: 1,
   name: "BMS Super X Capsule",
   category: "Male Wellness",
   MRP: '₹1999',

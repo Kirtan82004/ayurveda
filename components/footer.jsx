@@ -92,29 +92,37 @@ export default function Footer() {
           </div>
         </div>
         {/* Marketplace */}
-<div className="flex flex-col items-center justify-center mt-6">
-  <p className="text-sm opacity-70 mb-3">Available on</p>
+<div className="flex flex-col items-center justify-center mt-8">
+  <p className="text-sm opacity-70 mb-4 text-center">
+    Available on
+  </p>
 
-  <div className="flex gap-6 items-center">
+  <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
     <img
       src="/icons/amazon.png"
       alt="Amazon"
-      className="h-12 p-1 bg-white rounded-2xl hover:opacity-100 transition"
-    /> 
+      className="h-10 sm:h-12 md:h-14 p-2 bg-white rounded-2xl shadow-sm hover:scale-105 transition"
+    />
 
     <img
       src="/icons/flipkart.jpg"
       alt="Flipkart"
-      className="h-12 p-1 bg-white rounded-2xl hover:opacity-100 transition"
+      className="h-10 sm:h-12 md:h-14 p-2 bg-white rounded-2xl shadow-sm hover:scale-105 transition"
     />
-     <img
+
+    <img
       src="/icons/tata.png"
-      alt="Flipkart"
-      className="h-12 p-1 bg-white rounded-2xl hover:opacity-100 transition"
+      alt="Tata"
+      className="h-10 sm:h-12 md:h-14 p-2 bg-white rounded-2xl shadow-sm hover:scale-105 transition"
     />
-  
+    <img
+      src="/icons/Meesho.png"
+      alt="Meesho"
+      className="h-10 sm:h-12 md:h-14 p-2 bg-white rounded-2xl shadow-sm hover:scale-105 transition"
+    />
   </div>
 </div>
+
 
         {/* Bottom */}
         <div className="border-t border-background/20 pt-6 text-center text-sm opacity-70">
