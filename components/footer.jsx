@@ -107,6 +107,11 @@ export default function Footer() {
       alt="Flipkart"
       className="h-12 p-1 bg-white rounded-2xl hover:opacity-100 transition"
     />
+     <img
+      src="/icons/tata.png"
+      alt="Flipkart"
+      className="h-12 p-1 bg-white rounded-2xl hover:opacity-100 transition"
+    />
   
   </div>
 </div>

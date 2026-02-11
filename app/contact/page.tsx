@@ -197,6 +197,62 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+      {/* Support Message Section */}
+<section className="py-20 px-4 sm:px-6 lg:px-8">
+  <div className="max-w-4xl mx-auto">
+    <Card className="p-10 border border-border shadow-sm">
+      <h2 className="text-3xl font-serif font-bold mb-6 text-center">
+        We’re Always Here For You
+      </h2>
+
+      <p className="text-foreground/80 leading-relaxed mb-6 text-center">
+        Hum aapki har query, complaint, order support aur Ayurvedic guidance ke
+        liye hamesha uplabdh hain. Aapki health, trust aur satisfaction —
+        yahi hamari sabse badi priority hai.
+      </p>
+
+      <p className="text-foreground/80 leading-relaxed mb-6 text-center">
+        Bamuso Ayurveda mein hum sirf products nahi bechte, hum aapke behtar
+        swasthya ki yatra mein aapke saathi hain.
+      </p>
+
+      <p className="text-foreground/80 leading-relaxed mb-8 text-center">
+        Chahe aapko product ke baare mein jaankari chahiye, order se judi madad,
+        ya Ayurvedic wellness guidance — hamari team aapki sahayata ke liye
+        taiyar hai.
+      </p>
+
+      {/* Why Contact */}
+      <div className="bg-secondary rounded-xl p-6 mb-8">
+        <h3 className="text-xl font-serif font-bold mb-4 text-center">
+          Why Contact Bamuso Ayurveda?
+        </h3>
+
+        <div className="grid sm:grid-cols-2 gap-3 text-foreground/80">
+          <p>✔ Genuine Ayurvedic Guidance</p>
+          <p>✔ Fast Order Support</p>
+          <p>✔ Customer Satisfaction First</p>
+          <p>✔ Safe & Trusted Wellness Products</p>
+        </div>
+      </div>
+
+      {/* Hindi Trust Message */}
+      <div className="text-center">
+        <h3 className="text-xl font-serif font-bold mb-4">
+          Your Health Matters to Us
+        </h3>
+
+        <p className="text-foreground/80 leading-relaxed">
+          हम सुरक्षित, प्राकृतिक और असरदार Ayurvedic solutions देने के लिए
+          प्रतिबद्ध हैं। हम मानते हैं कि सही मार्गदर्शन और शुद्ध Ayurvedic
+          समाधान से हर व्यक्ति बेहतर, संतुलित और ऊर्जावान जीवन जी सकता है।
+          इसी विश्वास के साथ हम हर ग्राहक की सहायता करते हैं।
+        </p>
+      </div>
+    </Card>
+  </div>
+</section>
+
       {/* Map Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-secondary">
         <div className="max-w-7xl mx-auto">
