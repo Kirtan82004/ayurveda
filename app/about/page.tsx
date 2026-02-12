@@ -28,8 +28,10 @@ export default function AboutPage() {
             <Link href="/" className="text-primary hover:text-primary/80 transition">
               <ArrowLeft className="w-5 h-5" />
             </Link>
-            <h1 className="text-4xl font-serif font-bold">About BAMUSO Ayurveda</h1>
+            <p className="text-4xl font-serif font-bold">About Us</p>
+            
           </div>
+          <h1 className="text-4xl font-serif font-bold">BAMUSO Ayurveda</h1>
           <p className="text-lg text-foreground/70 max-w-2xl">Inspired by Nature, Powered by Trust</p>
         </div>
       </section>
@@ -39,7 +41,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <div>
-              <h2 className="text-3xl font-serif font-bold mb-6 text-foreground">Our Story</h2>
+              <h2 className="text-3xl font-serif font-bold mb-6 text-foreground">Our Story—<span className='font-light text-xl'>The Soul Behind BAMUSO Ayurveda</span></h2>
               <p className="text-lg text-foreground/80 mb-4 leading-relaxed">
                 BAMUSO Ayurveda is not just a brand — it is a legacy.
                 The blessings, experience, and trust of three generations form the foundation of BAMUSO.
@@ -58,110 +60,102 @@ export default function AboutPage() {
             <div className="flex justify-center">
               <div className="w-full h-96 bg-accent rounded-lg flex items-center justify-center">
                 <img
-                    src={img.src}
-                    alt={img.alt}
-                    className="w-full h-full object-cover rounded-xl"
-                  />
+                  src={img.src}
+                  alt={img.alt}
+                  className="w-full h-full object-cover rounded-xl"
+                />
               </div>
             </div>
           </div>
         </div>
       </section>
       {/* Mission */}
-<section className="py-16 px-4 sm:px-6 lg:px-8">
-  <div className="max-w-6xl mx-auto text-center">
-    <h2 className="text-3xl font-serif font-bold mb-8">
-      Our Mission
-    </h2>
+      <section className="py-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto text-center">
+          <h2 className="text-3xl font-serif font-bold mb-8">
+            Our Mission
+          </h2>
 
-    <p className="text-lg text-foreground/80 mb-6">
-      BAMUSO का मिशन है प्रकृति और आधुनिक विज्ञान को मिलाकर
-      ऐसा Ayurvedic health solution देना जो
-      प्राकृतिक, वैज्ञानिक, सुरक्षित और असरदार हो।
-    </p>
+          <p className="text-lg text-foreground/80 mb-6">
+            BAMUSO का मिशन है प्रकृति और आधुनिक विज्ञान को मिलाकर
+            ऐसा Ayurvedic health solution देना जो
+            प्राकृतिक, वैज्ञानिक, सुरक्षित और असरदार हो।
+          </p>
 
-    <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-      {[
-        "100% Natural",
-        "Scientifically Tested",
-        "Daily Safe",
-        "Real Results",
-      ].map((item, i) => (
-        <Card key={i} className="p-6 font-semibold">
-          {item}
-        </Card>
-      ))}
-    </div>
-  </div>
-</section>
-{/* Why BAMUSO is Different */}
-<section className="py-16 px-4 sm:px-6 lg:px-8 bg-secondary">
-  <div className="max-w-6xl mx-auto">
-    <h2 className="text-3xl font-serif font-bold mb-12 text-center">
-      Why BAMUSO is Different?
-    </h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              "100% Natural",
+              "Scientifically Tested",
+              "Daily Safe",
+              "Real Results",
+            ].map((item, i) => (
+              <Card key={i} className="p-6 font-semibold">
+                {item}
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+      {/* Why BAMUSO is Different */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-secondary">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl font-serif font-bold mb-12 text-center">
+            Why BAMUSO is Different?
+          </h2>
 
-    <ul className="grid md:grid-cols-2 gap-6 text-lg text-foreground/80">
-      <li>✔ 100% Pure & Natural Herbs</li>
-      <li>✔ GMP Certified | AYUSH Approved | ISO Standard</li>
-      <li>✔ Every Batch Scientifically Tested</li>
-      <li>✔ Chemical-Free, Paraben-Free, Cruelty-Free</li>
-      <li>✔ Made in India | Made for Everyone</li>
-    </ul>
-  </div>
-</section>
-{/* What We Offer */}
-<section className="py-16 px-4 sm:px-6 lg:px-8">
-  <div className="max-w-7xl mx-auto text-center">
-    <h2 className="text-3xl font-serif font-bold mb-12">
-      What We Offer
-    </h2>
+          <ul className="grid md:grid-cols-2 gap-6 text-lg text-foreground/80">
+            <li>✔ 100% Pure & Natural Herbs</li>
+            <li>✔ GMP Certified | AYUSH Approved | ISO Standard</li>
+            <li>✔ Every Batch Scientifically Tested</li>
+            <li>✔ Chemical-Free, Paraben-Free, Cruelty-Free</li>
+            <li>✔ Made in India | Made for Everyone</li>
+          </ul>
+        </div>
+      </section>
+      {/* What We Offer */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto text-center">
+          <h2 className="text-3xl font-serif font-bold mb-12">
+            What We Offer
+          </h2>
 
-    <p className="text-foreground/70 mb-10">
-      BAMUSO Ayurveda 7+ major health categories में 50+ Ayurvedic solutions प्रदान करता है
-    </p>
+          <p className="text-foreground/70 mb-10">
+            BAMUSO Ayurveda 7+ major health categories में 50+ Ayurvedic solutions प्रदान करता है
+          </p>
 
-    <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      {[
-        "Male Wellness",
-        "Women Wellness",
-        "Immunity Boosters",
-        "Weight Loss & Digestion",
-        "Beauty & Skin Care",
-        "Mind & Sleep Health",
-        "Special Condition Remedies",
-      ].map((cat, i) => (
-        <Card key={i} className="p-6 font-semibold">
-          {cat}
-        </Card>
-      ))}
-    </div>
-  </div>
-</section>
-{/* Vision */}
-<section className="py-16 px-4 sm:px-6 lg:px-8 bg-secondary">
-  <div className="max-w-5xl mx-auto text-center">
-    <h2 className="text-3xl font-serif font-bold mb-6">
-      The Vision Ahead
-    </h2>
-
-    <p className="text-lg text-foreground/80">
-      हमारा सपना है कि Ayurveda हर घर तक पहुँचे और
-      हर परिवार को प्राकृतिक, सुरक्षित और भरोसेमंद
-      स्वास्थ्य समाधान मिले।
-    </p>
-  </div>
-</section>
-
-
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              "Male Wellness",
+              "Women Wellness",
+              "Immunity Boosters",
+              "Weight Loss & Digestion",
+              "Beauty & Skin Care",
+              "Mind & Sleep Health",
+              "Special Condition Remedies",
+            ].map((cat, i) => (
+              <Card key={i} className="p-6 font-semibold">
+                {cat}
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
       {/* Ayurveda Philosophy */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-secondary">
+        <div className="max-w-5xl mb-4 mx-auto text-center">
+          <h2 className="text-3xl font-serif font-bold mb-6">
+            The Vision Ahead
+          </h2>
+          <p className="text-lg text-foreground/80">
+           Our dream is to bring Ayurveda to every home and ensure that every family receives natural, safe, and trustworthy health solutions.
+          </p>
+        </div>
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-serif font-bold text-center mb-12 text-foreground">
+          <h2 className="text-3xl font-serif font-bold text-center mb-3 text-foreground">
             Understanding Ayurveda
           </h2>
           <div className="prose prose-invert max-w-none mb-12">
-            <p className="text-lg text-foreground/80 leading-relaxed mb-6">
+            <p className="text-lg text-foreground/80 leading-relaxed">
               Ayurveda, meaning "the science of life" in Sanskrit, is an ancient Indian system of medicine dating back over 5,000 years. It emphasizes balance and harmony between the mind, body, and spirit through natural remedies and lifestyle practices.
             </p>
             <p className="text-lg text-foreground/80 leading-relaxed mb-6">
