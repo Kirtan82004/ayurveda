@@ -27,7 +27,7 @@ const TESTIMONIALS = [
 export default function BlogPage() {
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-secondary border-b border-border">
+      <section className="pt-10 pb-5 px-4 sm:px-6 lg:px-8 bg-secondary border-b border-border">
         <div className="max-w-7xl mx-auto">
           <div className="flex items-center gap-4 mb-6">
             <Link href="/" className="text-primary hover:text-primary/80 transition">
@@ -35,35 +35,22 @@ export default function BlogPage() {
             </Link>
             <h1 className="text-4xl font-serif font-bold">Health Tips & Blog</h1>
           </div>
-          <p className="text-lg text-foreground/70 max-w-2xl">
+          <p className="text-lg text-foreground/70 ">
             Ayurveda is not just a treatment, it’s a lifestyle. Discover tips, remedies,
             and wellness guidance to stay healthy, energetic, and balanced.
           </p>
-        </div>
-      </section>
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-3xl font-serif font-bold mb-4">
-            Ayurveda Health Tips & Wellness Blog
-          </h2>
-          <p className="text-foreground/80 leading-relaxed">
-            Ayurveda सिर्फ इलाज नहीं — एक जीवनशैली है।
-            हमारा उद्देश्य है हर व्यक्ति तक सुरक्षित, सरल और असरदार प्राकृतिक
-            wellness knowledge पहुँचाना।
+          <p className="text-lg text-foreground/70 ">
+            Ayurveda is not just a treatment — it is a way of life. Our aim is to deliver safe, simple, and effective natural wellness knowledge to every individual.
           </p>
-
-          <div className="mt-6 text-sm text-foreground/70">
-            ✔ Daily Ayurvedic Health Tips &nbsp; ✔ Herbal Home Remedies &nbsp; ✔ Diet & Lifestyle Guidance
-            ✔ Immunity, Digestion & Weight Management &nbsp; ✔ Skin–Hair Natural Care
-          </div>
         </div>
       </section>
 
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
+      <section className="pt-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-serif font-bold mb-10 text-center">
-            Daily Ayurvedic Health Tips
+          <h2 className="text-3xl font-serif font-bold text-center">
+             What You’ll Find in Our Health Tips & Blog
           </h2>
+          <span className="text-foreground/80 text-center mb-10 block">  In this blog section, we share carefully curated Ayurvedic knowledge and wellness insights to support your healthy lifestyle. We regularly bring you:</span>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {BLOG_TIPS.map((tip, index) => (
@@ -82,7 +69,17 @@ export default function BlogPage() {
           </div>
         </div>
       </section>
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
+       <section className="max-w-6xl mx-auto py-5 px-4 sm:px-6 lg:px-8">
+        <Card className="p-6 border border-border bg-background">
+          <h2 className="text-2xl font-serif font-bold">
+            Disclaimer
+          </h2>
+          <p className="text-foreground/80 leading-relaxed">
+        The information shared in this blog is for educational and general wellness purposes only. It is not intended to replace professional medical advice, diagnosis, or treatment
+        </p>
+        </Card>
+      </section>
+      <section className="py-10 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-serif font-bold mb-4">
             Guest Posts & Collaborations
