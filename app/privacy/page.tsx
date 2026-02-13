@@ -12,7 +12,7 @@ export default function PrivacyPage() {
 
       {/* Content */}
       <section className="py-12 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           <div className="flex items-center gap-4 mb-8">
             <Link href="/" className="text-primary hover:text-primary/80 transition">
               <ArrowLeft className="w-5 h-5" />

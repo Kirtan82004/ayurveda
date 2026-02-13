@@ -10,7 +10,7 @@ export default function LegalDisclaimerPage() {
     <div className="min-h-screen bg-background text-foreground">
 
       <section className="py-12 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           {/* Header */}
           <div className="flex items-center gap-4 mb-8">
             <Link href="/" className="text-primary hover:text-primary/80 transition">

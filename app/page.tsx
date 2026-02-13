@@ -35,7 +35,7 @@ const FEATURED_PRODUCTS = [
     description: "Best Massage Oil for men, strength, vitality aur nourishment support. ",
     image: '/images/oil1.webp'
   },
-  
+
   {
     id: 3,
     name: 'Neem Face Mask',
@@ -263,26 +263,26 @@ export default function Home() {
         </div>
       </section>
       {/* Brand Intro Section */}
-<section className="py-16 px-4 sm:px-6 lg:px-8">
-  <div className="max-w-4xl mx-auto text-center">
-    <h2 className="text-3xl font-serif font-bold mb-6 text-foreground">
-      Welcome to BAMUSO Ayurveda
-    </h2>
+      <section className="py-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl font-serif font-bold mb-6 text-foreground">
+            Welcome to BAMUSO Ayurveda
+          </h2>
 
-    <p className="text-lg text-foreground/80 leading-relaxed">
-      India’s ancient Ayurvedic tradition and the perfect blend of modern science.
-    </p>
+          <p className="text-lg text-foreground/80 leading-relaxed">
+            India’s ancient Ayurvedic tradition and the perfect blend of modern science.
+          </p>
 
-    <p className="text-lg text-foreground/80 leading-relaxed">
-      Our goal is — to deliver true, safe, and effective Ayurveda to every home.
-    </p>
+          <p className="text-lg text-foreground/80 leading-relaxed">
+            Our goal is — to deliver true, safe, and effective Ayurveda to every home.
+          </p>
 
-    <p className="text-lg text-foreground/80 leading-relaxed">
-      At BAMUSO, we don’t just make products…
-      We initiate a new journey of health, balance, and life energy.
-    </p>
-  </div>
-</section>
+          <p className="text-lg text-foreground/80 leading-relaxed">
+            At BAMUSO, we don’t just make products…
+            We initiate a new journey of health, balance, and life energy.
+          </p>
+        </div>
+      </section>
 
       {/* Product Categories */}
       <section className="py-16 bg-secondary px-4 sm:px-6 lg:px-8">
@@ -315,7 +315,7 @@ export default function Home() {
 
 
       {/* Benefits Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
+      <section className="pt-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-serif font-bold text-center mb-12 text-foreground">
             Why Choose BAMUSO Ayurveda?
@@ -344,7 +344,7 @@ export default function Home() {
         </div>
       </section>
       {/* Our Promise */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
+      <section className="py-10 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-3xl font-serif font-bold mb-12">
             Our Promise to You
