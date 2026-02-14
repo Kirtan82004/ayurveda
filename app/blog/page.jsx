@@ -45,7 +45,7 @@ export default function BlogPage() {
         </div>
       </section>
 
-      <section className="pt-16 px-4 sm:px-6 lg:px-8">
+      <section className="pt-10 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-serif font-bold text-center">
              What You’ll Find in Our Health Tips & Blog
@@ -102,7 +102,7 @@ export default function BlogPage() {
       </section>
 
 
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-secondary">
+      <section className="py-10 px-4 sm:px-6 lg:px-8 bg-secondary">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-serif font-bold mb-10 text-center">
             What Our Customers Say
@@ -125,7 +125,7 @@ export default function BlogPage() {
           </div>
         </div>
       </section>
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-secondary">
+      <section className="py-5 px-4 sm:px-6 lg:px-8 bg-secondary">
         <div className="max-w-5xl mx-auto text-center">
           <h2 className="text-3xl font-serif font-bold mb-10">
             Why Customers Love BAMUSO Ayurveda
