@@ -88,6 +88,10 @@ const FAQS = [
     question: "Do you offer free consultation?",
     answer: `Yes, we provide free Ayurvedic guidance and lifestyle support. You can book consultation via our website.`,
   },
+   {
+    question: "Are results guaranteed?",
+    answer: `Our products are formulated using traditional Ayurvedic herbs known for supporting overall wellness and vitality. Results may vary from person to person depending on body type, lifestyle, and consistency of use.`,
+  },
 ];
 
 export default function FAQPage() {

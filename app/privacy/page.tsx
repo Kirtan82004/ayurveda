@@ -11,7 +11,7 @@ export default function PrivacyPage() {
     <div className="min-h-screen bg-background text-foreground">
 
       {/* Content */}
-      <section className="py-12 px-4 sm:px-6 lg:px-8">
+      <section className="py-10 px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto">
           <div className="flex items-center gap-4 mb-8">
             <Link href="/" className="text-primary hover:text-primary/80 transition">
@@ -24,7 +24,7 @@ export default function PrivacyPage() {
 
           <div className="prose prose-invert max-w-none space-y-6">
             <Card className="p-6 border border-border">
-              <h2 className="text-2xl font-serif font-bold mb-4 text-foreground">Introduction</h2>
+              <h2 className="text-2xl font-serif font-bold text-foreground">Introduction</h2>
               <p className="text-foreground/80">
                 At Bamuso Ayurveda, your privacy and trust matter to us. This Privacy Policy explains how we
                 collect, use, store, and protect your information when you visit our website www.bamuso.com or
@@ -33,7 +33,7 @@ export default function PrivacyPage() {
             </Card>
 
             <Card className="p-6 border border-border">
-              <h2 className="text-2xl font-serif font-bold mb-4 text-foreground">Information We Collect</h2>
+              <h2 className="text-2xl font-serif font-bold text-foreground">Information We Collect</h2>
               <h3 className='font-bold'>a) Personal Information </h3>
               <ul className="space-y-2 text-foreground/80">
                 <li className="flex gap-3">
@@ -41,7 +41,7 @@ export default function PrivacyPage() {
                   <span>Name, email address, phone number, Billing Address / Shipping Address </span>
                 </li>
               </ul>
-              <h3 className='font-bold mt-4'>b) Payment Information </h3>
+              <h3 className='font-bold'>b) Payment Information </h3>
               <ul className="space-y-2 text-foreground/80">
                 <li className="flex gap-3">
                   <span className="text-primary font-bold">•</span>
@@ -51,8 +51,8 @@ export default function PrivacyPage() {
             </Card>
 
             <Card className="p-6 border border-border">
-              <h2 className="text-2xl font-serif font-bold mb-4 text-foreground">How We Use Your Information</h2>
-              <p className="text-foreground/80 mb-3">We use your information responsibly and only for necessary purposes:</p>
+              <h2 className="text-2xl font-serif font-bold text-foreground">How We Use Your Information</h2>
+              <p className="text-foreground/80">We use your information responsibly and only for necessary purposes:</p>
               <ul className="space-y-2 text-foreground/80">
                 <li className="flex gap-3">
                   <span className="text-primary font-bold">•</span>
@@ -83,11 +83,11 @@ export default function PrivacyPage() {
             </Card>
 
             <Card className="p-6 border border-border">
-              <h2 className="text-2xl font-serif font-bold mb-4 text-foreground">Cookies & Tracking Technologies </h2>
-              <p className="text-foreground/80 mb-3">
+              <h2 className="text-2xl font-serif font-bold text-foreground">Cookies & Tracking Technologies </h2>
+              <p className="text-foreground/80">
                 We use cookies, web beacons, pixels, and similar tools to:
               </p>
-              <ul className="space-y-2 text-foreground/80">
+              <ul className="text-foreground/80">
                 <li className="flex gap-3">
                   <span className="text-primary font-bold">•</span>
                   <span>Remember your preferences </span>
@@ -105,13 +105,13 @@ export default function PrivacyPage() {
                   <span>Analyze website traffic & performance </span>
                 </li>
               </ul>
-              <p className="text-foreground/80 mt-3">You may disable cookies from browser settings. However, some features may not work properly
+              <p className="text-foreground/80">You may disable cookies from browser settings. However, some features may not work properly
                 without them.</p>
             </Card>
 
             <Card className="p-6 border border-border">
-              <h2 className="text-2xl font-serif font-bold mb-4 text-foreground">Data Security</h2>
-              <p className="text-foreground/80 mb-3">We take strong security measures to protect your data: </p>
+              <h2 className="text-2xl font-serif font-bold text-foreground">Data Security</h2>
+              <p className="text-foreground/80">We take strong security measures to protect your data: </p>
               <ul className="space-y-2 text-foreground/80">
                 <li className="flex gap-3">
                   <span className="text-primary font-bold">•</span>
@@ -130,12 +130,12 @@ export default function PrivacyPage() {
                   <span>Regular monitoring and updates </span>
                 </li>
               </ul>
-              <p className="text-foreground/80 mt-3">However, no online method is 100% secure. While we do our best, we cannot guarantee
+              <p className="text-foreground/80">However, no online method is 100% secure. While we do our best, we cannot guarantee
                 absolute security. </p>
             </Card>
 
             <Card className="p-6 border border-border">
-              <h2 className="text-2xl font-serif font-bold mb-4 text-foreground">Third-Party Partners </h2>
+              <h2 className="text-2xl font-serif font-bold text-foreground">Third-Party Partners </h2>
               <p className="text-foreground/80 mb-3">We may work with trusted third-party platforms such as: </p>
               <ul className="space-y-2 text-foreground/80">
                 <li className="flex gap-3">
@@ -155,12 +155,12 @@ export default function PrivacyPage() {
                   <span>Analytics tools</span>
                 </li>
               </ul>
-              <p className="text-foreground/80 mt-3">They may use cookies or collect limited information to provide seamless services.
+              <p className="text-foreground/80">They may use cookies or collect limited information to provide seamless services.
                 Please refer to their respective privacy policies for more details.  </p>
             </Card>
             <Card className="p-6 border border-border">
-              <h2 className="text-2xl font-serif font-bold mb-4 text-foreground">Your Privacy Rights  </h2>
-              <p className="text-foreground/80 mb-3">Depending on your location and applicable laws, you may request to:  </p>
+              <h2 className="text-2xl font-serif font-bold text-foreground">Your Privacy Rights  </h2>
+              <p className="text-foreground/80">Depending on your location and applicable laws, you may request to:  </p>
               <ul className="space-y-2 text-foreground/80">
                 <li className="flex gap-3">
                   <span className="text-primary font-bold">•</span>
@@ -183,12 +183,12 @@ export default function PrivacyPage() {
                   <span>Withdraw consent for promotional messages </span>
                 </li>
               </ul>
-              <p className="text-foreground/80 mt-3">To exercise these rights, email us at:
+              <p className="text-foreground/80">To exercise these rights, email us at:
                 <a href="mailto:support@bamuso.com" className="text-primary hover:underline"> support@bamuso.com</a>   </p>
             </Card>
 
             <Card className="p-6 border border-border">
-              <h2 className="text-2xl font-serif font-bold mb-4 text-foreground"> Data Retention </h2>
+              <h2 className="text-2xl font-serif font-bold text-foreground"> Data Retention </h2>
               <p className="text-foreground/80">
                 We retain your information only as long as required:
               </p>
@@ -210,7 +210,7 @@ export default function PrivacyPage() {
             </Card>
 
             <Card className="p-6 border border-border">
-              <h2 className="text-2xl font-serif font-bold mb-4 text-foreground">Third-Party Links</h2>
+              <h2 className="text-2xl font-serif font-bold text-foreground">Third-Party Links</h2>
               <p className="text-foreground/80">
               Our website may contain links to third-party services (payment gateways, social media, blogs, etc.). 
               </p>
@@ -222,7 +222,7 @@ export default function PrivacyPage() {
               
             </Card>
             <Card className="p-6 border border-border">
-              <h2 className="text-2xl font-serif font-bold mb-4 text-foreground">Children’s Privacy</h2>
+              <h2 className="text-2xl font-serif font-bold text-foreground">Children’s Privacy</h2>
               <p className="text-foreground/80">
                 We do not knowingly collect or store information from individuals under 18 years of age.
                 If you believe a minor has shared data with us, please contact us immediately so we can delete
@@ -231,7 +231,7 @@ export default function PrivacyPage() {
             </Card>
 
             <Card className="p-6 border border-border">
-              <h2 className="text-2xl font-serif font-bold mb-4 text-foreground">Updates to This Policy</h2>
+              <h2 className="text-2xl font-serif font-bold text-foreground">Updates to This Policy</h2>
               <p className="text-foreground/80">
                 We may update this Privacy Policy occasionally to reflect changes in laws, technology, or our
                 practices.
@@ -241,15 +241,15 @@ export default function PrivacyPage() {
             </Card>
 
             <Card className="p-6 border border-border">
-              <h2 className="text-2xl font-serif font-bold mb-4 text-foreground">Contact Us</h2>
-              <p className="text-foreground/80 mb-4">
+              <h2 className="text-2xl font-serif font-bold text-foreground">Contact Us</h2>
+              <p className="text-foreground/80">
                 If you have questions about this Privacy Policy or how we handle your personal data, please contact us:
               </p>
               <div className="space-y-2 text-foreground/80">
                 <p><Mail className="w-4 h-4 inline mr-2" /> support@bamuso.com</p>
                 <p><strong>WhatsApp:</strong> +91 98765 43210</p>
               </div>
-              <Button asChild className="mt-4 bg-primary hover:bg-primary/90">
+              <Button asChild className="bg-primary hover:bg-primary/90">
                 <a href="https://wa.me/918377997202" target="_blank" rel="noopener noreferrer">
                   <MessageCircle className="w-4 h-4 mr-2" />
                   Contact Us

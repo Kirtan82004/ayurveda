@@ -18,7 +18,7 @@ export default function TermsPage() {
 
           <p className="text-foreground/70 mb-8">Last Updated: January 2025</p>
 
-        <Card className="p-8 space-y-6 border border-border">
+        <Card className="p-8 border border-border">
           <p className="text-lg text-foreground/80 leading-relaxed">
             Welcome to Bamuso Ayurveda. By accessing or using our website <a href="https://www.bamuso.com" className="text-primary underline">www.bamuso.com</a> and 
 purchasing our Ayurvedic products, you agree to the terms mentioned below. Please read them 
@@ -148,7 +148,7 @@ only if:
             </div>
           </div>
 
-          <p className="text-foreground/70 mt-4">
+          <p className="text-foreground/70">
             Bamuso Ayurveda – Inspired by Nature, Powered by Trust. Thank you for choosing Bamuso Ayurveda. We are committed to delivering safe, effective, and authentic Ayurvedic wellness solutions.
           </p>
         </Card>
