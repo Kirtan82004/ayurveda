@@ -37,7 +37,7 @@ export default function AboutPage() {
       </section>
 
       {/* Brand Story */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
+      <section className="py-10 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <div>
@@ -70,7 +70,7 @@ export default function AboutPage() {
         </div>
       </section>
       {/* Mission */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
+      <section className="pb-10 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-3xl font-serif font-bold mb-8">
             Our Mission
@@ -97,7 +97,7 @@ export default function AboutPage() {
         </div>
       </section>
       {/* Why BAMUSO is Different */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-secondary">
+      <section className="py-10 px-4 sm:px-6 lg:px-8 bg-secondary">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-serif font-bold mb-12 text-center">
             Why BAMUSO is Different?
@@ -113,7 +113,7 @@ export default function AboutPage() {
         </div>
       </section>
       {/* What We Offer */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
+      <section className="py-10 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-3xl font-serif font-bold mb-12">
             What We Offer
@@ -141,7 +141,7 @@ export default function AboutPage() {
         </div>
       </section>
       {/* Ayurveda Philosophy */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-secondary">
+      <section className="py-10 px-4 sm:px-6 lg:px-8 bg-secondary">
         <div className="max-w-5xl mb-4 mx-auto text-center">
           <h2 className="text-3xl font-serif font-bold mb-6">
             The Vision Ahead
@@ -187,7 +187,7 @@ export default function AboutPage() {
       </section>
 
       {/* Our Values */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
+      <section className="py-10 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-serif font-bold text-center mb-12 text-foreground">
             Our Core Values
@@ -218,7 +218,7 @@ export default function AboutPage() {
       </section>
 
       {/* Certifications */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-secondary">
+      <section className="py-10 px-4 sm:px-6 lg:px-8 bg-secondary">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-serif font-bold text-center mb-12 text-foreground">
             Trust, Safety & Certifications
@@ -262,7 +262,7 @@ export default function AboutPage() {
 
 
       {/* Why Choose Us */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
+      <section className="py-10 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-serif font-bold text-center mb-12 text-foreground">
             Why Choose BAMUSO Ayurveda?
@@ -282,7 +282,7 @@ export default function AboutPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-primary text-accent-foreground">
+      <section className="py-10 px-4 sm:px-6 lg:px-8 bg-primary text-accent-foreground">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl sm:text-4xl font-serif font-bold mb-4">
             Start Your Wellness Journey Today

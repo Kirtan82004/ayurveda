@@ -124,7 +124,7 @@ export default function FAQPage() {
           ))}
         </Accordion>
 
-        <div className="mt-16 text-center">
+        <div className="mt-10 text-center">
           <p className="mb-2">Still Have Questions?</p>
           <p className="text-foreground/70">
             Reach us anytime at:

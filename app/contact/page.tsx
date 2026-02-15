@@ -11,7 +11,7 @@ export default function ContactPage() {
     <div className="min-h-screen bg-background text-foreground">
 
       {/* Header */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-secondary border-b border-border">
+      <section className="py-10 px-4 sm:px-6 lg:px-8 bg-secondary border-b border-border">
         <div className="max-w-7xl mx-auto">
           <div className="flex items-center gap-4 mb-6">
             <Link href="/" className="text-primary hover:text-primary/80 transition">
@@ -20,7 +20,7 @@ export default function ContactPage() {
             <h1 className="text-4xl font-serif font-bold">Contact Us</h1>
           </div>
           {/* Support Message Section */}
-          <section className="py-20 px-4 sm:px-6 lg:px-8">
+          <section className="py-10 px-4 sm:px-6 lg:px-8">
             <div className="max-w-5xl mx-auto">
               <Card className="p-10 border border-border shadow-sm">
                 <h2 className="text-3xl font-serif font-bold text-center">
@@ -73,7 +73,7 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Content */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
+      <section className="py-10 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8 mb-16">
             {/* Direct Contact Card */}
@@ -182,7 +182,7 @@ export default function ContactPage() {
       </section>
 
       {/* Newsletter Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-secondary">
+      <section className="py-10 px-4 sm:px-6 lg:px-8 bg-secondary">
         <div className="max-w-2xl mx-auto">
           <Card className="p-12 border border-border text-center">
             <h2 className="text-2xl font-serif font-bold mb-3 text-foreground">
@@ -202,7 +202,7 @@ export default function ContactPage() {
       </section>
 
       {/* Social Proof */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
+      <section className="py-10 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-serif font-bold text-center mb-12 text-foreground">
             What Our Customers Say
@@ -246,7 +246,7 @@ export default function ContactPage() {
 
 
       {/* Map Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-secondary">
+      <section className="py-10 px-4 sm:px-6 lg:px-8 bg-secondary">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-2xl font-serif font-bold mb-8 text-center">
             Find Us on Map
@@ -264,7 +264,7 @@ export default function ContactPage() {
       </section>
 
       {/* Social Media Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-secondary">
+      <section className="pb-10 px-4 sm:px-6 lg:px-8 bg-secondary">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-serif font-bold mb-4 text-foreground">
             Connect With Us

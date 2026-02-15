@@ -148,7 +148,7 @@ export default function BlogPage() {
           </div>
         </div>
       </section>
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-primary text-accent-foreground">
+      <section className="py-10 px-4 sm:px-6 lg:px-8 bg-primary text-accent-foreground">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl font-serif font-bold mb-4">
             Join Our Wellness Community
