@@ -136,7 +136,7 @@ export default function PrivacyPage() {
 
             <Card className="p-6 border border-border">
               <h2 className="text-2xl font-serif font-bold text-foreground">Third-Party Partners </h2>
-              <p className="text-foreground/80 mb-3">We may work with trusted third-party platforms such as: </p>
+              <p className="text-foreground/80">We may work with trusted third-party platforms such as: </p>
               <ul className="space-y-2 text-foreground/80">
                 <li className="flex gap-3">
                   <span className="text-primary font-bold">•</span>
@@ -239,7 +239,14 @@ export default function PrivacyPage() {
                 We encourage you to review this page regularly.
               </p>
             </Card>
+             <Card className="p-6 border border-border">
+              <h2 className="text-2xl font-serif font-bold text-foreground">Bamuso Ayurveda – Inspired by Nature, Powered by Trust</h2>
 
+              <p className="text-foreground/80">
+                Thank you for trusting Bamuso Ayurveda.
+                Your wellness, safety, and satisfaction are always our priority.
+              </p>
+            </Card>
             <Card className="p-6 border border-border">
               <h2 className="text-2xl font-serif font-bold text-foreground">Contact Us</h2>
               <p className="text-foreground/80">
@@ -247,15 +254,16 @@ export default function PrivacyPage() {
               </p>
               <div className="space-y-2 text-foreground/80">
                 <p><Mail className="w-4 h-4 inline mr-2" /> support@bamuso.com</p>
-                <p><strong>WhatsApp:</strong> +91 98765 43210</p>
+                <p><strong>WhatsApp:</strong> +91 99903 59097</p>
               </div>
               <Button asChild className="bg-primary hover:bg-primary/90">
-                <a href="https://wa.me/918377997202" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/919990359097" target="_blank" rel="noopener noreferrer">
                   <MessageCircle className="w-4 h-4 mr-2" />
                   Contact Us
                 </a>
               </Button>
             </Card>
+
           </div>
         </div>
       </section>
