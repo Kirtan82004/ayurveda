@@ -54,12 +54,16 @@ const FEATURED_PRODUCTS = [
   },
 ];
 const HERO_IMAGES = [
-  {
-    src: "/images/ayurveda-1.webp",
-    alt: "Ayurvedic Herbs",
+   {
+    src: "/images/1.webp",
+    alt: "Ayurvedic Wellness",
   },
-  {
-    src: "/images/ayurveda-2.webp",
+   {
+    src: "/images/2.webp",
+    alt: "Ayurvedic Wellness",
+  },
+   {
+    src: "/images/3.jpeg",
     alt: "Ayurvedic Wellness",
   }
 ];
@@ -127,6 +131,7 @@ export default function Home() {
                   <div className="absolute inset-0 " />
 
                   {/* Hero Content */}
+        
                   <div className="absolute inset-0 flex items-center justify-center z-10 px-4">
                     <div className="max-w-3xl text-center rounded-2xl p-6 sm:p-10">
 
