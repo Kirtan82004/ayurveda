@@ -55,15 +55,15 @@ const FEATURED_PRODUCTS = [
 ];
 const HERO_IMAGES = [
    {
-    src: "/images/1.webp",
+    src: "/images/1.png",
     alt: "Ayurvedic Wellness",
   },
    {
-    src: "/images/2.webp",
+    src: "/images/2.png",
     alt: "Ayurvedic Wellness",
   },
    {
-    src: "/images/3.jpeg",
+    src: "/images/3.png",
     alt: "Ayurvedic Wellness",
   }
 ];
