@@ -250,7 +250,7 @@ export default function Home() {
                       <Link href={`/products/${product.id}`}>View</Link>
                     </Button>
                     <Button variant="outline" size="sm" className="flex-1 bg-transparent" asChild>
-                      <a href={`https://wa.me/918377997202?text=I'm interested in ${product.name}`} target="_blank" rel="noopener noreferrer">
+                      <a href={`https://wa.me/919990359097?text=I'm interested in ${product.name}`} target="_blank" rel="noopener noreferrer">
                         Order
                       </a>
                     </Button>
