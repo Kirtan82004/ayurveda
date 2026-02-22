@@ -115,11 +115,14 @@ export default function Footer() {
       alt="Tata"
       className="h-10 sm:h-12 md:h-14 p-2 bg-white rounded-2xl shadow-sm hover:scale-105 transition"
     />
-    <img
+    <a href="https://www.meesho.com/Bamusovermaprintingsolution?_ms=3.0.1" target="_blank">
+      <img
       src="/icons/Meesho.png"
       alt="Meesho"
       className="h-10 sm:h-12 md:h-14 p-2 bg-white rounded-2xl shadow-sm hover:scale-105 transition"
     />
+    </a>
+
   </div>
 </div>
 

@@ -6,13 +6,60 @@ import { Card } from '@/components/ui/card';
 import { ArrowLeft, MessageCircle } from 'lucide-react';
 
 const BLOG_TIPS = [
-  { title: 'Morning Rituals', description: 'Dinacharya routines for a balanced start.' },
-  { title: 'Immunity Boosters', description: 'Powerful herbs & practices to strengthen immunity.' },
-  { title: 'Natural Detox Tips', description: 'Ayurvedic ways to cleanse your body naturally.' },
-  { title: 'Weight Loss Ayurveda', description: 'Holistic methods for healthy weight management.' },
-  { title: 'Mind & Mental Wellness', description: 'Stress-free mind & better sleep practices.' },
-  { title: 'Skin & Hair Ayurvedic Care', description: 'Natural remedies for glow & hair strength.' },
-  { title: 'Food & Diet Recommendations', description: 'Seasonal Ayurvedic diet guidance.' },
+  {
+    title: 'Customer Reviews, Experiences & Testimonials',
+    description:
+      'Real customer experiences, authentic testimonials, and honest feedback about BAMUSO Ayurveda products to help you understand real user insights and wellness journeys.',
+    link: 'https://www.youtube.com/playlist?list=PL8ONJ3g-KkhcXwvq9f8BiBepTfa5FxP3n',
+  },
+  {
+    title: 'Ayurvedic Daily Routine & Lifestyle',
+    description:
+      'Discover traditional Ayurvedic daily routines, morning rituals, and healthy lifestyle practices that help support natural balance, energy, and overall wellness.',
+    link: 'https://www.youtube.com/playlist?list=PL8ONJ3g-KkhcexR8s1XPu371dZzB07m89',
+  },
+  {
+    title: 'Immunity, Digestion & Internal Wellness',
+    description:
+      'Learn Ayurvedic approaches that support natural immunity, healthy digestion, gut balance, and internal body wellness through herbs, diet, and lifestyle guidance.',
+    link: 'https://www.youtube.com/playlist?list=PL8ONJ3g-KkhcquOrdVW-aVfKpjNW5_eGy',
+  },
+  {
+    title: 'Healthy Weight Management & Body Balance',
+    description:
+      'Explore natural Ayurvedic guidance for maintaining healthy weight, improving metabolism, and supporting overall body balance through sustainable wellness practices.',
+    link: 'https://www.youtube.com/playlist?list=PL8ONJ3g-KkhcmYWNoMKYE0fs_vCH-JxQ5',
+  },
+  {
+    title: 'Natural Skin, Hair & Beauty Care',
+    description:
+      'Discover Ayurvedic skin care, hair care, and natural beauty solutions using herbs and traditional methods to support healthy skin and hair naturally.',
+    link: 'https://www.youtube.com/playlist?list=PL8ONJ3g-KkhdqIYaFSrYqvOL1jACwqJL4',
+  },
+  {
+    title: 'Men’s & Women’s Wellness Support',
+    description:
+      'Learn Ayurvedic wellness guidance designed to support men’s and women’s health, vitality, energy, and overall well-being naturally.',
+    link: 'https://www.youtube.com/playlist?list=PL8ONJ3g-KkhfZybkpzJxq1yQ2fngcxtl4',
+  },
+  {
+    title: 'Detox, Stress Relief & Mental Wellness',
+    description:
+      'Explore Ayurvedic detox practices, stress management techniques, and natural ways to support mental calmness and overall wellness balance.',
+    link: 'https://www.youtube.com/playlist?list=PL8ONJ3g-KkheffsP9gl22OiLr_7l7mm7c',
+  },
+  {
+    title: 'Seasonal Ayurveda & Home Remedies',
+    description:
+      'Get Ayurvedic seasonal health guidance and traditional herbal home remedies to support wellness throughout changing weather and seasonal transitions.',
+    link: 'https://www.youtube.com/playlist?list=PL8ONJ3g-KkhcCLs7pp9yH7HpIxATyxWc2',
+  },
+  {
+    title: 'Ayurvedic Herbs & Ingredient Education',
+    description:
+      'Learn about powerful Ayurvedic herbs, their traditional uses, and how they support natural health and wellness.',
+    link: 'https://www.youtube.com/playlist?list=PL8ONJ3g-KkhdCv7TnjviCtBzkDO1KaRtB',
+  },
 ];
 
 const TESTIMONIALS = [
@@ -48,35 +95,47 @@ export default function BlogPage() {
       <section className="pt-10 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-serif font-bold text-center">
-             What You’ll Find in Our Health Tips & Blog
+            What You’ll Find in Our Health Tips & Blog
           </h2>
           <span className="text-foreground/80 text-center mb-10 block">  In this blog section, we share carefully curated Ayurvedic knowledge and wellness insights to support your healthy lifestyle. We regularly bring you:</span>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {BLOG_TIPS.map((tip, index) => (
-              <Card
+              <Link
                 key={index}
-                className="p-6 border border-border hover:shadow-lg hover:-translate-y-1 transition-all"
+                href={tip.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group"
               >
-                <h3 className="text-xl font-serif font-bold mb-2">
-                  {tip.title}
-                </h3>
-                <p className="text-foreground/80 text-sm">
-                  {tip.description}
-                </p>
-              </Card>
+                <Card
+                  className="p-6 border border-border hover:shadow-xl hover:-translate-y-2 transition-all duration-300 cursor-pointer h-full"
+                >
+                  <h3 className="text-xl font-serif font-bold mb-2 group-hover:text-primary transition-colors">
+                    {tip.title}
+                  </h3>
+
+                  <p className="text-foreground/80 text-sm mb-4">
+                    {tip.description}
+                  </p>
+
+                  <span className="text-sm font-medium text-primary group-hover:underline">
+                    Watch Playlist →
+                  </span>
+                </Card>
+              </Link>
             ))}
           </div>
         </div>
       </section>
-       <section className="max-w-6xl mx-auto py-5 px-4 sm:px-6 lg:px-8">
+      <section className="max-w-6xl mx-auto py-5 px-4 sm:px-6 lg:px-8">
         <Card className="p-6 border border-border bg-background">
           <h2 className="text-2xl font-serif font-bold">
             Disclaimer
           </h2>
           <p className="text-foreground/80 leading-relaxed">
-        The information shared in this blog is for educational and general wellness purposes only. It is not intended to replace professional medical advice, diagnosis, or treatment
-        </p>
+            The information shared in this blog is for educational and general wellness purposes only. It is not intended to replace professional medical advice, diagnosis, or treatment
+          </p>
         </Card>
       </section>
       <section className="py-10 px-4 sm:px-6 lg:px-8">
