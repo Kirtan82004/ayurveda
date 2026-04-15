@@ -105,7 +105,7 @@ Please confirm.
     });
 
     fetch(
-      "https://script.google.com/macros/s/AKfycbwaQ5gN1xL-c-q1ibJI-YDv7eGRg3QHDLAvmZP1E5KXMlF88LBz5gQEWYWq6XpWhEwokw/exec?" +
+      "https://script.google.com/macros/s/AKfycbyoeMZrgmi6NLn4WkqdAIVi4t5pOo48Ah3f0dcRXGBgkelsJgvdmvHlSGrBgLydc6XxhA/exec?" +
       params.toString(),
       { method: "GET", mode: "no-cors" }
     );

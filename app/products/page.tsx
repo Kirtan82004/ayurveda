@@ -34,7 +34,7 @@ const PRODUCTS = [
     MRP: '₹799',
     price: '₹599',
     description: 'Natural antibacterial and skin-purifying treatment',
-    image: "/images/coming.webp"
+    image: "/images/OutOfStock.webp"
   },
   {
     id: 4,
@@ -43,7 +43,7 @@ const PRODUCTS = [
     MRP: '₹499',
     price: '₹399',
     description: 'Cooling and strengthening oil for hair care',
-    image: "/images/coming.webp"
+    image: "/images/OutOfStock.webp"
   },
   {
     id: 5,
@@ -52,7 +52,7 @@ const PRODUCTS = [
     MRP: '₹299',
     price: '₹199',
     description: 'Digestive and detoxifying herbal blend',
-    image: "/images/coming.webp"
+    image: "/images/OutOfStock.webp"
   },
   {
     id: 6,
@@ -61,7 +61,7 @@ const PRODUCTS = [
     MRP: '₹499',
     price: '₹449',
     description: 'Traditional brightening and exfoliating paste',
-    image: "/images/coming.webp"
+    image: "/images/OutOfStock.webp"
   },
   {
     id: 7,
@@ -70,7 +70,7 @@ const PRODUCTS = [
     MRP: '₹329',
     price: '₹279',
     description: 'Natural conditioning and color-enhancing rinse',
-    image: "/images/coming.webp"
+    image: "/images/OutOfStock.webp"
   },
   {
     id: 8,
@@ -79,7 +79,7 @@ const PRODUCTS = [
     MRP: '₹329',
     price: '₹279',
     description: 'Warming blend for digestive comfort',
-    image: "/images/coming.webp"
+    image: "/images/OutOfStock.webp"
   },
 ];
 

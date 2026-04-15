@@ -267,7 +267,7 @@ const PRODUCTS = [
     rating: 4.7,
     reviews: 156,
     description: "Natural antibacterial skin treatment",
-    images: ["/images/coming.webp"],
+    images: ["/images/OutOfStock.webp"],
     image: "data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22%3E%3Crect fill=%22%23F5E1A4%22 width=%22200%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fontSize=%2220%22 fill=%22%23B8860B%22 textAnchor=%22middle%22 dominantBaseline=%22middle%22%3ENeem Mask%3C/text%3E%3C/svg%3E",
     ingredients: [
       { name: "Neem Extract", function: "Antibacterial skin cleansing" },
@@ -311,7 +311,7 @@ const PRODUCTS = [
     rating: 4.8,
     reviews: 203,
     description: "Cooling and strengthening hair oil",
-    images: ["/images/coming.webp"],
+    images: ["/images/OutOfStock.webp"],
     image: "data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22%3E%3Crect fill=%22%23F5E1A4%22 width=%22200%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fontSize=%2220%22 fill=%22%23B8860B%22 textAnchor=%22middle%22 dominantBaseline=%22middle%22%3EBrahmi Oil%3C/text%3E%3C/svg%3E",
     ingredients: [
       { name: "Brahmi", function: "Hair strengthening" },
@@ -370,7 +370,7 @@ export default function ProductDetailPage() {
   };
 
   if (!product) {
-    return (
+    return ( 
       <div className="min-h-screen bg-background text-foreground flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-2xl font-serif font-bold mb-4">Product not found</h1>
@@ -554,7 +554,7 @@ export default function ProductDetailPage() {
                   </li>
                 ))}
               </ul>
-               {(product.id==2) ? (
+               {(product.id==1) ? (
           <div className="mt-1">
               <h2 className="text-2xl font-serif font-bold mb-6 text-foreground">Mineral Rasayan Support</h2>
               <p className="text-lg text-foreground/80 leading-relaxed"><span className='font-bold'>Shuddh Shilajit –</span> Energy & stamina support</p>

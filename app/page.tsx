@@ -42,7 +42,7 @@ const FEATURED_PRODUCTS = [
     category: 'Skin',
     price: '₹599',
     description: 'Natural skin purifier',
-    image: '/images/coming.webp',
+    image: '/images/OutOfStock.webp',
   },
   {
     id: 4,
@@ -50,7 +50,7 @@ const FEATURED_PRODUCTS = [
     category: 'Hair',
     price: '₹349',
     description: 'Strengthening and cooling',
-    image: "/images/coming.webp"
+    image: "/images/OutOfStock.webp"
   },
 ];
 const HERO_IMAGES = [

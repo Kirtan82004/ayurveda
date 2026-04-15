@@ -111,13 +111,13 @@ export default function BlogPage() {
                 <Card
                   className="p-6 border border-border hover:shadow-xl hover:-translate-y-2 transition-all duration-300 cursor-pointer h-full"
                 >
-                  <h3 className="text-xl font-serif font-bold mb-2 group-hover:text-primary transition-colors">
+                  <h3 className="text-xl font-serif font-bold group-hover:text-primary transition-colors">
                     {tip.title}
                   </h3>
 
-                  <p className="text-foreground/80 text-sm mb-4">
+                  <span className="text-foreground/80 text-sm ">
                     {tip.description}
-                  </p>
+                  </span>
 
                   <span className="text-sm font-medium text-primary group-hover:underline">
                     Watch Playlist →
