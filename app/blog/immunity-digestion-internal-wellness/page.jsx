@@ -23,27 +23,27 @@ const herbs = [
   {
     name: "Amla (Indian Gooseberry)",
     description:
-      "Rich in antioxidants and vitamin C, traditionally used to support immunity, digestion, and vitality.",
+      "Amla is rich in natural antioxidants and vitamin C. It is widely used in Ayurvedic formulations to support immunity, digestion, and overall vitality.",
   },
   {
     name: "Ginger",
     description:
-      "Traditionally valued in Ayurveda for supporting digestion and metabolic balance.",
+      "Ginger has long been valued in Ayurveda for its ability to stimulate digestion and support metabolism. It is commonly used to help improve digestive comfort.",
   },
   {
     name: "Turmeric",
     description:
-      "Known for its antioxidant properties and support for immunity and internal balance.",
+      "Turmeric contains natural compounds that are known for their antioxidant and supportive wellness properties. It is often used to support immunity and internal balance.",
   },
   {
     name: "Triphala",
     description:
-      "A traditional herbal blend that supports digestion and gut wellness.",
+      "Triphala is a traditional herbal blend that supports digestion, gentle detoxification, and overall gut health.",
   },
   {
     name: "Giloy",
     description:
-      "Traditionally used in Ayurveda to support immunity and overall wellness.",
+      "Giloy is a well-known herb traditionally used in Ayurveda for supporting immunity and maintaining overall wellness.",
   },
 ];
 
@@ -67,31 +67,31 @@ const lifestylePractices = [
   {
     title: "Regular Physical Activity",
     description:
-      "Exercise supports circulation, metabolism, and digestive efficiency.",
+      "Exercise helps improve circulation, metabolism, and digestive efficiency.",
   },
   {
     title: "Stress Management",
     description:
-      "Meditation and breathing exercises may help support emotional balance and reduce stress.",
+      "Chronic stress can weaken digestion and immunity. Practices such as meditation and breathing exercises may help support emotional balance.",
   },
   {
     title: "Adequate Sleep",
     description:
-      "Sleep allows the body to recover, restore energy, and strengthen immune function.",
+      "Sleep allows the body to repair tissues, restore energy levels, and strengthen immune function.",
   },
   {
     title: "Proper Hydration",
     description:
-      "Drinking enough water supports digestion and natural detoxification processes.",
+      "Drinking sufficient water throughout the day supports digestion and detoxification processes.",
   },
 ];
 
 const safetyTips = [
   "Follow recommended dosage instructions for herbal supplements.",
-  "Individuals with existing medical conditions should consult a healthcare professional before using herbal products.",
+  "Individuals with existing medical conditions should consult a healthcare professional before using new herbal products.",
   "Pregnant or breastfeeding women should seek medical advice before using herbal supplements.",
-  "Herbal products should complement a balanced lifestyle, not replace professional medical care.",
-  "Maintain proper nutrition and healthy lifestyle habits for best results.",
+  "Herbal products should be used as part of a balanced lifestyle and not as a substitute for professional medical treatment.",
+  "Maintain proper nutrition and lifestyle habits for best results.",
 ];
 
 export default function ImmunityDigestionPage() {
@@ -114,12 +114,6 @@ export default function ImmunityDigestionPage() {
             Immunity, Digestion & Internal Wellness
           </h1>
 
-          <p className="text-lg text-foreground/80 mt-6 leading-8">
-            An Ayurvedic guide to strengthening health from within
-            through digestion, immunity, herbal support,
-            and mindful lifestyle habits.
-          </p>
-
         </div>
       </section>
 
@@ -129,21 +123,20 @@ export default function ImmunityDigestionPage() {
         {/* Intro */}
         <div className="space-y-6">
 
+          <h2 className="text-3xl font-bold font-serif">
+            An Ayurvedic Guide to Strengthening Health from Within
+          </h2>
+
           <p className="text-foreground/80 leading-8">
-            Modern lifestyles often contribute to weak immunity,
-            digestive discomfort, fatigue, and reduced energy levels.
+            In modern lifestyles, many people experience health concerns such as weak immunity, digestive discomfort, fatigue, and reduced energy levels. Irregular eating habits, processed foods, stress, lack of sleep, and environmental pollution can gradually weaken the body's internal systems.
           </p>
 
           <p className="text-foreground/80 leading-8">
-            According to Ayurveda, true wellness begins from within.
-            Strong digestion and natural immunity are considered
-            essential for maintaining long-term health and vitality.
+            According to Ayurveda, true health begins from within. The strength of digestion and the body's natural immunity play a fundamental role in maintaining long-term wellness. When digestion functions efficiently and the body produces strong immunity factors, individuals are better able to maintain energy, resist illness, and support overall vitality.
           </p>
 
           <p className="text-foreground/80 leading-8">
-            Ayurveda emphasizes maintaining internal balance
-            through proper nutrition, herbal support,
-            and mindful lifestyle habits.
+            Ayurveda emphasizes the importance of maintaining internal balance through proper nutrition, herbal support, and mindful lifestyle habits.
           </p>
 
         </div>
@@ -156,10 +149,11 @@ export default function ImmunityDigestionPage() {
           </h2>
 
           <p className="text-foreground/80 leading-8 mb-6">
-            In Ayurveda, digestion is governed by Agni,
-            often referred to as the digestive fire.
-            Agni helps break down food, absorb nutrients,
-            and convert them into energy.
+            In Ayurveda, digestion is governed by Agni, often referred to as the digestive fire. Agni is responsible for breaking down food, absorbing nutrients, and converting them into energy that supports all bodily functions.
+          </p>
+
+          <p className="text-foreground/80 leading-8 mb-6">
+            When Agni is strong and balanced, the body experiences:
           </p>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -175,10 +169,11 @@ export default function ImmunityDigestionPage() {
           </div>
 
           <p className="text-foreground/80 leading-8 mt-8">
-            When digestion becomes weak or irregular,
-            toxins known as Ama may accumulate in the body,
-            contributing to bloating, fatigue,
-            digestive discomfort, and low immunity.
+            However, when digestion becomes weak or irregular, toxins known as Ama may accumulate in the body. This can contribute to symptoms such as bloating, fatigue, low immunity, and digestive discomfort.
+          </p>
+
+          <p className="text-foreground/80 leading-8 mt-6">
+            Maintaining a healthy digestive system is therefore considered one of the most important foundations of Ayurvedic wellness.
           </p>
 
         </div>
@@ -191,9 +186,11 @@ export default function ImmunityDigestionPage() {
           </h2>
 
           <p className="text-foreground/80 leading-8 mb-6">
-            Ayurveda describes immunity through the concept of Ojas,
-            which represents vitality, resilience,
-            and resistance to illness.
+            Ayurveda describes immunity through the concept of Ojas, which represents the body's vital energy and resistance to illness. Ojas is produced when digestion is strong and nutrients are properly absorbed.
+          </p>
+
+          <p className="text-foreground/80 leading-8 mb-6">
+            Healthy Ojas contributes to:
           </p>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-4">
@@ -208,6 +205,14 @@ export default function ImmunityDigestionPage() {
 
           </div>
 
+          <p className="text-foreground/80 leading-8 mt-8">
+            When lifestyle habits weaken digestion and nutrition, Ojas may also become depleted, leading to reduced resilience and fatigue.
+          </p>
+
+          <p className="text-foreground/80 leading-8 mt-6">
+            Supporting digestion and maintaining a balanced lifestyle are therefore essential steps for building strong immunity.
+          </p>
+
         </div>
 
         {/* Herbs */}
@@ -216,6 +221,10 @@ export default function ImmunityDigestionPage() {
           <h2 className="text-3xl font-bold font-serif mb-8">
             Important Ayurvedic Herbs for Digestive and Immune Health
           </h2>
+
+          <p className="text-foreground/80 leading-8 mb-6">
+            Ayurvedic tradition includes many herbs that have historically been used to support digestive balance and immune function.
+          </p>
 
           <div className="space-y-5">
 
@@ -235,6 +244,10 @@ export default function ImmunityDigestionPage() {
 
           </div>
 
+          <p className="text-foreground/80 leading-8 mt-6">
+            These herbs are often combined in Ayurvedic formulations designed to promote digestive balance and immune support.
+          </p>
+
         </div>
 
         {/* Diet */}
@@ -245,8 +258,11 @@ export default function ImmunityDigestionPage() {
           </h2>
 
           <p className="text-foreground/80 leading-8 mb-6">
-            Diet plays a major role in supporting digestion,
-            nutrient absorption, and immunity.
+            Diet plays a major role in maintaining digestion and immunity. Ayurveda recommends eating foods that are fresh, balanced, and suited to individual digestive capacity.
+          </p>
+
+          <p className="text-foreground/80 leading-8 mb-6">
+            Important dietary habits include:
           </p>
 
           <div className="grid sm:grid-cols-2 gap-4">
@@ -261,6 +277,10 @@ export default function ImmunityDigestionPage() {
 
           </div>
 
+          <p className="text-foreground/80 leading-8 mt-6">
+            Warm, nourishing foods and herbal ingredients can help support digestive strength and nutrient absorption.
+          </p>
+
         </div>
 
         {/* Bamuso Ayurveda */}
@@ -271,12 +291,14 @@ export default function ImmunityDigestionPage() {
           </h2>
 
           <p className="text-foreground/80 leading-8 mb-6">
-            Bamuso Ayurveda formulations are inspired by
-            traditional Ayurvedic knowledge and natural ingredients
-            designed to support internal wellness.
+            Along with proper diet and lifestyle habits, herbal wellness formulations can support the body's natural balance.
           </p>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <p className="text-foreground/80 leading-8">
+            At Bamuso Ayurveda, herbal products are inspired by traditional Ayurvedic knowledge and carefully selected natural ingredients. These formulations are designed to support various aspects of internal wellness, including:
+          </p>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
 
             {bamusoSupport.map((item, index) => (
               <Card key={index} className="p-4">
@@ -288,6 +310,14 @@ export default function ImmunityDigestionPage() {
 
           </div>
 
+          <p className="text-foreground/80 leading-8 mt-8">
+            When combined with healthy daily routines, Bamuso Ayurveda products may help complement the body's natural processes and support long-term wellness.
+          </p>
+
+          <p className="text-foreground/80 leading-8 mt-6">
+            Herbal supplements, digestive formulations, and immunity support products can become valuable additions to a balanced wellness routine.
+          </p>
+
         </div>
 
         {/* Lifestyle */}
@@ -296,6 +326,14 @@ export default function ImmunityDigestionPage() {
           <h2 className="text-3xl font-bold font-serif mb-8">
             Lifestyle Practices That Support Digestion and Immunity
           </h2>
+
+          <p className="text-foreground/80 leading-8 mb-6">
+            Ayurveda emphasizes that lifestyle habits strongly influence digestive strength and immune health.
+          </p>
+
+          <p className="text-foreground/80 leading-8 mb-6">
+            Some beneficial daily practices include:
+          </p>
 
           <div className="space-y-5">
 
@@ -315,6 +353,10 @@ export default function ImmunityDigestionPage() {
 
           </div>
 
+          <p className="text-foreground/80 leading-8 mt-8">
+            These habits work together to maintain internal balance and long-term wellness.
+          </p>
+
         </div>
 
         {/* Preventive Health */}
@@ -325,14 +367,15 @@ export default function ImmunityDigestionPage() {
           </h2>
 
           <p className="text-foreground/80 leading-8 mb-5">
-            Ayurveda strongly focuses on prevention and maintaining
-            balance before health concerns arise.
+            Ayurveda focuses strongly on prevention. Instead of waiting for illness to occur, the system encourages individuals to maintain strong digestion, balanced nutrition, and healthy lifestyle habits.
+          </p>
+
+          <p className="text-foreground/80 leading-8 mb-5">
+            When the body functions in harmony with natural rhythms, it becomes more resilient to stress, environmental challenges, and seasonal changes.
           </p>
 
           <p className="text-foreground/80 leading-8">
-            Proper diet, herbal support, and mindful living
-            can help improve resilience to stress,
-            environmental challenges, and seasonal changes.
+            Preventive care through proper diet, herbal support, and mindful living can significantly contribute to overall health and vitality.
           </p>
 
         </div>
@@ -345,6 +388,14 @@ export default function ImmunityDigestionPage() {
             <h2 className="text-3xl font-bold font-serif mb-6">
               Safety and Responsible Use
             </h2>
+
+            <p className="text-foreground/80 leading-8 mb-6">
+              While herbal products and natural remedies are generally gentle, responsible use is important.
+            </p>
+
+            <p className="text-foreground/80 leading-8 mb-6">
+              Please consider the following safety guidelines:
+            </p>
 
             <div className="space-y-4">
 
@@ -359,6 +410,10 @@ export default function ImmunityDigestionPage() {
 
             </div>
 
+            <p className="text-foreground/80 leading-8 mt-8">
+              Responsible wellness practices ensure long-term safety and effectiveness.
+            </p>
+
           </Card>
 
         </div>
@@ -371,16 +426,19 @@ export default function ImmunityDigestionPage() {
           </h2>
 
           <p className="text-foreground/80 leading-8 mb-5">
-            Immunity, digestion, and internal wellness
-            are deeply interconnected in Ayurveda.
+            Immunity, digestion, and internal wellness are deeply interconnected. When digestion is strong and the body produces healthy Ojas, individuals experience better energy, stronger immunity, and improved overall health.
+          </p>
+
+          <p className="text-foreground/80 leading-8 mb-5">
+            Ayurveda offers a holistic approach that combines balanced nutrition, herbal ingredients, healthy lifestyle practices, and natural wellness support.
+          </p>
+
+          <p className="text-foreground/80 leading-8 mb-5">
+            By incorporating Ayurvedic principles and herbal solutions from Bamuso Ayurveda, individuals can take meaningful steps toward maintaining internal balance and long-term well-being.
           </p>
 
           <p className="text-foreground/80 leading-8">
-            By incorporating balanced nutrition,
-            herbal support, mindful lifestyle habits,
-            and Ayurvedic principles,
-            individuals can take meaningful steps
-            toward long-term wellness and vitality.
+            True wellness begins from within, and strengthening the body's internal systems is the key to living a healthy and energetic life.
           </p>
 
         </div>

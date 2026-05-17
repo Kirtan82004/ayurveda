@@ -8,7 +8,7 @@ const doshas = [
   {
     title: "Vata",
     description:
-      "Responsible for dryness and aging of the skin.",
+      "Responsible for dryness and aging of skin.",
   },
   {
     title: "Pitta",
@@ -18,7 +18,7 @@ const doshas = [
   {
     title: "Kapha",
     description:
-      "Responsible for hydration, thickness, and natural glow.",
+      "Responsible for skin hydration, thickness, and glow.",
   },
 ];
 
@@ -26,33 +26,33 @@ const ingredients = [
   {
     name: "Kumkumadi Oil",
     description:
-      "A traditional Ayurvedic formulation made with saffron and botanical extracts to support glowing and nourished skin.",
+      "Kumkumadi Tailam is a well-known Ayurvedic formulation traditionally used to support glowing skin. It contains herbs like saffron, sandalwood, and other botanical extracts that help nourish the skin and improve overall complexion.",
   },
   {
     name: "Aloe Vera",
     description:
-      "Known for its soothing and hydrating properties that help maintain healthy skin moisture.",
+      "Aloe vera is widely used for its soothing and hydrating properties. It helps maintain skin moisture and supports healing of minor skin irritations.",
   },
   {
     name: "Neem",
     description:
-      "Traditionally valued for its purifying and antibacterial properties in skincare.",
+      "Neem is valued in Ayurveda for its purifying and antibacterial properties. It is commonly used in skincare formulations designed to support clearer skin.",
   },
   {
     name: "Amla (Indian Gooseberry)",
     description:
-      "Rich in antioxidants and vitamin C that support healthy skin and hair wellness.",
+      "Amla is rich in antioxidants and vitamin C, which support collagen production and help maintain healthy hair and skin.",
   },
   {
     name: "Bhringraj",
     description:
-      "Traditionally used in Ayurvedic hair oils to support scalp health and stronger hair roots.",
+      "Bhringraj is traditionally used in hair oils to support scalp health and promote stronger hair roots.",
   },
 ];
 
 const hairCareTips = [
   "Regular oil massage with herbal oils",
-  "Using mild herbal shampoos",
+  "Using mild herbal shampoos instead of harsh chemicals",
   "Maintaining balanced nutrition",
   "Reducing excessive heat styling",
   "Managing stress and improving sleep quality",
@@ -72,12 +72,12 @@ const beautyRoutine = [
   {
     title: "3️⃣ Scalp Care",
     description:
-      "Regular scalp massage improves circulation and supports healthy hair growth.",
+      "Regular scalp massage improves blood circulation and supports hair growth.",
   },
   {
     title: "4️⃣ Healthy Diet",
     description:
-      "Foods rich in vitamins, minerals, and antioxidants help support healthy skin and hair.",
+      "Foods rich in vitamins, minerals, and antioxidants play a crucial role in maintaining healthy skin and hair.",
   },
   {
     title: "5️⃣ Hydration",
@@ -87,7 +87,7 @@ const beautyRoutine = [
 ];
 
 const safetyTips = [
-  "Always perform a patch test before using new skincare products.",
+  "Always perform a patch test before applying new skincare products.",
   "Avoid using multiple strong products at the same time.",
   "Follow recommended usage instructions.",
   "Individuals with sensitive skin should consult a healthcare professional before using new products.",
@@ -123,9 +123,7 @@ export default function NaturalBeautyPage() {
           </h1>
 
           <p className="text-lg text-foreground/80 mt-6 leading-8">
-            The Ayurvedic path to healthy, radiant beauty through
-            natural ingredients, balanced lifestyle habits,
-            and holistic wellness.
+            The Ayurvedic Path to Healthy, Radiant Beauty
           </p>
 
         </div>
@@ -138,22 +136,15 @@ export default function NaturalBeautyPage() {
         <div className="space-y-6">
 
           <p className="text-foreground/80 leading-8">
-            Modern lifestyles, pollution, stress,
-            and excessive use of chemical-based products
-            can negatively affect skin and hair health.
+            In the modern world, skin and hair problems such as acne, hair fall, premature aging, dryness, and dullness have become increasingly common. Pollution, stress, poor diet, lack of sleep, and excessive use of chemical-based cosmetic products often disturb the natural balance of the body.
           </p>
 
           <p className="text-foreground/80 leading-8">
-            Ayurveda takes a holistic approach to beauty,
-            emphasizing that true beauty comes from internal balance,
-            proper nutrition, and natural care routines.
+            Ayurveda, the ancient science of natural wellness, takes a holistic approach to beauty. Instead of focusing only on external treatments, Ayurveda emphasizes that true beauty comes from internal balance, proper nutrition, and natural care routines.
           </p>
 
           <p className="text-foreground/80 leading-8">
-            Healthy digestion, balanced hormones,
-            proper sleep, and herbal nourishment
-            all contribute to glowing skin
-            and stronger, healthier hair.
+            Healthy digestion, balanced hormones, proper sleep, and natural herbal care all contribute to glowing skin and strong, healthy hair.
           </p>
 
         </div>
@@ -166,8 +157,7 @@ export default function NaturalBeautyPage() {
           </h2>
 
           <p className="text-foreground/80 leading-8 mb-6">
-            Ayurveda connects beauty with the balance
-            of the three doshas in the body.
+            In Ayurveda, beauty is closely connected with the balance of the three doshas:
           </p>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -189,9 +179,11 @@ export default function NaturalBeautyPage() {
           </div>
 
           <p className="text-foreground/80 leading-8 mt-8">
-            When these doshas remain balanced,
-            the skin appears naturally radiant
-            and the hair remains healthy and strong.
+            When these doshas remain balanced, the skin appears naturally radiant and the hair remains strong and healthy. However, imbalance in these energies can lead to common beauty concerns such as hair thinning, dull skin, pigmentation, and premature wrinkles.
+          </p>
+
+          <p className="text-foreground/80 leading-8 mt-6">
+            Ayurveda focuses on restoring internal harmony while also supporting the body with natural herbs and plant-based ingredients.
           </p>
 
         </div>
@@ -202,6 +194,10 @@ export default function NaturalBeautyPage() {
           <h2 className="text-3xl font-bold font-serif mb-8">
             Natural Ayurvedic Ingredients for Skin & Hair Wellness
           </h2>
+
+          <p className="text-foreground/80 leading-8 mb-6">
+            Ayurvedic texts describe many herbs and botanical ingredients that have traditionally been used for beauty and personal care. These ingredients are valued for their natural nourishment, antioxidant properties, and gentle action on the body.
+          </p>
 
           <div className="space-y-5">
 
@@ -231,9 +227,15 @@ export default function NaturalBeautyPage() {
           </h2>
 
           <p className="text-foreground/80 leading-8 mb-6">
-            Hair health is influenced by nutrition,
-            scalp circulation, stress levels,
-            and overall lifestyle habits.
+            Hair health is influenced by several factors including nutrition, scalp circulation, stress levels, and hormonal balance. Excessive use of chemical shampoos, hair styling tools, and harsh treatments can weaken hair roots and damage the scalp.
+          </p>
+
+          <p className="text-foreground/80 leading-8 mb-6">
+            Ayurvedic hair care focuses on gentle nourishment and strengthening of the scalp.
+          </p>
+
+          <p className="text-foreground/80 leading-8 mb-6">
+            Some important hair care habits include:
           </p>
 
           <div className="grid sm:grid-cols-2 gap-4">
@@ -248,6 +250,10 @@ export default function NaturalBeautyPage() {
 
           </div>
 
+          <p className="text-foreground/80 leading-8 mt-8">
+            When these habits are followed consistently, hair becomes stronger, shinier, and healthier over time.
+          </p>
+
         </div>
 
         {/* Daily Routine */}
@@ -256,6 +262,10 @@ export default function NaturalBeautyPage() {
           <h2 className="text-3xl font-bold font-serif mb-8">
             Daily Ayurvedic Beauty Routine
           </h2>
+
+          <p className="text-foreground/80 leading-8 mb-6">
+            Ayurveda recommends a simple but effective daily routine to maintain skin and hair health naturally.
+          </p>
 
           <div className="space-y-5">
 
@@ -285,21 +295,23 @@ export default function NaturalBeautyPage() {
           </h2>
 
           <p className="text-foreground/80 leading-8 mb-5">
-            Environmental stress, pollution,
-            and excessive use of chemical products
-            can affect natural skin and hair balance.
+            Modern lifestyles often expose the body to environmental stress, pollution, and chemical products that can affect skin and hair health.
           </p>
 
           <p className="text-foreground/80 leading-8 mb-5">
-            Ayurvedic formulations can provide supportive care
-            by combining traditional herbs
-            with modern wellness approaches.
+            Natural Ayurvedic formulations can provide supportive care by combining traditional herbs with modern wellness approaches.
+          </p>
+
+          <p className="text-foreground/80 leading-8 mb-5">
+            At BAMUSO Ayurveda, the focus is on creating herbal wellness products inspired by Ayurvedic knowledge and natural ingredients. Carefully selected botanical extracts are used in formulations designed to support skin nourishment, scalp health, and overall beauty care.
+          </p>
+
+          <p className="text-foreground/80 leading-8 mb-5">
+            Products such as herbal face washes, natural hair oils, skin care serums, and traditional Kumkumadi-based formulations can complement a healthy lifestyle and help maintain natural beauty.
           </p>
 
           <p className="text-foreground/80 leading-8">
-            At BAMUSO Ayurveda, herbal products are designed
-            using carefully selected botanical ingredients
-            inspired by Ayurvedic wellness principles.
+            These products are designed to support the body gently while respecting the principles of natural wellness.
           </p>
 
         </div>
@@ -312,6 +324,14 @@ export default function NaturalBeautyPage() {
             <h2 className="text-3xl font-bold font-serif mb-6">
               Safety Considerations in Natural Beauty Care
             </h2>
+
+            <p className="text-foreground/80 leading-8 mb-6">
+              While natural and herbal products are generally considered gentle, it is important to use them responsibly.
+            </p>
+
+            <p className="text-foreground/80 leading-8 mb-6">
+              Here are some safety recommendations:
+            </p>
 
             <div className="space-y-4">
 
@@ -326,6 +346,10 @@ export default function NaturalBeautyPage() {
 
             </div>
 
+            <p className="text-foreground/80 leading-8 mt-8">
+              Natural care works best when used consistently and responsibly as part of a balanced lifestyle.
+            </p>
+
           </Card>
 
         </div>
@@ -336,6 +360,10 @@ export default function NaturalBeautyPage() {
           <h2 className="text-3xl font-bold font-serif mb-8">
             Benefits of an Ayurvedic Beauty Approach
           </h2>
+
+          <p className="text-foreground/80 leading-8 mb-6">
+            Adopting Ayurvedic beauty practices can offer long-term benefits:
+          </p>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
 
@@ -349,6 +377,10 @@ export default function NaturalBeautyPage() {
 
           </div>
 
+          <p className="text-foreground/80 leading-8 mt-8">
+            Unlike temporary cosmetic solutions, Ayurvedic care focuses on long-term nourishment and internal balance, which leads to sustainable beauty and vitality.
+          </p>
+
         </div>
 
         {/* Conclusion */}
@@ -359,16 +391,19 @@ export default function NaturalBeautyPage() {
           </h2>
 
           <p className="text-foreground/80 leading-8 mb-5">
-            Natural beauty reflects the overall health
-            and harmony of the body.
+            Natural beauty is not only about external appearance—it reflects the overall health and harmony of the body.
+          </p>
+
+          <p className="text-foreground/80 leading-8 mb-5">
+            Ayurveda teaches that when digestion, nutrition, lifestyle, and natural care routines are balanced, the skin and hair naturally become healthier and more vibrant.
+          </p>
+
+          <p className="text-foreground/80 leading-8 mb-5">
+            By choosing herbal ingredients, adopting mindful beauty routines, and supporting the body with natural wellness solutions, it is possible to maintain long-lasting beauty and confidence.
           </p>
 
           <p className="text-foreground/80 leading-8">
-            Ayurveda teaches that balanced nutrition,
-            mindful routines, herbal care,
-            and healthy lifestyle habits
-            can help maintain naturally glowing skin,
-            healthy hair, and long-term wellness.
+            At BAMUSO Ayurveda, the mission is to support this journey by offering nature-inspired products designed to complement healthy lifestyles and promote holistic well-being.
           </p>
 
         </div>

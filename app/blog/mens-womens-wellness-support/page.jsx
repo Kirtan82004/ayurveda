@@ -32,27 +32,27 @@ const herbs = [
   {
     name: "Ashwagandha",
     description:
-      "Traditionally used as an Ayurvedic adaptogen to support stress management, strength, and stamina.",
+      "Ashwagandha is one of the most respected Ayurvedic adaptogens. It is traditionally used to help the body adapt to stress and support physical strength and stamina.",
   },
   {
     name: "Shilajit",
     description:
-      "A mineral-rich natural substance traditionally used to support energy, endurance, and vitality.",
+      "Shilajit is a mineral-rich natural substance found in Himalayan regions and has historically been used to support energy levels, endurance, and overall vitality.",
   },
   {
     name: "Safed Musli",
     description:
-      "Traditionally valued for supporting stamina, physical performance, and reproductive wellness.",
+      "Safed Musli is known in Ayurveda for supporting stamina, reproductive health, and physical performance.",
   },
   {
     name: "Gokshura",
     description:
-      "Traditionally used to support urinary health and reproductive wellness.",
+      "Gokshura has been used traditionally to support urinary health and reproductive wellness.",
   },
   {
     name: "Shatavari",
     description:
-      "Known in Ayurveda for supporting women’s hormonal balance and reproductive health.",
+      "Shatavari is particularly valued for supporting women’s hormonal balance and reproductive health.",
   },
 ];
 
@@ -68,27 +68,27 @@ const lifestyleHabits = [
   {
     title: "Balanced Nutrition",
     description:
-      "A diet rich in whole foods, fruits, vegetables, healthy fats, and herbs supports long-term wellness.",
+      "Consuming a balanced diet rich in whole foods, fruits, vegetables, healthy fats, and natural herbs supports overall wellness.",
   },
   {
     title: "Regular Physical Activity",
     description:
-      "Exercise improves circulation, energy levels, and hormonal balance.",
+      "Exercise improves blood circulation, energy levels, and hormonal balance.",
   },
   {
     title: "Stress Management",
     description:
-      "Meditation, yoga, and breathing exercises help support mental calmness and emotional balance.",
+      "Meditation, breathing exercises, and yoga can help reduce stress and support mental well-being.",
   },
   {
     title: "Proper Sleep",
     description:
-      "Adequate sleep supports tissue repair, hormonal balance, and energy restoration.",
+      "Adequate sleep allows the body to recover, repair tissues, and maintain hormonal balance.",
   },
   {
     title: "Hydration",
     description:
-      "Maintaining hydration helps support metabolic processes and overall vitality.",
+      "Drinking sufficient water helps maintain energy levels and supports metabolic processes.",
   },
 ];
 
@@ -96,8 +96,8 @@ const safetyTips = [
   "Always follow the recommended dosage instructions.",
   "Consult a healthcare professional if you have existing medical conditions.",
   "Pregnant or breastfeeding women should consult a doctor before using herbal supplements.",
-  "Individuals under 18 years should avoid adult wellness supplements unless advised by a healthcare professional.",
-  "Herbal supplements should complement a healthy lifestyle and not replace professional medical care.",
+  "Individuals under 18 years should avoid using adult wellness supplements unless advised by a healthcare professional.",
+  "Herbal supplements should be used as part of a balanced diet and healthy lifestyle, not as a replacement for medical treatment.",
 ];
 
 export default function MensWomenWellnessPage() {
@@ -121,9 +121,7 @@ export default function MensWomenWellnessPage() {
           </h1>
 
           <p className="text-lg text-foreground/80 mt-6 leading-8">
-            A holistic Ayurvedic approach to energy,
-            vitality, hormonal balance,
-            and long-term wellness support.
+            A Holistic Ayurvedic Approach to Energy, Vitality & Hormonal Balance
           </p>
 
         </div>
@@ -136,23 +134,15 @@ export default function MensWomenWellnessPage() {
         <div className="space-y-6">
 
           <p className="text-foreground/80 leading-8">
-            Modern lifestyles often contribute to fatigue,
-            stress, hormonal imbalance,
-            reduced stamina, and low vitality
-            in both men and women.
+            In today’s fast-paced lifestyle, both men and women face increasing health challenges such as fatigue, hormonal imbalance, low stamina, stress, reduced immunity, and lack of physical vitality. Long working hours, mental pressure, unhealthy diet, poor sleep, and lack of physical activity can gradually affect the body’s natural balance.
           </p>
 
           <p className="text-foreground/80 leading-8">
-            Ayurveda explains that true wellness depends
-            on maintaining balance between the body,
-            mind, and energy systems.
+            Ayurveda, the ancient Indian system of natural wellness, explains that true health depends on the balance of body, mind, and energy systems. When these systems remain balanced, individuals experience better stamina, improved mood, stronger immunity, and enhanced overall wellness.
           </p>
 
           <p className="text-foreground/80 leading-8">
-            A balanced lifestyle supported by nutrition,
-            herbal wellness practices,
-            and healthy daily habits
-            can help maintain long-term vitality and well-being.
+            The concept of wellness in Ayurveda goes beyond treating symptoms. It focuses on strengthening the body internally so that both men and women can maintain long-term vitality and well-being.
           </p>
 
         </div>
@@ -165,9 +155,7 @@ export default function MensWomenWellnessPage() {
           </h2>
 
           <p className="text-foreground/80 leading-8 mb-6">
-            According to Ayurveda,
-            overall wellness is influenced
-            by several important internal factors.
+            According to Ayurvedic science, overall wellness is influenced by several key factors:
           </p>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -181,6 +169,14 @@ export default function MensWomenWellnessPage() {
             ))}
 
           </div>
+
+          <p className="text-foreground/80 leading-8 mt-8">
+            When these systems function properly, the body naturally maintains strength, reproductive health, stamina, and mental clarity.
+          </p>
+
+          <p className="text-foreground/80 leading-8 mt-6">
+            However, when lifestyle habits become irregular, these systems may become imbalanced, leading to common problems such as low energy, stress, fatigue, poor reproductive health, and hormonal fluctuations.
+          </p>
 
         </div>
 
@@ -237,6 +233,10 @@ export default function MensWomenWellnessPage() {
 
           </div>
 
+          <p className="text-foreground/80 leading-8 mt-8">
+            Ayurveda recommends strengthening the body naturally through proper nutrition, herbal support, and balanced daily routines.
+          </p>
+
         </div>
 
         {/* Herbs */}
@@ -245,6 +245,10 @@ export default function MensWomenWellnessPage() {
           <h2 className="text-3xl font-bold font-serif mb-8">
             Ayurvedic Herbs Traditionally Used for Wellness Support
           </h2>
+
+          <p className="text-foreground/80 leading-8 mb-6">
+            Many Ayurvedic herbs have been traditionally used to support energy, vitality, and reproductive wellness.
+          </p>
 
           <div className="space-y-5">
 
@@ -264,6 +268,10 @@ export default function MensWomenWellnessPage() {
 
           </div>
 
+          <p className="text-foreground/80 leading-8 mt-6">
+            These herbs are often combined in balanced formulations designed to support overall wellness.
+          </p>
+
         </div>
 
         {/* BMS Super X */}
@@ -274,9 +282,11 @@ export default function MensWomenWellnessPage() {
           </h2>
 
           <p className="text-foreground/80 leading-8 mb-6">
-            BMS Super X is formulated as an Ayurvedic wellness supplement
-            inspired by traditional herbal combinations
-            designed to support energy and vitality.
+            At Bamuso Ayurveda, the goal is to combine traditional Ayurvedic wisdom with modern wellness needs.
+          </p>
+
+          <p className="text-foreground/80 leading-8 mb-6">
+            BMS Super X is formulated as an Ayurvedic wellness supplement designed to support:
           </p>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -291,6 +301,14 @@ export default function MensWomenWellnessPage() {
 
           </div>
 
+          <p className="text-foreground/80 leading-8 mt-8">
+            The formulation is inspired by traditional herbal combinations that have been used for centuries in Ayurvedic wellness practices.
+          </p>
+
+          <p className="text-foreground/80 leading-8 mt-6">
+            When used alongside a balanced lifestyle, herbal formulations like BMS Super X may help support the body’s natural strength and vitality.
+          </p>
+
         </div>
 
         {/* Lifestyle */}
@@ -299,6 +317,14 @@ export default function MensWomenWellnessPage() {
           <h2 className="text-3xl font-bold font-serif mb-8">
             Lifestyle Habits That Support Natural Vitality
           </h2>
+
+          <p className="text-foreground/80 leading-8 mb-6">
+            Ayurveda emphasizes that herbal supplements work best when combined with healthy lifestyle habits.
+          </p>
+
+          <p className="text-foreground/80 leading-8 mb-6">
+            Some important daily practices include:
+          </p>
 
           <div className="space-y-5">
 
@@ -328,17 +354,15 @@ export default function MensWomenWellnessPage() {
           </h2>
 
           <p className="text-foreground/80 leading-8 mb-5">
-            Ayurveda views wellness as a combination
-            of physical, mental,
-            and emotional balance.
+            Ayurveda views wellness as a combination of physical, mental, and emotional health. When these elements remain balanced, individuals naturally experience better energy, improved confidence, and a higher quality of life.
           </p>
 
           <p className="text-foreground/80 leading-8">
-            Supporting the body with natural herbs,
-            balanced nutrition,
-            and mindful daily routines
-            can help maintain energy,
-            confidence, and long-term wellness.
+            Supporting the body through natural herbs, balanced nutrition, and mindful daily routines can help maintain vitality and wellness in both men and women.
+          </p>
+
+          <p className="text-foreground/80 leading-8 mt-6">
+            Herbal wellness supplements such as BMS Super X can be used as part of a broader lifestyle approach focused on strengthening the body naturally.
           </p>
 
         </div>
@@ -377,18 +401,19 @@ export default function MensWomenWellnessPage() {
           </h2>
 
           <p className="text-foreground/80 leading-8 mb-5">
-            Modern lifestyle challenges can affect energy,
-            stamina, and overall vitality
-            in both men and women.
+            Modern lifestyle challenges often affect energy, stamina, and overall wellness. By combining traditional Ayurvedic knowledge, natural herbs, and healthy lifestyle habits, it is possible to support long-term vitality and well-being.
+          </p>
+
+          <p className="text-foreground/80 leading-8 mb-5">
+            Both men and women can benefit from adopting natural wellness practices that strengthen the body internally and help maintain balance in daily life.
+          </p>
+
+          <p className="text-foreground/80 leading-8 mb-5">
+            At Bamuso Ayurveda, the focus is on providing herbal wellness solutions inspired by ancient Ayurvedic wisdom. Products like BMS Super X are designed to support natural vitality and help individuals maintain an active, balanced lifestyle.
           </p>
 
           <p className="text-foreground/80 leading-8">
-            By combining Ayurvedic knowledge,
-            natural herbs,
-            balanced nutrition,
-            and healthy lifestyle habits,
-            individuals can support long-term wellness,
-            vitality, and body balance naturally.
+            True wellness begins from within—and Ayurveda provides a natural path to achieving it.
           </p>
 
         </div>

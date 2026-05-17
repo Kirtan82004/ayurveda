@@ -51,11 +51,6 @@ export default function CustomerReviewsPage() {
           <h1 className="text-4xl md:text-5xl font-bold font-serif leading-tight">
             Customer Reviews, Experiences & Testimonials
           </h1>
-
-          <p className="text-foreground/80 mt-6 text-lg leading-8">
-            Real experiences from customers who incorporated
-            Bamuso Ayurveda products into their wellness routines.
-          </p>
         </div>
       </section>
 

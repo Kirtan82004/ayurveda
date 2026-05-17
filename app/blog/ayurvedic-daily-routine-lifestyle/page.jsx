@@ -49,11 +49,6 @@ export default function AyurvedicLifestylePage() {
             Ayurvedic Daily Routine & Lifestyle
           </h1>
 
-          <p className="text-lg text-foreground/80 mt-6 leading-8">
-            A complete guide to living a balanced and healthy life
-            through Ayurveda, mindful routines, and natural wellness.
-          </p>
-
         </div>
       </section>
 
@@ -62,23 +57,20 @@ export default function AyurvedicLifestylePage() {
 
         {/* Intro */}
         <div className="space-y-6">
-
+          
+          <h2 className="text-3xl font-bold font-serif mb-5">
+            A Complete Guide to Living a Balanced and Healthy Lif
+          </h2>
           <p className="text-foreground/80 leading-8">
-            In today’s fast-paced world, people often struggle with
-            fatigue, stress, digestive issues, poor sleep, and
-            reduced immunity.
+            In today’s fast-paced world, people often struggle with fatigue, stress, digestive issues, poor sleep, and reduced immunity. Irregular eating habits, lack of proper rest, excessive screen time, and unhealthy lifestyle choices can gradually disturb the body’s natural balance.
           </p>
 
           <p className="text-foreground/80 leading-8">
-            Ayurveda, the ancient Indian science of health and wellness,
-            emphasizes that a disciplined daily routine is one of the
-            most powerful ways to maintain physical, mental,
-            and emotional balance.
+           Ayurveda, the ancient Indian science of health and wellness, emphasizes that a disciplined daily routine is one of the most powerful ways to maintain physical, mental, and emotional balance. This concept is known as Dinacharya, which refers to a structured daily lifestyle designed to support the body’s natural rhythms.
           </p>
 
           <p className="text-foreground/80 leading-8">
-            This concept is known as Dinacharya, a structured
-            lifestyle designed to support the body’s natural rhythms.
+           By following an Ayurvedic daily routine, individuals can strengthen digestion, improve energy levels, enhance mental clarity, and maintain overall well-being.
           </p>
 
         </div>
@@ -91,18 +83,16 @@ export default function AyurvedicLifestylePage() {
           </h2>
 
           <p className="text-foreground/80 leading-8 mb-6">
-            Dinacharya is based on the understanding that the body
-            follows a natural biological clock influenced by the sun,
-            seasons, and environmental rhythms.
+           Dinacharya is based on the understanding that the body follows a natural biological clock influenced by the sun, seasons, and environmental rhythms. When daily activities such as waking up, eating, exercising, and sleeping are aligned with these natural cycles, the body functions more efficiently.
           </p>
 
           <p className="text-foreground/80 leading-8 mb-8">
-            Ayurveda suggests that maintaining consistency in daily
-            habits helps regulate the doshas (Vata, Pitta, and Kapha)
-            and supports overall wellness.
+           Ayurveda suggests that maintaining consistency in daily habits helps regulate the doshas (Vata, Pitta, and Kapha) and supports overall wellness.
           </p>
 
+          <p className="text-foreground/80 leading-8 mb-5">A balanced routine promotes:</p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            
             {benefits.map((item, index) => (
               <Card key={index} className="p-5">
                 <p className="text-foreground/80">
@@ -120,6 +110,7 @@ export default function AyurvedicLifestylePage() {
           <h2 className="text-3xl font-bold font-serif mb-8">
             Morning Routine for Natural Energy
           </h2>
+          <p className="text-foreground/80 leading-8 mb-5">The morning routine is considered one of the most important parts of Ayurvedic lifestyle practices.</p>
 
           <div className="space-y-6">
 
@@ -129,10 +120,9 @@ export default function AyurvedicLifestylePage() {
               </h3>
 
               <p className="text-foreground/80 leading-8">
-                Ayurveda recommends waking up approximately
-                60–90 minutes before sunrise. This time is
-                believed to support mental clarity, calmness,
-                and productivity.
+                Ayurveda recommends waking up during Brahma Muhurta, which is approximately 60–90 minutes before sunrise. This time of day is believed to be ideal for mental clarity, calmness, and spiritual awareness.
+Early rising helps improve productivity, concentration, and overall vitality.
+
               </p>
             </Card>
 
@@ -142,10 +132,9 @@ export default function AyurvedicLifestylePage() {
               </h3>
 
               <p className="text-foreground/80 leading-8">
-                Drinking warm water in the morning may support
-                digestion and natural cleansing processes.
-                Traditional practices such as tongue scraping
-                and oil pulling are also commonly recommended.
+               Drinking a glass of warm water in the morning may help support digestion and stimulate the body’s natural cleansing processes.
+Traditional Ayurvedic practices such as tongue scraping and oil pulling are also commonly recommended for maintaining oral hygiene and detoxification.
+
               </p>
             </Card>
 
@@ -155,9 +144,8 @@ export default function AyurvedicLifestylePage() {
               </h3>
 
               <p className="text-foreground/80 leading-8">
-                Gentle exercise, yoga, stretching,
-                Surya Namaskar, and Pranayama help improve
-                circulation, flexibility, and overall wellness.
+                Gentle exercise, yoga, or stretching helps improve blood circulation, flexibility, and energy levels. Practices such as Surya Namaskar, breathing exercises (Pranayama), and meditation support both physical and mental wellness.
+Regular physical activity also helps balance stress hormones and maintain metabolic health.
               </p>
             </Card>
 
@@ -173,9 +161,10 @@ export default function AyurvedicLifestylePage() {
           </h2>
 
           <p className="text-foreground/80 leading-8 mb-6">
-            Ayurveda emphasizes that food plays a central role
-            in maintaining health and supporting digestion,
-            nutrient absorption, and energy production.
+            Ayurveda emphasizes that food plays a central role in maintaining health. A balanced diet supports digestion, nutrient absorption, and energy production.
+          </p>
+          <p className="text-foreground/80 leading-8 mb-5">
+          Important dietary principles include:
           </p>
 
           <div className="grid sm:grid-cols-2 gap-4">
@@ -195,7 +184,7 @@ export default function AyurvedicLifestylePage() {
             ))}
 
           </div>
-
+          <p className="text-foreground/80 leading-8 mb-5">Strong digestion, known as Agni, is considered the foundation of good health in Ayurveda.</p>
         </div>
 
         {/* Herbal Support */}
@@ -206,9 +195,9 @@ export default function AyurvedicLifestylePage() {
           </h2>
 
           <p className="text-foreground/80 leading-8 mb-5">
-            Ayurvedic herbs and natural wellness products
-            can help support daily health needs and
-            complement healthy lifestyle routines.
+            In addition to lifestyle practices, Ayurvedic herbs and natural wellness products can help support daily health needs.
+At Bamuso Ayurveda, herbal formulations are inspired by traditional Ayurvedic principles and designed to support modern lifestyles. These products may help complement healthy routines by supporting:
+
           </p>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -228,6 +217,8 @@ export default function AyurvedicLifestylePage() {
             ))}
 
           </div>
+          <p className="text-foreground/80 leading-8 mb-5">Natural herbal supplements, herbal teas, and wellness formulations can be incorporated into daily routines to promote long-term health.</p>
+          <p className="text-foreground/80 leading-8 mb-5">When combined with balanced diet and lifestyle practices, such herbal solutions can contribute to improved well-being.</p>
 
         </div>
 
@@ -237,6 +228,8 @@ export default function AyurvedicLifestylePage() {
           <h2 className="text-3xl font-bold font-serif mb-8">
             Mental Wellness and Stress Management
           </h2>
+          <p className="text-foreground/80 leading-8 mb-5">Mental balance is an essential part of the Ayurvedic lifestyle. Stress and emotional imbalance can negatively affect digestion, sleep, and immunity.</p>
+          <p className="text-foreground/80 leading-8 mb-5">Ayurveda recommends several practices to support mental wellness:</p>
 
           <div className="space-y-5">
 
@@ -284,6 +277,8 @@ export default function AyurvedicLifestylePage() {
           <h2 className="text-3xl font-bold font-serif mb-5">
             Evening Routine for Better Sleep
           </h2>
+          <p className="text-foreground/80 leading-8 mb-5">A proper evening routine prepares the body for restful sleep and recovery.</p>
+          <p className="text-foreground/80 leading-8 mb-5">Recommended practices include:</p>
 
           <div className="grid sm:grid-cols-2 gap-4">
 
@@ -301,7 +296,7 @@ export default function AyurvedicLifestylePage() {
             ))}
 
           </div>
-
+          <p className="text-foreground/80 leading-8 mb-5">Adequate sleep allows the body to repair tissues, restore energy levels, and maintain hormonal balance.</p>
         </div>
 
         {/* Long Term Benefits */}
@@ -310,7 +305,7 @@ export default function AyurvedicLifestylePage() {
           <h2 className="text-3xl font-bold font-serif mb-8">
             Long-Term Benefits of an Ayurvedic Lifestyle
           </h2>
-
+          <p className="text-foreground/80 leading-8 mb-5">Following Ayurvedic daily routines consistently may support many aspects of health, including:</p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
 
             {longTermBenefits.map((item, i) => (
@@ -322,7 +317,9 @@ export default function AyurvedicLifestylePage() {
             ))}
 
           </div>
-
+          <p>
+            The Ayurvedic approach focuses on prevention and long-term balance, rather than only addressing health issues after they appear.
+          </p>
         </div>
 
         {/* Safety */}
@@ -333,7 +330,8 @@ export default function AyurvedicLifestylePage() {
             <h2 className="text-3xl font-bold font-serif mb-6">
               Safety and Responsible Wellness Practices
             </h2>
-
+            <p className="text-foreground/80 leading-8">While natural health practices and herbal products can support wellness, it is important to use them responsibly.</p>
+            <h3 className="font-semibold text-lg">Please keep the following guidelines in mind:</h3>
             <div className="space-y-4">
 
               {safetyTips.map((tip, index) => (
@@ -359,19 +357,16 @@ export default function AyurvedicLifestylePage() {
           </h2>
 
           <p className="text-foreground/80 leading-8 mb-5">
-            Ayurveda teaches that health is not achieved
-            through a single remedy but through consistent
-            daily habits that support the body’s natural rhythms.
+            Ayurveda teaches that health is not achieved through a single remedy but through consistent daily habits that support the body’s natural rhythms.
           </p>
 
           <p className="text-foreground/80 leading-8">
-            By following an Ayurvedic daily routine,
-            maintaining balanced nutrition, practicing mindfulness,
-            and incorporating natural herbal support,
-            individuals can build a strong foundation
-            for long-term health and vitality.
+          By following an Ayurvedic daily routine, maintaining balanced nutrition, practicing mindfulness, and incorporating natural herbal support from Bamuso Ayurveda, individuals can build a strong foundation for long-term health and vitality.
           </p>
 
+           <p className="text-foreground/80 leading-8 mb-5">
+           Living in harmony with natural rhythms allows the body and mind to function optimally, leading to improved energy, better resilience to stress, and a healthier, more balanced life.
+          </p>
         </div>
 
       </section>

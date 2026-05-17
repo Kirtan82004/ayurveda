@@ -33,27 +33,27 @@ const herbs = [
   {
     name: "Triphala",
     description:
-      "A traditional Ayurvedic herbal blend used to support digestion, detoxification, and gut wellness.",
+      "Triphala is a well-known Ayurvedic herbal combination made from three fruits: Amalaki, Bibhitaki, and Haritaki. It is traditionally used to support digestion, detoxification, and gut health.",
   },
   {
     name: "Brahmi",
     description:
-      "Traditionally valued for supporting memory, focus, mental clarity, and relaxation.",
+      "Brahmi is valued in Ayurveda for supporting memory, focus, and mental clarity. It is often used to help maintain cognitive wellness and relaxation.",
   },
   {
     name: "Ashwagandha",
     description:
-      "An adaptogenic herb traditionally used to help the body adapt to stress and support vitality.",
+      "Ashwagandha is widely known as an adaptogenic herb that helps the body adapt to stress and supports overall vitality and mental balance.",
   },
   {
     name: "Tulsi (Holy Basil)",
     description:
-      "Traditionally used to support immunity, respiratory wellness, and emotional balance.",
+      "Tulsi is considered a powerful natural herb that helps support immunity, respiratory health, and emotional well-being.",
   },
   {
     name: "Shankhpushpi",
     description:
-      "Traditionally valued for supporting concentration, calmness, and cognitive wellness.",
+      "Shankhpushpi is traditionally used in Ayurveda to support memory, concentration, and calmness of the mind.",
   },
 ];
 
@@ -61,12 +61,12 @@ const stressReliefPractices = [
   {
     title: "Meditation",
     description:
-      "Daily meditation helps calm the mind, improve emotional stability, and reduce stress.",
+      "Daily meditation helps calm the mind, reduce anxiety, and improve emotional stability.",
   },
   {
     title: "Yoga",
     description:
-      "Yoga and breathing exercises (Pranayama) support both physical flexibility and mental relaxation.",
+      "Yoga supports both physical flexibility and mental relaxation. Certain breathing exercises (Pranayama) are especially effective for stress management.",
   },
   {
     title: "Digital Detox",
@@ -76,12 +76,12 @@ const stressReliefPractices = [
   {
     title: "Quality Sleep",
     description:
-      "Consistent and proper sleep supports emotional balance and mental recovery.",
+      "Sleep plays a crucial role in mental recovery and emotional balance. Ayurveda emphasizes maintaining a consistent sleep schedule.",
   },
   {
     title: "Healthy Diet",
     description:
-      "Fresh fruits, vegetables, whole grains, and herbal ingredients support physical and mental wellness.",
+      "A diet rich in fresh fruits, vegetables, whole grains, and herbal ingredients supports both physical and mental wellness.",
   },
 ];
 
@@ -97,7 +97,7 @@ const safetyTips = [
   "Always follow recommended dosage instructions for herbal supplements.",
   "Individuals with existing medical conditions should consult a healthcare professional before starting new herbal products.",
   "Pregnant or breastfeeding women should seek medical advice before using detox or herbal supplements.",
-  "Herbal products should not replace professional medical treatment.",
+  "Herbal products should not be used as a substitute for professional medical treatment.",
   "Maintain a balanced diet and healthy lifestyle for best results.",
 ];
 
@@ -122,9 +122,7 @@ export default function DetoxMentalWellnessPage() {
           </h1>
 
           <p className="text-lg text-foreground/80 mt-6 leading-8">
-            An Ayurvedic guide to cleansing the body,
-            calming the mind,
-            and supporting long-term mental and physical balance.
+            An Ayurvedic Guide to Cleansing the Body and Calming the Mind
           </p>
 
         </div>
@@ -137,23 +135,15 @@ export default function DetoxMentalWellnessPage() {
         <div className="space-y-6">
 
           <p className="text-foreground/80 leading-8">
-            Modern lifestyles often expose the body and mind
-            to high stress levels,
-            unhealthy routines,
-            environmental toxins,
-            and mental exhaustion.
+            Modern lifestyles have significantly increased stress levels and exposure to environmental toxins. Long working hours, irregular sleep patterns, unhealthy diets, pollution, and excessive digital screen usage can overload the body and mind. Over time, this may lead to fatigue, digestive disturbances, mental exhaustion, poor concentration, and emotional imbalance.
           </p>
 
           <p className="text-foreground/80 leading-8">
-            Ayurveda explains that true wellness comes from
-            maintaining balance within both the body and mind.
+            Ayurveda, the ancient science of natural health and wellness, emphasizes that true well-being comes from maintaining balance within the body and mind. When toxins accumulate and mental stress increases, the body’s natural harmony is disturbed. Detoxification and mental relaxation practices play an essential role in restoring this balance.
           </p>
 
           <p className="text-foreground/80 leading-8">
-            Through detoxification, herbal wellness support,
-            proper nutrition, and mindful lifestyle habits,
-            Ayurveda offers natural ways
-            to restore internal harmony and mental clarity.
+            Through natural herbs, proper diet, and mindful lifestyle practices, Ayurveda offers effective ways to support detoxification, reduce stress, and promote mental clarity.
           </p>
 
         </div>
@@ -166,9 +156,11 @@ export default function DetoxMentalWellnessPage() {
           </h2>
 
           <p className="text-foreground/80 leading-8 mb-6">
-            Ayurveda associates stress and mental imbalance
-            with disturbances in the doshas,
-            especially increased Vata imbalance.
+            In Ayurveda, mental health is closely connected with the balance of Vata, Pitta, and Kapha doshas, as well as the stability of the mind (Manas).
+          </p>
+
+          <p className="text-foreground/80 leading-8 mb-6">
+            Stress often increases Vata imbalance, which can lead to symptoms such as:
           </p>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -184,9 +176,7 @@ export default function DetoxMentalWellnessPage() {
           </div>
 
           <p className="text-foreground/80 leading-8 mt-8">
-            Long-term stress may also negatively affect digestion,
-            immunity, sleep quality,
-            and hormonal balance.
+            When stress continues for long periods, it may also affect digestion, immunity, and hormonal balance. Ayurveda addresses these issues by strengthening the nervous system and supporting the body’s natural adaptability to stress.
           </p>
 
         </div>
@@ -199,11 +189,11 @@ export default function DetoxMentalWellnessPage() {
           </h2>
 
           <p className="text-foreground/80 leading-8 mb-6">
-            Ayurveda explains that toxins,
-            known as Ama,
-            may accumulate in the body due to poor digestion,
-            unhealthy diet,
-            and environmental exposure.
+            Ayurveda teaches that toxins, known as Ama, accumulate in the body due to improper digestion, unhealthy food habits, and environmental exposure.
+          </p>
+
+          <p className="text-foreground/80 leading-8 mb-6">
+            When Ama builds up in the body, it may contribute to:
           </p>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
@@ -217,6 +207,10 @@ export default function DetoxMentalWellnessPage() {
             ))}
 
           </div>
+
+          <p className="text-foreground/80 leading-8 mb-6">
+            Detoxification helps remove these accumulated toxins and restore the natural balance of bodily systems.
+          </p>
 
           <h3 className="text-2xl font-semibold mb-5">
             Ayurvedic Detox Practices
@@ -234,6 +228,10 @@ export default function DetoxMentalWellnessPage() {
 
           </div>
 
+          <p className="text-foreground/80 leading-8 mt-8">
+            These methods gently support the body’s natural cleansing processes.
+          </p>
+
         </div>
 
         {/* Herbs */}
@@ -242,6 +240,10 @@ export default function DetoxMentalWellnessPage() {
           <h2 className="text-3xl font-bold font-serif mb-8">
             Ayurvedic Herbs for Detox and Mental Wellness
           </h2>
+
+          <p className="text-foreground/80 leading-8 mb-6">
+            Ayurveda offers a variety of natural herbs that have been traditionally used to support detoxification and mental balance.
+          </p>
 
           <div className="space-y-5">
 
@@ -261,6 +263,10 @@ export default function DetoxMentalWellnessPage() {
 
           </div>
 
+          <p className="text-foreground/80 leading-8 mt-6">
+            These herbs have been part of Ayurvedic wellness practices for centuries and continue to be valued for their natural benefits.
+          </p>
+
         </div>
 
         {/* Stress Relief Practices */}
@@ -269,6 +275,10 @@ export default function DetoxMentalWellnessPage() {
           <h2 className="text-3xl font-bold font-serif mb-8">
             Natural Practices for Stress Relief
           </h2>
+
+          <p className="text-foreground/80 leading-8 mb-6">
+            Ayurveda recommends several lifestyle practices that help maintain mental balance and reduce stress.
+          </p>
 
           <div className="space-y-5">
 
@@ -298,24 +308,19 @@ export default function DetoxMentalWellnessPage() {
           </h2>
 
           <p className="text-foreground/80 leading-8 mb-5">
-            Bamuso Ayurveda combines traditional Ayurvedic wisdom
-            with modern wellness needs
-            through carefully selected herbal formulations.
+            At Bamuso Ayurveda, the aim is to combine traditional Ayurvedic knowledge with modern wellness needs. Natural herbal formulations inspired by Ayurvedic principles are designed to support overall health and daily well-being.
           </p>
 
           <p className="text-foreground/80 leading-8 mb-5">
-            Herbal detox supplements,
-            stress support capsules,
-            digestive wellness products,
-            and herbal teas
-            may help support the body’s natural balance
-            and relaxation processes.
+            Products such as herbal detox supplements, stress support capsules, digestive formulations, and herbal teas may help support the body’s natural cleansing process and promote relaxation.
+          </p>
+
+          <p className="text-foreground/80 leading-8 mb-5">
+            These herbal wellness solutions are designed to complement healthy lifestyle habits and encourage long-term balance in the body and mind.
           </p>
 
           <p className="text-foreground/80 leading-8">
-            These wellness solutions are designed
-            to complement healthy lifestyle habits
-            and support long-term physical and mental well-being.
+            By incorporating natural herbs, mindful routines, and proper nutrition, individuals can take meaningful steps toward maintaining mental clarity, reducing stress, and supporting overall wellness.
           </p>
 
         </div>
@@ -328,8 +333,15 @@ export default function DetoxMentalWellnessPage() {
           </h2>
 
           <p className="text-foreground/80 leading-8 mb-6">
-            Ayurveda emphasizes that emotional and physical health
-            are deeply interconnected.
+            Ayurveda emphasizes that the mind and body are deeply interconnected. Emotional stress can affect digestion, sleep, and immunity, while physical imbalances may influence mood and mental clarity.
+          </p>
+
+          <p className="text-foreground/80 leading-8 mb-6">
+            Maintaining a balanced lifestyle that includes proper nutrition, herbal support, relaxation techniques, and regular physical activity helps nurture both mental and physical health.
+          </p>
+
+          <p className="text-foreground/80 leading-8 mb-6">
+            When the body is detoxified and the mind is calm, individuals often experience:
           </p>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -368,6 +380,10 @@ export default function DetoxMentalWellnessPage() {
 
             </div>
 
+            <p className="text-foreground/80 leading-8 mt-6">
+              Responsible use of natural wellness products ensures long-term benefits and safety.
+            </p>
+
           </Card>
 
         </div>
@@ -380,18 +396,19 @@ export default function DetoxMentalWellnessPage() {
           </h2>
 
           <p className="text-foreground/80 leading-8 mb-5">
-            Detoxification, stress management,
-            and mental wellness
-            are essential for maintaining
-            a balanced and healthy lifestyle.
+            Detoxification, stress management, and mental wellness are essential components of a healthy and balanced life. In today’s demanding world, taking time to support the body and mind through natural methods has become more important than ever.
+          </p>
+
+          <p className="text-foreground/80 leading-8 mb-5">
+            Ayurveda offers a time-tested approach that focuses on cleansing the body, calming the mind, and restoring internal harmony.
+          </p>
+
+          <p className="text-foreground/80 leading-8 mb-5">
+            By combining natural herbs, mindful daily routines, and supportive wellness products from Bamuso Ayurveda, individuals can take meaningful steps toward improving their overall health, vitality, and mental clarity.
           </p>
 
           <p className="text-foreground/80 leading-8">
-            Ayurveda offers a natural,
-            time-tested approach
-            that supports cleansing the body,
-            calming the mind,
-            and restoring long-term internal harmony.
+            True wellness begins when the body is balanced, the mind is calm, and lifestyle habits support long-term health.
           </p>
 
         </div>
