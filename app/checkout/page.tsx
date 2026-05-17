@@ -159,42 +159,91 @@ Please confirm.
   };
 
 
-  const handlePayNow = () => {
-    if (!Object.values(formData).every(Boolean)) {
-      setAlert({
-        type: "error",
-        title: "Missing details",
-        description: "Please fill all fields before placing the order.",
-      });
-      return;
-    }
-
-    const orderId = generateOrderId();
-
-    const amountInPaise = cartTotal * 100;
-
-    // 🔥 Razorpay Payment Link (NO backend)
-    const paymentLink =
-      `https://rzp.io/l/bamuso-pay` +
-      `?amount=${amountInPaise}` +
-      `&description=Order%20ID:%20${orderId}` +
-      `&prefill[name]=${encodeURIComponent(formData.name)}` +
-      `&prefill[email]=${encodeURIComponent(formData.email)}` +
-      `&prefill[contact]=${encodeURIComponent(formData.phone)}`;
-
-    // ⚠️ Save order as PENDING (not paid yet)
-    submitOrderToSheet("ONLINE_PENDING", orderId, "WAITING");
-
+  const handlePayNow = async () => {
+  if (!Object.values(formData).every(Boolean)) {
     setAlert({
-      type: "info",
-      title: "Complete Payment",
-      description: `Order ID: ${orderId}. Please pay exactly ₹${cartTotal}. After payment, send screenshot with Order ID on WhatsApp.`,
+      type: "error",
+      title: "Missing details",
+      description: "Please fill all fields before placing the order.",
+    });
+    return;
+  }
+
+  try {
+    const API_URL = process.env.NEXT_PUBLIC_API_URL;
+
+    const orderIdLocal = generateOrderId();
+
+    // 🔹 1. Backend se order create
+    const res = await fetch(`${API_URL}/api/payment/create-order`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ amount: cartTotal }),
     });
 
+    const order = await res.json();
 
-    window.open(paymentLink, "_blank");
+    // 🔹 2. Razorpay popup
+    const options = {
+      key: process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID,
+      amount: order.amount,
+      currency: order.currency,
+      order_id: order.id,
+      name: "BAMUSO Ayurveda",
+      description: `Order ${orderIdLocal}`,
 
-  };
+      handler: async function (response) {
+        // 🔹 3. Verify payment
+        const verifyRes = await fetch(`${API_URL}/api/payment/verify`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(response),
+        });
+
+        const data = await verifyRes.json();
+
+        if (data.success) {
+          // ✅ Save order as PAID
+          submitOrderToSheet("ONLINE", orderIdLocal, response.razorpay_payment_id);
+
+          openWhatsApp(orderIdLocal, response.razorpay_payment_id, "ONLINE");
+
+          setAlert({
+            type: "success",
+            title: "Payment Successful 🎉",
+            description: `Order ID: ${orderIdLocal}`,
+          });
+
+          clearCart();
+        } else {
+          setAlert({
+            type: "error",
+            title: "Payment Failed",
+            description: "Verification failed. Contact support.",
+          });
+        }
+      },
+    };
+
+    const rzp = new window.Razorpay(options);
+    rzp.open();
+
+    rzp.on("payment.failed", function () {
+      setAlert({
+        type: "error",
+        title: "Payment Failed",
+        description: "Try again",
+      });
+    });
+
+  } catch (err) {
+    console.error(err);
+  }
+};
 
 useEffect(() => {
   if (alert) {

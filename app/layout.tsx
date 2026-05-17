@@ -12,7 +12,7 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-   metadataBase: new URL("https://bamuso-ayurveda.vercel.app"),
+  metadataBase: new URL("https://bamuso-ayurveda.vercel.app"),
   title: "Buy Ayurvedic Products Online in India | BAMUSO Ayurveda",
   description:
     "Shop authentic Ayurvedic products online from BAMUSO Ayurveda. Ashwagandha, Turmeric, Brahmi Oil & more. 100% natural, AYUSH & GMP certified.",
@@ -53,16 +53,19 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`font-sans antialiased`}>
-         <Script
+        {/* ✅ Razorpay Script (only once) */}
+        <Script
           src="https://checkout.razorpay.com/v1/checkout.js"
           strategy="afterInteractive"
         />
+
         <CartProvider>
-          <Header/>
+          <Header />
           {children}
-          <Footer/>
+          <Footer />
         </CartProvider>
         <Analytics />
+
       </body>
     </html>
   )
