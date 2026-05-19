@@ -212,8 +212,8 @@ export default function DetoxMentalWellnessPage() {
             Detoxification helps remove these accumulated toxins and restore the natural balance of bodily systems.
           </p>
 
-          <h3 className="text-2xl font-semibold mb-5">
-            Ayurvedic Detox Practices
+          <h3 className="text-foreground/80 mb-5">
+            Ayurvedic Detox Practices include:
           </h3>
 
           <div className="grid sm:grid-cols-2 gap-4">
@@ -366,7 +366,13 @@ export default function DetoxMentalWellnessPage() {
             <h2 className="text-3xl font-bold font-serif mb-6">
               Safety and Responsible Use
             </h2>
+            <p className="text-foreground/80 leading-8">
+            While herbal wellness practices are generally gentle and natural, it is important to use them responsibly.</p>
 
+            <p className="text-foreground/80 leading-8">
+            Please keep the following safety guidelines in mind:
+            
+            </p>
             <div className="space-y-4">
 
               {safetyTips.map((tip, index) => (

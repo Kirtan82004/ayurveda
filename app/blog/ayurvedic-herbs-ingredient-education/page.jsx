@@ -103,9 +103,7 @@ export default function AyurvedicHerbsPage() {
           </h1>
 
           <p className="text-lg text-foreground/80 mt-6 leading-8">
-            Understanding the power of natural ingredients,
-            traditional herbal wisdom,
-            and the role of Ayurvedic herbs in holistic wellness.
+            Understanding the Power of Natural Ingredients in Ayurveda
           </p>
 
         </div>
@@ -157,6 +155,10 @@ export default function AyurvedicHerbsPage() {
             has specific characteristics
             that influence the body’s balance.
           </p>
+           <p className="text-foreground/80 leading-8 mb-6">
+      Herbs are categorized based on their:
+          </p>
+
 
           <div className="grid sm:grid-cols-2 gap-4">
 
@@ -184,9 +186,15 @@ export default function AyurvedicHerbsPage() {
         {/* Herbs */}
         <div className="mt-14">
 
-          <h2 className="text-3xl font-bold font-serif mb-8">
+          <h2 className="text-3xl font-bold font-serif mb-3">
             Important Ayurvedic Herbs and Their Traditional Uses
           </h2>
+
+          <p className="text-foreground/80 leading-8 mb-8">
+            Many herbs used in Ayurvedic formulations
+            have been respected for centuries
+            for their natural wellness benefits.
+          </p>
 
           <div className="space-y-5">
 
@@ -224,6 +232,10 @@ export default function AyurvedicHerbsPage() {
             Instead of using a single ingredient alone,
             Ayurvedic formulations often combine multiple herbs
             that complement each other.
+          </p>
+
+          <p className="text-foreground/80 leading-8 mb-8">
+            This approach offers several advantages:
           </p>
 
           <div className="grid sm:grid-cols-2 gap-4">
@@ -309,11 +321,15 @@ export default function AyurvedicHerbsPage() {
             in their wellness and personal care products.
           </p>
 
-          <p className="text-foreground/80 leading-8 mb-8">
+          <p className="text-foreground/80 leading-8 mb-5">
             Understanding herbal ingredients
             allows consumers to make better decisions
             and choose products
             that align with natural health practices.
+          </p>
+
+          <p className="text-foreground/80 leading-8 mb-8">
+            Quality Ayurvedic products should ideally focus on:
           </p>
 
           <div className="grid sm:grid-cols-2 gap-4">
@@ -340,9 +356,14 @@ export default function AyurvedicHerbsPage() {
         {/* Daily Life */}
         <div className="mt-14">
 
-          <h2 className="text-3xl font-bold font-serif mb-8">
+          <h2 className="text-3xl font-bold font-serif mb-5">
             Integrating Ayurvedic Herbs into Daily Life
           </h2>
+
+          <p className="text-foreground/80 leading-8 mb-8">
+            Ayurvedic herbs can be incorporated
+            into daily wellness routines in several ways:
+          </p>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
 
@@ -372,6 +393,15 @@ export default function AyurvedicHerbsPage() {
             <h2 className="text-3xl font-bold font-serif mb-6">
               Safety and Responsible Use
             </h2>
+
+            <p className="text-foreground/80 leading-8 mb-6">
+              Although Ayurvedic herbs are natural,
+              it is important to use them responsibly.
+            </p>
+
+            <p className="text-foreground/80 leading-8 mb-6">
+              Please consider the following safety guidelines:
+            </p>
 
             <div className="space-y-4">
 

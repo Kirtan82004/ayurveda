@@ -401,7 +401,7 @@ export default function Home() {
             Subscribe to our WhatsApp channel for wellness tips, product updates, and special offers
           </p>
           <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground" asChild>
-            <a href="https://whatsapp.com/channel/0029Va8znqQ42DciLmcEAY2T" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/919990359097" target="_blank" rel="noopener noreferrer">
               <MessageCircle className="w-5 h-5 mr-2" />
               Subscribe on WhatsApp
             </a>

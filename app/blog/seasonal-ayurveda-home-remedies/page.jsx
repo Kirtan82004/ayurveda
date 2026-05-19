@@ -34,7 +34,7 @@ const homeRemedies = [
   {
     title: "Turmeric Milk for Immunity",
     description:
-      "Turmeric milk, also known as golden milk, is traditionally used to support immunity and overall wellness.",
+      "Turmeric milk, also known as “golden milk,” is traditionally used to support immunity and overall wellness.",
   },
   {
     title: "Triphala for Gentle Detox",
@@ -120,6 +120,8 @@ export default function SeasonalAyurvedaPage() {
             When these energies remain balanced,
             the body stays healthy,
             energetic, and resilient.
+            However, sudden seasonal changes can disturb this balance
+            and lead to common health concerns.
           </p>
 
           <p className="text-foreground/80 leading-8">
@@ -372,6 +374,11 @@ export default function SeasonalAyurvedaPage() {
           </div>
 
           <p className="text-foreground/80 leading-8 mt-8">
+            may help complement seasonal health routines
+            and support overall well-being.
+          </p>
+
+          <p className="text-foreground/80 leading-8 mt-5">
             When combined with proper diet,
             hydration,
             and lifestyle habits,
@@ -389,10 +396,14 @@ export default function SeasonalAyurvedaPage() {
             Lifestyle Tips for Seasonal Health
           </h2>
 
-          <p className="text-foreground/80 leading-8 mb-8">
+          <p className="text-foreground/80 leading-8 mb-5">
             Ayurveda emphasizes that wellness depends
             not only on remedies
             but also on daily lifestyle practices.
+          </p>
+
+          <p className="text-foreground/80 leading-8 mb-8">
+            Here are some seasonal wellness tips:
           </p>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -457,6 +468,15 @@ export default function SeasonalAyurvedaPage() {
             <h2 className="text-3xl font-bold font-serif mb-6">
               Safety and Responsible Use
             </h2>
+
+            <p className="text-foreground/80 leading-8 mb-6">
+              Although Ayurvedic herbs and home remedies are natural,
+              they should always be used responsibly.
+            </p>
+
+            <p className="text-foreground/80 leading-8 mb-6">
+              Please keep these safety guidelines in mind:
+            </p>
 
             <div className="space-y-4">
 

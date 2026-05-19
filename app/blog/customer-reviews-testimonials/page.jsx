@@ -111,12 +111,12 @@ export default function CustomerReviewsPage() {
             Why Customers Trust Bamuso Ayurveda
           </h2>
 
-          <p className="text-foreground/80 leading-8 mb-6">
+          <p className="text-foreground/80 leading-8">
             Many customers choose Bamuso Ayurveda because the brand
             focuses on combining traditional herbal wisdom with
             modern quality standards.
           </p>
-
+          <p className="text-foreground/80 leading-8 mb-3">Some reasons customers appreciate Bamuso Ayurveda products include:</p>
           <div className="grid sm:grid-cols-2 gap-4">
             {[
               "Natural herbal ingredients inspired by Ayurveda",

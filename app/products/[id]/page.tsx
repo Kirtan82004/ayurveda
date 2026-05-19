@@ -524,7 +524,7 @@ export default function ProductDetailPage() {
                   <Link href="/cart">View Cart</Link>
                 </Button>
                 <Button asChild size="lg" className="flex-1 bg-primary hover:bg-primary/90">
-                  <a href={`https://wa.me/918377997202?text=I want to order ${product.name} (${product.price})`} target="_blank" rel="noopener noreferrer">
+                  <a href={`https://wa.me/919990359097?text=I want to order ${product.name} (${product.price})`} target="_blank" rel="noopener noreferrer">
                     <MessageCircle className="w-5 h-5 mr-2" />
                     Order Now
                   </a>

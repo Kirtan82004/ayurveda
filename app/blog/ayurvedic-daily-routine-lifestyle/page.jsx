@@ -48,7 +48,9 @@ export default function AyurvedicLifestylePage() {
           <h1 className="text-4xl md:text-5xl font-bold font-serif leading-tight">
             Ayurvedic Daily Routine & Lifestyle
           </h1>
-
+            <p className="text-lg text-foreground/80 mt-6 leading-8">
+            A Complete Guide to Living a Balanced and Healthy Lif
+          </p>
         </div>
       </section>
 
@@ -57,10 +59,6 @@ export default function AyurvedicLifestylePage() {
 
         {/* Intro */}
         <div className="space-y-6">
-          
-          <h2 className="text-3xl font-bold font-serif mb-5">
-            A Complete Guide to Living a Balanced and Healthy Lif
-          </h2>
           <p className="text-foreground/80 leading-8">
             In today’s fast-paced world, people often struggle with fatigue, stress, digestive issues, poor sleep, and reduced immunity. Irregular eating habits, lack of proper rest, excessive screen time, and unhealthy lifestyle choices can gradually disturb the body’s natural balance.
           </p>

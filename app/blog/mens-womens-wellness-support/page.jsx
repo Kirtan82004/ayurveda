@@ -134,7 +134,7 @@ export default function MensWomenWellnessPage() {
         <div className="space-y-6">
 
           <p className="text-foreground/80 leading-8">
-            In today’s fast-paced lifestyle, both men and women face increasing health challenges such as fatigue, hormonal imbalance, low stamina, stress, reduced immunity, and lack of physical vitality. Long working hours, mental pressure, unhealthy diet, poor sleep, and lack of physical activity can gradually affect the body’s natural balance.
+            In today’s fast-paced lifestyle, both men and women face increasing health challenges such as fatigue, hormonal imbalance, low stamina, stress, reduced immunity, and lack of physical vitality. Long working hours, mental pressure, unhealthy diet, poor sleep, and lack of physical activity gradually disturb the body’s natural balance.
           </p>
 
           <p className="text-foreground/80 leading-8">
@@ -142,7 +142,7 @@ export default function MensWomenWellnessPage() {
           </p>
 
           <p className="text-foreground/80 leading-8">
-            The concept of wellness in Ayurveda goes beyond treating symptoms. It focuses on strengthening the body internally so that both men and women can maintain long-term vitality and well-being.
+            The concept of wellness in Ayurveda goes beyond treating symptoms. It focuses on strengthening the body internally so that both men and women can maintain long-term vitality and well-being through natural practices and lifestyle alignment.
           </p>
 
         </div>
@@ -175,7 +175,7 @@ export default function MensWomenWellnessPage() {
           </p>
 
           <p className="text-foreground/80 leading-8 mt-6">
-            However, when lifestyle habits become irregular, these systems may become imbalanced, leading to common problems such as low energy, stress, fatigue, poor reproductive health, and hormonal fluctuations.
+            However, when lifestyle habits become irregular, these systems may become imbalanced, leading to issues like low energy, stress, fatigue, and hormonal fluctuations.
           </p>
 
         </div>
@@ -186,7 +186,7 @@ export default function MensWomenWellnessPage() {
           <h2 className="text-3xl font-bold font-serif mb-8">
             Common Wellness Challenges in Modern Lifestyle
           </h2>
-
+          <p className="text-foreground/80 leading-8 mb-6">Both men and women commonly experience health concerns due to modern lifestyle factors.</p>
           <div className="grid lg:grid-cols-2 gap-6">
 
             <Card className="p-6">
@@ -194,7 +194,7 @@ export default function MensWomenWellnessPage() {
               <h3 className="text-2xl font-semibold mb-5">
                 In Men
               </h3>
-
+              <p className="text-foreground/80 leading-8 mb-5">Men may experience issues such as:</p>
               <div className="space-y-3">
 
                 {menChallenges.map((item, index) => (
@@ -215,7 +215,7 @@ export default function MensWomenWellnessPage() {
               <h3 className="text-2xl font-semibold mb-5">
                 In Women
               </h3>
-
+              <p className="text-foreground/80 leading-8 mb-5">Women may experience challenges such as:</p>
               <div className="space-y-3">
 
                 {womenChallenges.map((item, index) => (
@@ -375,7 +375,9 @@ export default function MensWomenWellnessPage() {
             <h2 className="text-3xl font-bold font-serif mb-6">
               Safety & Responsible Usage
             </h2>
-
+            <p className="text-foreground/80 leading-8 mb-4">While Ayurvedic products are based on natural ingredients, responsible usage is always important.
+Please keep the following safety recommendations in mind:
+</p>
             <div className="space-y-4">
 
               {safetyTips.map((tip, index) => (
