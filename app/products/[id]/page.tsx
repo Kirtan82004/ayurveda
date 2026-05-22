@@ -5,10 +5,142 @@ import { useState } from 'react';
 import { useParams } from 'next/navigation';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
-import { MessageCircle, ArrowLeft, Check, ShoppingCart } from 'lucide-react';
+import { MessageCircle, ArrowLeft, Check, ShoppingCart,ChevronDown } from 'lucide-react';
 import { useCart } from '@/app/cart-context';
 
+
 const PRODUCTS = [
+  {
+    id: 1,
+    name: "BMS Super X Capsule",
+    category: "Male Wellness",
+    MRP: '₹1999',
+    price: "₹999",
+    rating: 4.7,
+    reviews: 96,
+    description: "Boosts Vitality, Stamina & Physical Strength. Natural Support for Stress Relief & Overall Performance Capsules",
+    longDescription:
+      "Aaj ke busy lifestyle, stress aur physical fatigue ki wajah se body energy aur stamina naturally affect ho sakti hai. BMS Super X ek Ayurvedic formulation hai jo traditional herbs aur minerals (Rasayan) ke combination se tayyar ki gayi hai. Iska purpose body ko daily vitality, strength aur overall wellness support dena hai.Ye formulation specially un logon ke liye design ki gayi hai jo apne routine me thakaan, low energy aur body weakness feel karte hain. Herbal ingredients body ko andar se nourish karte hain, stress handle karne ki capacity support karte hain aur active lifestyle maintain karne me madad dete hain",
+    images: ["/images/capsule1.webp", "/images/capsule2.webp", "/images/capsule3.webp", '/images/box.webp'],
+    image:
+      "data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22%3E%3Crect fill=%22%23F5E1A4%22 width=%22200%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fontSize=%2216%22 fill=%22%23B8860B%22 textAnchor=%22middle%22 dominantBaseline=%22middle%22%3EBMS Capsule%3C/text%3E%3C/svg%3E",
+
+    ingredients: [
+      { name: "Jaifal (Nutmeg)", function: "Nervous system support, relaxation & sleep support" },
+      { name: "Gokhru (Tribulus)", function: "Vitality & urinary wellness support" },
+      { name: "Safed Musli", function: "Physical strength & stamina support" },
+      { name: "Kokilaksh", function: "Reproductive & urinary health support" },
+      { name: "Dalchini (Cinnamon)", function: "Blood circulation & digestion support" },
+      { name: "Shatavari", function: "Hormonal balance & immunity support" },
+      { name: "Lata Kasturi", function: "Nerve wellness & vitality support" },
+      { name: "Lavang (Clove)", function: "Circulation & natural defense support" },
+      { name: "Kesar (Saffron)", function: "Mood, energy & overall vitality support" },
+      { name: "Ashwagandha", function: "Stress relief, strength & stamina support" },
+      { name: "Sonth (Dry Ginger)", function: "Digestion & absorption support" },
+      { name: "Kaunch Beej", function: "Reproductive wellness & vitality support" },
+      { name: "Akarkara", function: "Traditionally known for vitality and stamina support" },
+    ],
+
+    benefits: [
+      "Daily energy, stamina aur performance support",
+      "Sustained energy levels & physical endurance support",
+      "Stress management & mood wellness support",
+      "Healthy blood circulation support",
+      "Nutrient absorption support",
+      "Hormonal balance support",
+      "Reproductive wellness support",
+      "Immunity & body rejuvenation support"
+    ],
+
+    dosage:
+      "1 capsule daily at night with lukewarm milk or water, or as directed by a healthcare professional or experienced Doctor’s direction ",
+
+    packDetails: {
+      form: "Capsules",
+      quantity: "30 Capsules",
+      shelfLife: "36 Months",
+      storage: "Store in cool & dry place, away from sunlight"
+    },
+
+    manufacturingQuality: {
+      manufacturedBy: "Human Pharmecia Inc.",
+      certifiedBy: ["AYUSH", "GMP"]
+    },
+
+    safetyInformation: [
+      "Ayurvedic wellness supplement",
+      "Not intended to diagnose, treat, cure, or prevent any disease",
+      "People with BP, diabetes, heart conditions should consult doctor before use",
+      "Not recommended for pregnant or lactating women",
+      "Keep away from children"
+    ],
+
+    whyChoose: [
+      "Traditional Ayurvedic herbs + Rasayan",
+      "Natural formulation",
+      "Busy lifestyle ke liye wellness support",
+      "Trusted Ayurvedic manufacturing standards"
+    ],
+
+    faqs: [
+      {
+        question: "What is BMS Super X and who is it designed for?",
+        answer: "BMS Super X is a premium Ayurvedic formulation designed to support daily vitality, strength, and overall wellness. It is specifically crafted for individuals with busy lifestyles who experience physical fatigue, low energy, stress, or general body weakness. It helps restore stamina and supports an active lifestyle."
+      },
+      {
+        question: "How does BMS Super X work to improve energy levels?",
+        answer: "The formulation combines traditional herbs like Ashwagandha and Safed Musli with powerful mineral Rasayans like Shilajit and Makar Dhwaj. These ingredients work synergistically to nourish the body from within, improve nutrient absorption, and support the nervous system, leading to sustained energy and reduced fatigue."
+      },
+      {
+        question: "What are the key ingredients in BMS Super X?",
+        answer: "BMS Super X contains a potent blend of herbs and minerals. Key herbal ingredients include Ashwagandha, Safed Musli, Kaunch Beej, Kesar (Saffron), and Shatavari. It is further enhanced with mineral Rasayans such as Shuddh Shilajit, Tribhang Bhasma, and Abhrak Bhasma for deep rejuvenation."
+      },
+      {
+        question: "What is the recommended dosage for best results?",
+        answer: "For optimal benefits, take 1 capsule daily at night. It is best consumed with lukewarm milk to enhance the absorption of the Ayurvedic herbs. If milk is not available, it can also be taken with lukewarm water."
+      },
+      {
+        question: "How long should I take BMS Super X to see visible results?",
+        answer: "Ayurvedic supplements work on the root cause and generally require consistency. While you may feel improvements in energy levels within the first few weeks, it is recommended to continue the course for at least 2-3 months for long-term vitality and strength benefits."
+      },
+      {
+        question: "Can I take this supplement if I have Diabetes or High Blood Pressure?",
+        answer: "BMS Super X is a natural formulation; however, individuals with specific medical conditions such as Diabetes, High Blood Pressure, or heart conditions should consult a doctor or healthcare professional before starting this supplement to ensure it aligns with their current treatment."
+      },
+      {
+        question: "Is BMS Super X safe for long-term use?",
+        answer: "Yes, BMS Super X is an Ayurvedic wellness supplement made from natural ingredients and is generally considered safe for adult consumption. It is non-habit forming and designed to support your daily routine naturally."
+      },
+      {
+        question: "Is this product suitable for women?",
+        answer: "While the product supports overall vitality and hormonal balance, it has specific safety restrictions. It is not recommended for pregnant or lactating women. Women planning to use it for general fatigue should consult a healthcare professional first."
+      },
+      {
+        question: "Can I take BMS Super X with water instead of milk?",
+        answer: "Yes, you can take the capsule with lukewarm water. However, according to Ayurveda, milk acts as an Anupana (vehicle) that helps deliver the potency of herbs like Ashwagandha and Shilajit deeper into the tissues, so milk is the preferred method."
+      },
+      {
+        question: "Are there any side effects?",
+        answer: "BMS Super X is an Ayurvedic product manufactured under GMP and AYUSH-certified standards. When taken as per the directed dosage, it typically does not cause side effects. However, do not exceed the recommended dose."
+      },
+      {
+        question: "Does this product help with stress and mood?",
+        answer: "Yes, ingredients like Ashwagandha, Jaifal (Nutmeg), and Kesar (Saffron) are included specifically to support the nervous system, improve mood, and help the body manage daily stress more effectively."
+      },
+      {
+        question: "Is there an age limit for using BMS Super X?",
+        answer: "This product is intended for adults looking to improve their vitality and strength. It should be kept out of reach of children and is not recommended for use by minors."
+      },
+      {
+        question: "What is the shelf life of the product?",
+        answer: "The product has a shelf life of 36 months (3 years) from the date of manufacturing. Please store it in a cool, dry place away from direct sunlight."
+      },
+      {
+        question: "Is BMS Super X a certified product?",
+        answer: "Yes, BMS Super X is manufactured by Human Pharmecia Inc. and is a quality-assured product with AYUSH and GMP (Good Manufacturing Practice) certifications, ensuring it meets high standards of safety and quality."
+      }
+    ]
+  },
   {
     id: 2,
     name: 'BMS Super X Oil',
@@ -128,54 +260,66 @@ const PRODUCTS = [
     ]
   },
   {
-    id: 1,
-    name: "BMS Super X Capsule",
-    category: "Male Wellness",
+    id: 3,
+    name: 'BMS Super X Combo Pack (Capsule + Oil)',
+    category: 'Male Wellness',
     MRP: '₹1999',
-    price: "₹999",
-    rating: 4.7,
-    reviews: 96,
-    description: "Boosts Vitality, Stamina & Physical Strength. Natural Support for Stress Relief & Overall Performance Capsules",
+    price: '₹1499',
+    rating: 4.9,
+    reviews: 186,
+    description:
+      'Boost vitality, stamina aur physical strength with Ayurvedic internal + external wellness support.',
+
     longDescription:
-      "Aaj ke busy lifestyle, stress aur physical fatigue ki wajah se body energy aur stamina naturally affect ho sakti hai. BMS Super X ek Ayurvedic formulation hai jo traditional herbs aur minerals (Rasayan) ke combination se tayyar ki gayi hai. Iska purpose body ko daily vitality, strength aur overall wellness support dena hai.Ye formulation specially un logon ke liye design ki gayi hai jo apne routine me thakaan, low energy aur body weakness feel karte hain. Herbal ingredients body ko andar se nourish karte hain, stress handle karne ki capacity support karte hain aur active lifestyle maintain karne me madad dete hain",
-    images: ["/images/capsule1.webp", "/images/capsule2.webp", "/images/capsule3.webp", '/images/box.webp'],
+      'Modern lifestyle ka stress, fatigue aur pressure dheere dheere body ki natural energy, stamina aur strength ko reduce kar deta hai. Agar aap low energy, body weakness, stress, reduced stamina ya active lifestyle maintain karne mein difficulty feel karte hain, toh BMS Super X Combo Pack aapke liye specially design kiya gaya hai. Yeh combo Ayurvedic principle “Internal Nourishment + External Rejuvenation” par based hai. BMS Super X Capsule body ko andar se vitality, stamina aur stress resilience support karta hai, jabki BMS Super X Oil externally circulation, nourishment aur relaxation support deta hai. Traditional Ayurvedic herbs, mineral rasayan aur nourishing oils se bana yeh combo daily wellness, strength aur active lifestyle maintain karne mein madad karta hai.',
+
+    images: [
+      '/images/combo.jpeg',
+      '/images/combo2.jpeg',
+      '/images/comboOil.png',
+      '/images/combo4.png',
+      '/images/Combo5.png'
+
+    ],
+
     image:
-      "data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22%3E%3Crect fill=%22%23F5E1A4%22 width=%22200%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fontSize=%2216%22 fill=%22%23B8860B%22 textAnchor=%22middle%22 dominantBaseline=%22middle%22%3EBMS Capsule%3C/text%3E%3C/svg%3E",
+      'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22%3E%3Crect fill=%22%23F5E1A4%22 width=%22200%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fontSize=%2218%22 fill=%22%23B8860B%22 textAnchor=%22middle%22 dominantBaseline=%22middle%22%3EBMS Combo%3C/text%3E%3C/svg%3E',
 
     ingredients: [
-      { name: "Jaifal (Nutmeg)", function: "Nervous system support, relaxation & sleep support" },
-      { name: "Gokhru (Tribulus)", function: "Vitality & urinary wellness support" },
-      { name: "Safed Musli", function: "Physical strength & stamina support" },
-      { name: "Kokilaksh", function: "Reproductive & urinary health support" },
-      { name: "Dalchini (Cinnamon)", function: "Blood circulation & digestion support" },
-      { name: "Shatavri", function: "Hormonal balance & immunity support" },
-      { name: "Lata Kasturi", function: "Nerve wellness & vitality support" },
-      { name: "Lavang (Clove)", function: "Circulation & natural defense support" },
-      { name: "Kesar (Saffron)", function: "Mood, energy & overall vitality support" },
-      { name: "Ashwagandha", function: "Stress relief, strength & stamina support" },
-      { name: "Sonth (Dry Ginger)", function: "Digestion & absorption support" },
-      { name: "Kaunch Beej", function: "Reproductive wellness & vitality support" },
+      { name: "Ashwagandha", function: "Supports stress relief, stamina & strength" },
+      { name: "Safed Musli", function: "Traditionally used for vitality & endurance support" },
+      { name: "Kaunch Beej", function: "Supports vitality & reproductive wellness" },
+      { name: "Shatavari", function: "Supports hormonal balance & immunity" },
+      { name: "Gokhru (Tribulus)", function: "Supports vitality & urinary wellness" },
+      { name: "Jaifal (Nutmeg)", function: "Supports nervous system relaxation" },
+      { name: "Lavang (Clove)", function: "Supports circulation & natural defense" },
+      { name: "Dalchini (Cinnamon)", function: "Supports digestion & circulation" },
+      { name: "Sonth (Dry Ginger)", function: "Helps improve digestion & absorption" },
+      { name: "Kesar (Saffron)", function: "Supports mood, vitality & energy" },
+      { name: "Akarkara", function: "Traditionally known for stamina & vitality support" },
     ],
 
     benefits: [
-      "Daily energy, stamina aur performance support",
-      "Sustained energy levels & physical endurance support",
-      "Stress management & mood wellness support",
-      "Healthy blood circulation support",
-      "Nutrient absorption support",
-      "Hormonal balance support",
-      "Reproductive wellness support",
-      "Immunity & body rejuvenation support"
+      "Supports natural stamina & vitality",
+      "Helps maintain daily energy & endurance",
+      "Supports healthy blood circulation",
+      "Promotes body nourishment & relaxation",
+      "Supports stress management & mood balance",
+      "Helps maintain an active lifestyle",
+      "Supports reproductive wellness",
+      "Provides internal & external Ayurvedic support",
+      "Helps nourish the body from within and outside",
+      "Supports overall wellness & rejuvenation"
     ],
 
     dosage:
-      "1 capsule daily at night with lukewarm milk or water, or as directed by a healthcare professional or experienced Doctor’s direction ",
+      "Capsule: Take 1 capsule daily at night with lukewarm milk for best absorption, or lukewarm water if milk isn't available. Milk acts as an Ayurvedic Anupana (carrier), helping herbs reach deeper tissues. Oil: Warm a few drops of BMS Super X Oil between your palms and massage gently on the desired area. Use 1–2 times daily — preferably after bath or before bedtime. For external use only.",
 
     packDetails: {
-      form: "Capsules",
-      quantity: "30 Capsules",
+      form: "Capsule + Herbal Oil Combo",
+      quantity: "1 Bottle Capsules + 1 Bottle Oil",
       shelfLife: "36 Months",
-      storage: "Store in cool & dry place, away from sunlight"
+      storage: "Store in a cool & dry place away from direct sunlight"
     },
 
     manufacturingQuality: {
@@ -184,18 +328,27 @@ const PRODUCTS = [
     },
 
     safetyInformation: [
-      "Ayurvedic wellness supplement",
+      "BMS Super X Capsule is an Ayurvedic wellness supplement",
+      "BMS Super X Oil is for external use only",
       "Not intended to diagnose, treat, cure, or prevent any disease",
-      "People with BP, diabetes, heart conditions should consult doctor before use",
+      "Individuals with diabetes, high blood pressure, or heart conditions should consult a healthcare professional before use",
       "Not recommended for pregnant or lactating women",
-      "Keep away from children"
+      "Avoid contact of the oil with eyes, cuts, or wounds",
+      "Discontinue use if irritation occurs",
+      "Keep away from children",
+      "Always follow the recommended dosage",
     ],
 
     whyChoose: [
-      "Traditional Ayurvedic herbs + Rasayan",
-      "Natural formulation",
-      "Busy lifestyle ke liye wellness support",
-      "Trusted Ayurvedic manufacturing standards"
+      "This two-product system works inside and out. The capsule uses powerful Ayurvedic herbs and rasayans to boost daily energy, build stamina, reduce stress, balance hormones, and support reproductive and overall body strength — naturally and consistently.",
+      "The herbal oil complements it externally through massage, supporting healthy blood circulation, muscle relaxation, deep tissue nourishment, and stress relief. Its light texture absorbs easily for maximum benefit.",
+      "Ideal for adults who experience low energy or fatigue, lead a stressful lifestyle, or want to maintain strength and vitality the natural, Ayurvedic way.",
+      "Quality you can trust: Manufactured in a GMP-certified facility with AYUSH Ministry-approved formulations — no harmful chemicals, just safe and consistent Ayurvedic care.",
+      "Premium nourishing herbal oil with easy absorption",
+      "Manufactured in GMP-certified facility",
+      "AYUSH approved formulation",
+      "No harmful chemicals",
+      "Suitable for daily Ayurvedic wellness routine"
     ],
 
     faqs: [
@@ -254,12 +407,68 @@ const PRODUCTS = [
       {
         question: "Is BMS Super X a certified product?",
         answer: "Yes, BMS Super X is manufactured by Human Pharmecia Inc. and is a quality-assured product with AYUSH and GMP (Good Manufacturing Practice) certifications, ensuring it meets high standards of safety and quality."
+      },
+      {
+        question: "What is BMS Super X Oil?",
+        answer:
+          "BMS Super X Oil is an Ayurvedic proprietary herbal oil made with traditional herbs like Ashwagandha, Shilajit, Akarkara, and Kesar. It is used for body nourishment, circulation support, and overall wellness."
+      },
+      {
+        question: "Is this oil for internal or external use?",
+        answer:
+          "This product is strictly for external use only. It should not be consumed orally."
+      },
+      {
+        question: "How do I use this oil?",
+        answer:
+          "Take a small quantity (a few drops) and gently massage onto the required body area. It can be used 1–2 times daily, preferably after a bath or before bedtime."
+      },
+      {
+        question: "Who can use BMS Super X Oil?",
+        answer:
+          "It is suitable for adult men and women. People with sensitive skin should perform a patch test before regular use."
+      },
+      {
+        question: "How long does it take to see results?",
+        answer:
+          "Herbal products work gradually. With regular use, users may experience improved body relaxation, nourishment, and comfort. Results may vary from person to person."
+      },
+      {
+        question: "Can this oil help with body weakness or fatigue?",
+        answer:
+          "The herbs used in this formulation are traditionally known in Ayurveda for supporting strength, vitality, and nourishment, which may be helpful during periods of tiredness or low energy."
+      },
+      {
+        question: "Does it contain chemicals or artificial fragrance?",
+        answer:
+          "This is an Ayurvedic herbal oil prepared with traditional herbs and natural base oils. No artificial medicinal chemicals are added."
+      },
+      {
+        question: "Is it safe for daily use?",
+        answer:
+          "Yes, it is generally considered safe for daily use when applied in the recommended quantity. Discontinue use if irritation occurs."
+      },
+      {
+        question: "Can I apply it on sensitive areas?",
+        answer:
+          "Apply only on external body areas with gentle massage. Avoid contact with eyes, mucous membranes, cuts, or open wounds."
+      },
+      {
+        question: "How should I store the oil?",
+        answer:
+          "Keep the bottle tightly closed and store in a cool, dry place away from direct sunlight."
+      },
+      {
+        question: "Does this product cure any disease?",
+        answer:
+          "No. This is an Ayurvedic wellness support oil. It is not intended to diagnose, treat, cure, or prevent any disease."
       }
+
     ]
   },
 
   {
-    id: 3,
+    id: 4,
     name: "Neem Face Mask",
     category: "Skin",
     MRP: '₹999',
@@ -303,7 +512,7 @@ const PRODUCTS = [
   },
 
   {
-    id: 4,
+    id: 5,
     name: "Brahmi Hair Oil",
     category: "Hair",
     MRP: '₹999',
@@ -337,7 +546,9 @@ const PRODUCTS = [
     safetyInformation: ["For external use only"],
     whyChoose: ["Cooling Ayurvedic oil"],
     faqs: []
-  }
+  },
+
+
 ];
 
 export default function ProductDetailPage() {
@@ -350,7 +561,7 @@ export default function ProductDetailPage() {
   const { addToCart } = useCart();
   const [quantity, setQuantity] = useState(1);
   const [showAddedMessage, setShowAddedMessage] = useState(false);
-
+  const [openFAQ, setOpenFAQ] = useState<number | null>(0);
 
   const handleAddToCart = () => {
     if (!product) return;
@@ -555,13 +766,25 @@ export default function ProductDetailPage() {
                 ))}
               </ul>
               {(product.id == 1) ? (
+
                 <div className="mt-1">
                   <h2 className="text-2xl font-serif font-bold mb-6 text-foreground">Mineral Rasayan Support</h2>
                   <p className="text-lg text-foreground/80 leading-relaxed"><span className='font-bold'>Shuddh Shilajit –</span> Energy & stamina support</p>
                   <p className="text-lg text-foreground/80 leading-relaxed"><span className='font-bold'>Tribhang Bhasma –</span> Nerve wellness support</p>
                   <p className="text-lg text-foreground/80 leading-relaxed"><span className='font-bold'>Abhrak Bhasma –</span> Body rejuvenation support</p>
-                  <p className="text-lg text-foreground/80 leading-relaxed"><span className='font-bold'>Makar Dhwaj  –</span> Traditional Rasayan for vitality & strength support</p>
+                  <p className="text-lg text-foreground/80 leading-relaxed"><span className='font-bold'>Makar Dhwaj –</span> Traditional Rasayan for vitality & strength support</p>
 
+                </div>
+              ) : null}
+              {(product.id == 3) ? (
+                <div className="mt-1">
+                  <h2 className="text-2xl font-serif font-bold mb-6 text-foreground">Mineral Rasayan Support</h2>
+                  <p className="text-lg text-foreground/80 leading-relaxed"><span className='font-bold'>Shuddh Shilajit –</span>Supports energy and stamina</p>
+                  <p className="text-lg text-foreground/80 leading-relaxed"><span className='font-bold'>Tribhang Bhasma –</span> Supports nerve wellness</p>
+                  <p className="text-lg text-foreground/80 leading-relaxed"><span className='font-bold'>Abhrak Bhasma –</span> Supports body rejuvenation</p>
+                  <p className="text-lg text-foreground/80 leading-relaxed"><span className='font-bold'>Makar Dhwaj  –</span> Traditional Rasayan for vitality & strength support</p>
+                  <p className="text-lg text-foreground/80 leading-relaxed"><span className='font-bold'>Jaitoon Oil (Olive Oil) –</span> Supports body rejuvenation</p>
+                  <p className="text-lg text-foreground/80 leading-relaxed"><span className='font-bold'>Til Oil (Sesame Oil) –</span> Traditional Rasayan for vitality & strength support</p>
                 </div>
               ) : null}
             </Card>
@@ -584,7 +807,6 @@ export default function ProductDetailPage() {
             <h2 className="text-2xl font-serif font-bold mb-4 text-foreground">How to Use</h2>
             <p className="text-lg text-foreground/80 leading-relaxed">{product.dosage}</p>
           </Card>
-
           <div className="mt-16 grid md:grid-cols-2 gap-12">
             {/* Ingredients */}
             <Card className="p-8 border border-border">
@@ -612,17 +834,65 @@ export default function ProductDetailPage() {
               </ul>
             </Card>
           </div>
+          {/* FAQs */}
 
           <div className="mt-16">
-            <Card className="p-8 border border-border">
-              <h2 className="text-2xl font-serif font-bold mb-6 text-foreground">FAQs</h2>
-              <div className="space-y-4">
-                {product.faqs.map((faq, index) => (
-                  <div key={index}>
-                    <p className="font-semibold text-foreground mb-1">{faq.question}</p>
-                    <p className="text-foreground/80">{faq.answer}</p>
-                  </div>
-                ))}
+            <Card className="border border-border shadow-sm rounded-2xl overflow-hidden">
+
+              <div className="border-b border-border px-8 py-6 bg-muted/30">
+                <h2 className="text-3xl font-serif font-bold text-foreground">
+                  Frequently Asked Questions
+                </h2>
+
+                <p className="text-foreground/70 mt-2">
+                  Everything you need to know about {product.name}
+                </p>
+              </div>
+
+              <div className="p-6 md:p-8">
+                <div className="space-y-4">
+                  {product.faqs.map((faq, index) => {
+                    const isOpen = openFAQ === index;
+
+                    return (
+                      <div
+                        key={index}
+                        className="rounded-2xl border border-border bg-background overflow-hidden"
+                      >
+                        <button
+                          onClick={() =>
+                            setOpenFAQ(isOpen ? null : index)
+                          }
+                          className="w-full flex items-center justify-between gap-4 p-5 text-left hover:bg-muted/40 transition"
+                        >
+                          <div className="flex items-center gap-4">
+
+                            <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary font-semibold">
+                              {index + 1}
+                            </div>
+
+                            <h3 className="text-lg font-semibold text-foreground">
+                              {faq.question}
+                            </h3>
+                          </div>
+
+                          <ChevronDown
+                            className={`h-5 w-5 text-foreground/70 transition-transform duration-300 ${isOpen ? "rotate-180" : ""
+                              }`}
+                          />
+                        </button>
+
+                        {isOpen && (
+                          <div className="px-5 pb-5 pl-19">
+                            <p className="text-foreground/75 leading-relaxed">
+                              {faq.answer}
+                            </p>
+                          </div>
+                        )}
+                      </div>
+                    );
+                  })}
+                </div>
               </div>
             </Card>
           </div>

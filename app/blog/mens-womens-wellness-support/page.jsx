@@ -142,7 +142,7 @@ export default function MensWomenWellnessPage() {
           </p>
 
           <p className="text-foreground/80 leading-8">
-            The concept of wellness in Ayurveda goes beyond treating symptoms. It focuses on strengthening the body internally so that both men and women can maintain long-term vitality and well-being through natural practices and lifestyle alignment.
+            The concept of wellness in Ayurveda goes beyond treating symptoms. It focuses on strengthening the body internally so that both men and women can maintain long-term vitality and well-being.
           </p>
 
         </div>
@@ -375,9 +375,9 @@ export default function MensWomenWellnessPage() {
             <h2 className="text-3xl font-bold font-serif mb-6">
               Safety & Responsible Usage
             </h2>
-            <p className="text-foreground/80 leading-8 mb-4">While Ayurvedic products are based on natural ingredients, responsible usage is always important.
-Please keep the following safety recommendations in mind:
-</p>
+            <p className="text-foreground/80 leading-8 ">While Ayurvedic products are based on natural ingredients, responsible usage is always important.</p>
+            <p className="text-foreground/80 leading-8 ">Please keep the following safety recommendations in mind:</p>
+
             <div className="space-y-4">
 
               {safetyTips.map((tip, index) => (

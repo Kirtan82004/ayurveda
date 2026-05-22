@@ -49,7 +49,7 @@ export default function AyurvedicLifestylePage() {
             Ayurvedic Daily Routine & Lifestyle
           </h1>
             <p className="text-lg text-foreground/80 mt-6 leading-8">
-            A Complete Guide to Living a Balanced and Healthy Lif
+            A Complete Guide to Living a Balanced and Healthy Life
           </p>
         </div>
       </section>
@@ -238,7 +238,7 @@ At Bamuso Ayurveda, herbal formulations are inspired by traditional Ayurvedic pr
 
               <p className="text-foreground/80 leading-8">
                 Regular meditation helps calm the mind,
-                improve focus, and support emotional balance.
+                improve focus.
               </p>
             </Card>
 

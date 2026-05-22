@@ -26,15 +26,14 @@ const PRODUCTS = [
     description: "Best Massage Oil for men, strength, vitality aur nourishment support. ",
     image: '/images/oil1.webp'
   },
-  
-  {
+ {
     id: 3,
-    name: 'Neem Face Mask',
-    category: 'Skin',
-    MRP: '₹799',
-    price: '₹599',
-    description: 'Natural antibacterial and skin-purifying treatment',
-    image: "/images/OutOfStock.webp"
+    name: 'BMS Super X Combo Pack (Capsule+Oil)',
+    category: 'Male Wellness',
+    MRP: '₹2998',
+    price: '₹1399',
+    description: 'Boost Vitality, Stamina & Physical Strength with Natural Ayurvedic Support – BMS Super X Capsule + Herbal Massage Oil for Energy, Stress Relief & Overall Performance.',
+    image: "/images/Combo.jpeg"
   },
   {
     id: 4,
@@ -47,15 +46,6 @@ const PRODUCTS = [
   },
   {
     id: 5,
-    name: 'Triphala Churna',
-    category: 'Digestion',
-    MRP: '₹299',
-    price: '₹199',
-    description: 'Digestive and detoxifying herbal blend',
-    image: "/images/OutOfStock.webp"
-  },
-  {
-    id: 6,
     name: 'Sesame Ubtan',
     category: 'Skin',
     MRP: '₹499',
@@ -64,7 +54,7 @@ const PRODUCTS = [
     image: "/images/OutOfStock.webp"
   },
   {
-    id: 7,
+    id: 6,
     name: 'Hibiscus Hair Rinse',
     category: 'Hair',
     MRP: '₹329',
@@ -73,7 +63,7 @@ const PRODUCTS = [
     image: "/images/OutOfStock.webp"
   },
   {
-    id: 8,
+    id: 7,
     name: 'Ginger Digestion Tea',
     category: 'Digestion',
     MRP: '₹329',
