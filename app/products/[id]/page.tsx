@@ -781,7 +781,7 @@ export default function ProductDetailPage() {
                   <p className="text-lg text-foreground/80 leading-relaxed"><span className='font-bold'>Tribhang Bhasma –</span> Supports nerve wellness</p>
                   <p className="text-lg text-foreground/80 leading-relaxed"><span className='font-bold'>Abhrak Bhasma –</span> Supports body rejuvenation</p>
                   <p className="text-lg text-foreground/80 leading-relaxed"><span className='font-bold'>Makar Dhwaj  –</span> Traditional Rasayan for vitality support</p>
-                  <<h2 className="text-2xl font-serif font-bold mb-6 text-foreground">Mineral Rasayan Support</h2>
+                  <h2 className="text-2xl font-serif font-bold mb-6 text-foreground">Mineral Rasayan Support</h2>
                   <p className="text-lg text-foreground/80 leading-relaxed"><span className='font-bold'>Jaitoon Oil (Olive Oil) –</span> Helps enhance herbal absorption and nourish skin.</p>
                   <p className="text-lg text-foreground/80 leading-relaxed"><span className='font-bold'>Til Oil (Sesame Oil) –</span> A deep penetrating Ayurvedic oil that supports circulation and tissue nourishment.</p>
                 </div>
