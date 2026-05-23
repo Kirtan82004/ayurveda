@@ -284,30 +284,30 @@ const PRODUCTS = [
       'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22%3E%3Crect fill=%22%23F5E1A4%22 width=%22200%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fontSize=%2218%22 fill=%22%23B8860B%22 textAnchor=%22middle%22 dominantBaseline=%22middle%22%3EBMS Combo%3C/text%3E%3C/svg%3E',
 
     ingredients: [
-      { name: "Ashwagandha", function: "Supports stress relief, stamina & strength" },
-      { name: "Safed Musli", function: "Traditionally used for vitality & endurance support" },
-      { name: "Kaunch Beej", function: "Supports vitality & reproductive wellness" },
-      { name: "Shatavari", function: "Supports hormonal balance & immunity" },
-      { name: "Gokhru (Tribulus)", function: "Supports vitality & urinary wellness" },
-      { name: "Jaifal (Nutmeg)", function: "Supports nervous system relaxation" },
-      { name: "Lavang (Clove)", function: "Supports circulation & natural defense" },
-      { name: "Dalchini (Cinnamon)", function: "Supports digestion & circulation" },
-      { name: "Sonth (Dry Ginger)", function: "Helps improve digestion & absorption" },
-      { name: "Kesar (Saffron)", function: "Supports mood, vitality & energy" },
-      { name: "Akarkara", function: "Traditionally known for stamina & vitality support" },
+      { name: "Ashwagandha", function: "Supports stress relief, strength, stamina, and nervous system balance." },
+      { name: "Safed Musli", function: "Traditionally used for physical strength and stamina support." },
+      { name: "Kaunch Beej", function: "Supports vitality & reproductive wellness." },
+      { name: "Shatavari", function: "Supports hormonal balance & immunity." },
+      { name: "Gokhru (Tribulus)", function: "Supports vitality & urinary wellness." },
+      { name: "Jaifal (Nutmeg)", function: "Supports nervous system relaxation and balance." },
+      { name: "Lavang (Clove)", function: "Supports circulation & natural defense." },
+      { name: "Dalchini (Cinnamon)", function: "Supports digestion and blood circulation." },
+      { name: "Sonth (Dry Ginger)", function: "Helps improve digestion and nutrient absorption." },
+      { name: "Kesar (Saffron)", function: "Supports mood, vitality & energy." },
+      { name: "Akarkara", function: "Traditionally known for vitality and stamina support." },
     ],
 
     benefits: [
-      "Supports natural stamina & vitality",
-      "Helps maintain daily energy & endurance",
+      "Supports natural stamina and vitality",
+      "Helps maintain daily energy and endurance",
       "Supports healthy blood circulation",
-      "Promotes body nourishment & relaxation",
-      "Supports stress management & mood balance",
+      "Promotes body nourishment and relaxation",
+      "Supports stress management and mood balance",
       "Helps maintain an active lifestyle",
       "Supports reproductive wellness",
       "Provides internal & external Ayurvedic support",
       "Helps nourish the body from within and outside",
-      "Supports overall wellness & rejuvenation"
+      "Supports overall wellness and rejuvenation"
     ],
 
     dosage:
@@ -780,9 +780,10 @@ export default function ProductDetailPage() {
                   <p className="text-lg text-foreground/80 leading-relaxed"><span className='font-bold'>Shuddh Shilajit –</span>Supports energy and stamina</p>
                   <p className="text-lg text-foreground/80 leading-relaxed"><span className='font-bold'>Tribhang Bhasma –</span> Supports nerve wellness</p>
                   <p className="text-lg text-foreground/80 leading-relaxed"><span className='font-bold'>Abhrak Bhasma –</span> Supports body rejuvenation</p>
-                  <p className="text-lg text-foreground/80 leading-relaxed"><span className='font-bold'>Makar Dhwaj  –</span> Traditional Rasayan for vitality & strength support</p>
-                  <p className="text-lg text-foreground/80 leading-relaxed"><span className='font-bold'>Jaitoon Oil (Olive Oil) –</span> Supports body rejuvenation</p>
-                  <p className="text-lg text-foreground/80 leading-relaxed"><span className='font-bold'>Til Oil (Sesame Oil) –</span> Traditional Rasayan for vitality & strength support</p>
+                  <p className="text-lg text-foreground/80 leading-relaxed"><span className='font-bold'>Makar Dhwaj  –</span> Traditional Rasayan for vitality support</p>
+                  <<h2 className="text-2xl font-serif font-bold mb-6 text-foreground">Mineral Rasayan Support</h2>
+                  <p className="text-lg text-foreground/80 leading-relaxed"><span className='font-bold'>Jaitoon Oil (Olive Oil) –</span> Helps enhance herbal absorption and nourish skin.</p>
+                  <p className="text-lg text-foreground/80 leading-relaxed"><span className='font-bold'>Til Oil (Sesame Oil) –</span> A deep penetrating Ayurvedic oil that supports circulation and tissue nourishment.</p>
                 </div>
               ) : null}
             </Card>
