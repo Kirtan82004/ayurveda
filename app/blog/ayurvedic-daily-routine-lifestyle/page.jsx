@@ -284,7 +284,7 @@ At Bamuso Ayurveda, herbal formulations are inspired by traditional Ayurvedic pr
               "Eating light dinners",
               "Avoiding heavy meals late at night",
               "Reducing screen time before bedtime",
-              "Practicing relaxation techniques",
+              "Practicing relaxation techniques such as meditation or reading",
             ].map((item, i) => (
               <Card key={i} className="p-4">
                 <p className="text-foreground/80">

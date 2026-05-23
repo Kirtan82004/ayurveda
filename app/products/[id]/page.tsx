@@ -263,23 +263,21 @@ const PRODUCTS = [
     id: 3,
     name: 'BMS Super X Combo Pack (Capsule + Oil)',
     category: 'Male Wellness',
-    MRP: '₹1999',
-    price: '₹1499',
-    rating: 4.9,
-    reviews: 186,
+    MRP: '₹2998',
+    price: '₹1399',
+    rating: 4.7,
+    reviews: 47,
     description:
-      'Boost vitality, stamina aur physical strength with Ayurvedic internal + external wellness support.',
+      'Boost Vitality, Stamina & Physical Strength with Natural Ayurvedic Support – BMS Super X Capsule + Herbal Massage Oil for Energy, Stress Relief & Overall Performance',
 
     longDescription:
-      'Modern lifestyle ka stress, fatigue aur pressure dheere dheere body ki natural energy, stamina aur strength ko reduce kar deta hai. Agar aap low energy, body weakness, stress, reduced stamina ya active lifestyle maintain karne mein difficulty feel karte hain, toh BMS Super X Combo Pack aapke liye specially design kiya gaya hai. Yeh combo Ayurvedic principle “Internal Nourishment + External Rejuvenation” par based hai. BMS Super X Capsule body ko andar se vitality, stamina aur stress resilience support karta hai, jabki BMS Super X Oil externally circulation, nourishment aur relaxation support deta hai. Traditional Ayurvedic herbs, mineral rasayan aur nourishing oils se bana yeh combo daily wellness, strength aur active lifestyle maintain karne mein madad karta hai.',
-
+      "Modern life brings stress, fatigue, and constant pressure that slowly drain your energy, stamina, and body strength. If you often feel: Low daily energy and physical fatigue • Stress and mental pressure • Reduced stamina and endurance • Lack of body strength and vitality • Difficulty maintaining an active lifestyle …then BMS Super X Combo Pack is designed for you.What's Inside the Combo? BMS Super X Capsule – Works from within to support internal vitality, stamina, and stress resilience. BMS Super X Oil – Works externally to improve circulation, nourishment, and relaxation.Together, they follow the classic Ayurvedic principle of Internal Nourishment + External Rejuvenation — giving your body complete, natural support.Formulated with traditional herbs, mineral rasayan, and nourishing oils inspired by classical Ayurvedic wisdom.",
     images: [
-      '/images/combo.jpeg',
-      '/images/combo2.jpeg',
-      '/images/comboOil.png',
-      '/images/combo4.png',
+      '/images/Combo.jpeg',
+      '/images/Combo2.jpeg',
+      '/images/ComboOil.png',
+      '/images/Combo4.png',
       '/images/Combo5.png'
-
     ],
 
     image:
@@ -324,7 +322,7 @@ const PRODUCTS = [
 
     manufacturingQuality: {
       manufacturedBy: "Human Pharmecia Inc.",
-      certifiedBy: ["AYUSH", "GMP"]
+      certifiedBy: ["938-ISM (HR)"]
     },
 
     safetyInformation: [

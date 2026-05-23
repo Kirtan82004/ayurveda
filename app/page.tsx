@@ -38,11 +38,12 @@ const FEATURED_PRODUCTS = [
 
   {
     id: 3,
-    name: 'Neem Face Mask',
-    category: 'Skin',
-    price: '₹599',
-    description: 'Natural skin purifier',
-    image: '/images/OutOfStock.webp',
+    name: 'BMS Super X Combo Pack (Capsule+Oil)',
+    category: 'Male Wellness',
+    MRP: '₹2998',
+    price: '₹1399',
+    description: 'Boost Vitality, Stamina & Physical Strength with Natural Ayurvedic Support – BMS Super X Capsule + Herbal Massage Oil for Energy, Stress Relief & Overall Performance.',
+    image: "/images/Combo.jpeg"
   },
   {
     id: 4,
