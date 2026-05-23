@@ -342,11 +342,6 @@ const PRODUCTS = [
       "The herbal oil complements it externally through massage, supporting healthy blood circulation, muscle relaxation, deep tissue nourishment, and stress relief. Its light texture absorbs easily for maximum benefit.",
       "Ideal for adults who experience low energy or fatigue, lead a stressful lifestyle, or want to maintain strength and vitality the natural, Ayurvedic way.",
       "Quality you can trust: Manufactured in a GMP-certified facility with AYUSH Ministry-approved formulations — no harmful chemicals, just safe and consistent Ayurvedic care.",
-      "Premium nourishing herbal oil with easy absorption",
-      "Manufactured in GMP-certified facility",
-      "AYUSH approved formulation",
-      "No harmful chemicals",
-      "Suitable for daily Ayurvedic wellness routine"
     ],
 
     faqs: [
@@ -767,23 +762,23 @@ export default function ProductDetailPage() {
 
                 <div className="mt-1">
                   <h2 className="text-2xl font-serif font-bold mb-6 text-foreground">Mineral Rasayan Support</h2>
-                  <p className="text-lg text-foreground/80 leading-relaxed"><span className='font-bold'>Shuddh Shilajit –</span> Energy & stamina support</p>
-                  <p className="text-lg text-foreground/80 leading-relaxed"><span className='font-bold'>Tribhang Bhasma –</span> Nerve wellness support</p>
-                  <p className="text-lg text-foreground/80 leading-relaxed"><span className='font-bold'>Abhrak Bhasma –</span> Body rejuvenation support</p>
-                  <p className="text-lg text-foreground/80 leading-relaxed"><span className='font-bold'>Makar Dhwaj –</span> Traditional Rasayan for vitality & strength support</p>
+                  <p className='text-foreground/70'><span className='text-foreground'>Shuddh Shilajit –</span> Energy & stamina support</p>
+                  <p className='text-foreground/70'><span className='text-foreground'>Tribhang Bhasma –</span> Nerve wellness support</p>
+                  <p className='text-foreground/70'><span className='text-foreground'>Abhrak Bhasma –</span> Body rejuvenation support</p>
+                  <p className='text-foreground/70'><span className='text-foreground'>Makar Dhwaj –</span> Traditional Rasayan for vitality & strength support</p>
 
                 </div>
               ) : null}
               {(product.id == 3) ? (
                 <div className="mt-1">
                   <h2 className="text-2xl font-serif font-bold mb-6 text-foreground">Mineral Rasayan Support</h2>
-                  <p className="text-lg text-foreground/80 leading-relaxed"><span className='font-bold'>Shuddh Shilajit –</span>Supports energy and stamina</p>
-                  <p className="text-lg text-foreground/80 leading-relaxed"><span className='font-bold'>Tribhang Bhasma –</span> Supports nerve wellness</p>
-                  <p className="text-lg text-foreground/80 leading-relaxed"><span className='font-bold'>Abhrak Bhasma –</span> Supports body rejuvenation</p>
-                  <p className="text-lg text-foreground/80 leading-relaxed"><span className='font-bold'>Makar Dhwaj  –</span> Traditional Rasayan for vitality support</p>
-                  <h2 className="text-2xl font-serif font-bold mb-6 text-foreground">Mineral Rasayan Support</h2>
-                  <p className="text-lg text-foreground/80 leading-relaxed"><span className='font-bold'>Jaitoon Oil (Olive Oil) –</span> Helps enhance herbal absorption and nourish skin.</p>
-                  <p className="text-lg text-foreground/80 leading-relaxed"><span className='font-bold'>Til Oil (Sesame Oil) –</span> A deep penetrating Ayurvedic oil that supports circulation and tissue nourishment.</p>
+                  <p className='text-foreground/70'><span className='text-foreground'>Shuddh Shilajit –</span>Supports energy and stamina</p>
+                  <p className='text-foreground/70'><span className='text-foreground'>Tribhang Bhasma –</span> Supports nerve wellness</p>
+                  <p className='text-foreground/70'><span className='text-foreground'>Abhrak Bhasma –</span> Supports body rejuvenation</p>
+                  <p className='text-foreground/70'><span className='text-foreground'>Makar Dhwaj  –</span> Traditional Rasayan for vitality support</p>
+                  <h2 className="text-2xl font-serif font-bold mb-6 text-foreground">Nourishing Base Oil</h2>
+                  <p className='text-foreground/70'><span className='text-foreground'>Jaitoon Oil (Olive Oil) –</span> Helps enhance herbal absorption and nourish skin.</p>
+                  <p className='text-foreground/70'><span className='text-foreground'>Til Oil (Sesame Oil) –</span> A deep penetrating Ayurvedic oil that supports circulation and tissue nourishment.</p>
                 </div>
               ) : null}
             </Card>
